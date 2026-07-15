@@ -246,7 +246,11 @@ hash = "d91f079f3801edc0080bb1e21ecddb2f301bbbfd20bf4f60eb1b2cddf5f212d8"
 
 [[files]]
 file = "config/ProjectE/mapping.toml"
-hash = "b2c9b44f6f0c6d16975b79ab0868390cde74a559f5fddd5a19bc0b6dcab6cbd5"
+hash = "9b81c365477dd81be43d4792427c1b502a032c50751b0cb6f3ebbb3acf393be4"
+
+[[files]]
+file = "config/ProjectE/pregenerated_emc.json"
+hash = "4a138b5f62e52649011f3e6997c7c32915324f386ff2549b134b880c310dd684"
 
 [[files]]
 file = "config/ProjectE/processing.toml"

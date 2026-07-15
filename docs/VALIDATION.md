@@ -44,6 +44,12 @@ The original 1.18.2 pack used a pregenerated EMC cache while disabling every liv
 
 Alpha 3 replaces that obsolete configuration with ProjectE 1.20.1's generated mapper defaults and disables pregenerated-cache mode. This also repairs existing alpha installations because ProjectE recalculates instead of reusing their empty `pregenerated_emc.json`. Validation registered **5,856 EMC values**.
 
+## Alpha 4 base-value EMC model
+
+Alpha 4 restores the original pack's intended EMC policy rather than deriving values from crafting. It ships the curated upstream base-value table as `pregenerated_emc.json` and disables every ProjectE crafting, machine-recipe, tag, brewing, API, and custom-conversion mapper. The obsolete `immersiveengineering:raw_bauxite` alias was dropped because 1.20.1 uses `immersiveengineering:raw_aluminum`, which already has its own upstream base value.
+
+Consequently, only the explicit base resources and progression items selected by Mechanical Mastery receive EMC. Crafted derivatives do not acquire automatically generated EMC values.
+
 ## Remaining upstream warnings
 
 The server log still contains non-fatal warnings/errors emitted internally by selected third-party builds, including missing mixin metadata and Advanced Peripherals' optional Powah ComputerCraft integration methods. They do not prevent mod loading, recipe loading, quest loading, world creation, or server startup. No pack-owned KubeJS or recipe failure remained in the final validation run.
