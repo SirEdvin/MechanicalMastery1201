@@ -1,0 +1,17 @@
+hash-format = "sha256"
+
+[[files]]
+file = "docs/PORT-AUDIT.md"
+hash = "561384b61e438149aeda9c401b426bac645d72be729f9a40872a570ca1a48fb6"
+
+[[files]]
+file = "docs/curseforge-compatibility.csv"
+hash = "f2e0021f025e3fc2594c70b3a7bd9bc7f45e3258c21684ca45dd285b62fc8ab9"
+
+[[files]]
+file = "docs/mod-inventory.csv"
+hash = "191b0f379381f1170355f625508c10affe73bed1037c2b75883fab5e55687cbb"
+
+[[files]]
+file = "docs/modrinth-compatibility.csv"
+hash = "29909665bccd289effd138bcade4a4e7e576e75d9520410016b876a409ca5aba"

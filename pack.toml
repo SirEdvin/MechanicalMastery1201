@@ -1,0 +1,13 @@
+name = "Mechanical Mastery 1.20.1 Port"
+author = "ammoniumx; 1.20.1 port maintained by SirEdvin"
+version = "0.1.0-alpha.1"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "8b0a204941eca6175128c19f7e72307588b199f2101aa2913857fc45e16ef242"
+
+[versions]
+forge = "47.4.21"
+minecraft = "1.20.1"

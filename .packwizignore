@@ -1,0 +1,12 @@
+# Packwiz internal/project exclusions
+.git/
+.github/
+build/
+README.md
+LICENSE.md
+PORTING.md
+AGENTS.md
+*.zip
+*.mrpack
+.upstream/
+work/

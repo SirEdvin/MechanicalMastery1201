@@ -1,0 +1,32 @@
+# Git
+.git/
+
+# Runtime/generated Minecraft state
+logs/
+crash-reports/
+saves/
+world/
+local/
+backups/
+*.log
+*.lock
+options.txt
+optionsof.txt
+servers.dat
+usercache.json
+usernamecache.json
+launcher_accounts.json
+
+# Build/export output
+build/
+*.zip
+*.mrpack
+
+# IDE/OS
+.idea/
+.vscode/
+.DS_Store
+
+# Local audit/work files
+.upstream/
+work/
