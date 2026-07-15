@@ -2143,6 +2143,11 @@ hash = "96204145e12506e0625d8b9bfa05aad54e9a62fd511bae39f0d57fcb5e39f4cc"
 metafile = true
 
 [[files]]
+file = "mods/cloud-solutions.pw.toml"
+hash = "68cfce19dcb651727e5b98c21861534a63290bed81fd14271bb40eb1398c9f19"
+metafile = true
+
+[[files]]
 file = "mods/clumps.pw.toml"
 hash = "e3173aaa4e9078ad7ace2b9ef43ce15ce9919c0b566d8830cea87264f92b3a6a"
 metafile = true
@@ -2250,6 +2255,11 @@ metafile = true
 [[files]]
 file = "mods/dark-utilities.pw.toml"
 hash = "1e5226def4d447c7b1352274229443c7bf66658be97f3a7fa3dbc1581e9f12b3"
+metafile = true
+
+[[files]]
+file = "mods/digital-items-3.pw.toml"
+hash = "7e90696877a7c861609420d15929246d52b725c41f98d54cf68214ff70e66427"
 metafile = true
 
 [[files]]
@@ -2395,6 +2405,11 @@ metafile = true
 [[files]]
 file = "mods/kleeslabs.pw.toml"
 hash = "ebe73adda33fdb1b40e8ec6eec8f40b6a65280cd340ac4edc97ce764f7c42d9e"
+metafile = true
+
+[[files]]
+file = "mods/kotlin-for-forge.pw.toml"
+hash = "70a4ecd9d0c04ad20aeb976c1ee28933ce48a0a1f43df42deafaeb2ad7235297"
 metafile = true
 
 [[files]]
@@ -2780,6 +2795,16 @@ metafile = true
 [[files]]
 file = "mods/trashslot.pw.toml"
 hash = "51b17c87ab726217410bfcc72017394a4e141abe56debe2b25163ea7949c4b9f"
+metafile = true
+
+[[files]]
+file = "mods/turtlematic.pw.toml"
+hash = "7d5a47a1f54122cd91d2fa6a50cf59887b0031486fecd9916d88440b0339cbf1"
+metafile = true
+
+[[files]]
+file = "mods/unlimitedperipheralworks.pw.toml"
+hash = "6cbb7d1b65315650cb8050350510dca0bb57f397dad395f1b8667bf64b484798"
 metafile = true
 
 [[files]]
