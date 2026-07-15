@@ -1,0 +1,1 @@
+{"type":"mekanism:purifying","itemInput":{"ingredient":{"item":"minecraft:raw_gold"}},"chemicalInput":{"amount":1,"gas":"mekanism:oxygen"},"output":{"item":"mekanism:clump_gold","count":2}}

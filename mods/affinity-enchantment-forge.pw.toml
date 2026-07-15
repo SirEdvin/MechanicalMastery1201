@@ -1,0 +1,13 @@
+name = "Affinity Enchantment [FORGE]"
+filename = "affinity-1.20.1-0.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "da54a15e0c5fbb295fdc2207d0aae793be736720"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4756767
+project-id = 663096

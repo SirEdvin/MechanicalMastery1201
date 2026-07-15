@@ -1,0 +1,11 @@
+{
+	id: "2304808539E0FDC4"
+	order_index: 5
+	title: "{ftbquests.loot_table.2523283000924372420.title}"
+	loot_size: 1
+	rewards: [{
+		command: "/gamerule keepInventory true"
+		player_command: false
+		type: "command"
+	}]
+}

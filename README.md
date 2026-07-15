@@ -1,8 +1,8 @@
 # Mechanical Mastery 1.20.1 Port
 
-An **unofficial, work-in-progress Forge 1.20.1 source port** of [Mechanical Mastery](https://www.curseforge.com/minecraft/modpacks/mechanical-mastery) by **ammoniumx**, maintained as a reproducible [Packwiz](https://packwiz.infra.link/) project.
+An **unofficial Forge 1.20.1 source port** of [Mechanical Mastery](https://www.curseforge.com/minecraft/modpacks/mechanical-mastery) by **ammoniumx**, maintained as a reproducible [Packwiz](https://packwiz.infra.link/) project.
 
-> This is an unofficial work-in-progress port. It is not an official release and is not endorsed by the original author.
+> This is an unofficial alpha port. It is not an official release and is not endorsed by the original author. Clean client/server installation and dedicated-server startup are validated, but full player regression through all five quest tiers is still welcome.
 
 ## Upstream
 
@@ -18,7 +18,11 @@ packwiz refresh
 packwiz list
 ```
 
-The pack is not considered playable until clean-client and dedicated-server launches pass and the Mechanical Essence, custom ore-processing, quest, EMC, and endgame chains have been regression-tested.
+## Validation
+
+The validated alpha contains 154 Packwiz mod entries, nine executable KubeJS scripts, 200 quests, 19 singularities, eleven generated Mekanism ore-processing chains, and the original skyblock/EMC/endgame content. The final dedicated-server run loaded all KubeJS scripts and recipes with zero pack-owned errors or failed recipes and reached `Done` on Forge 47.4.21.
+
+See [PORTING.md](PORTING.md) for migration decisions and [docs/VALIDATION.md](docs/VALIDATION.md) for the exact validation scope and remaining upstream warnings.
 
 ## Licensing
 

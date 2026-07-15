@@ -1,0 +1,333 @@
+// priority: 0
+// FIX ALL THIS
+
+console.info('Hello, World! (You will see this line every time server resources reload)')
+
+ServerEvents.recipes( event => {
+	// Change recipes here
+	let metals = {};
+	let all_metals = ['iron', 'gold', 'osmium', 'copper', 'tin', 'lead', 'uranium', 'aluminum', 'silver', 'nickel', 'zinc'];
+	let vanilla_metals = ['iron', 'copper', 'gold'];
+	let mekanism_metals = ['iron', 'gold', 'osmium', 'copper', 'tin', 'lead', 'uranium'];
+	let thermal_metals = ['tin', 'lead', 'silver', 'nickel'];
+	let create_metals = ['iron', 'gold', 'copper', 'zinc', 'osmium', 'silver', 'tin', 'lead', 'aluminum', 'uranium', 'nickel'];
+	// let immersive_metals = ['aluminum', 'lead', 'silver', 'nickel', 'uranium'];
+	
+	console.log('[AMMONIUM@KUBEJS]: Starting ore processing calculations...');
+	all_metals.forEach((metal) => {
+		metals[metal] = {};
+		
+		// ores and ingots
+		if(vanilla_metals.includes(metal)){
+			metals[metal]['ore'] = `minecraft:raw_${metal}`;
+			metals[metal]['ingot'] = `minecraft:${metal}_ingot`;
+		} else {
+			if(metal == 'aluminum'){
+				metals[metal]['ore'] = 'immersiveengineering:raw_aluminum';
+				metals[metal]['ingot'] = 'immersiveengineering:ingot_aluminum';
+			} else {
+			if(mekanism_metals.includes(metal)) {
+				metals[metal]['ore'] = `mekanism:raw_${metal}`;
+				metals[metal]['ingot'] = `mekanism:ingot_${metal}`;
+			} else {
+			if(thermal_metals.includes(metal)) {
+				metals[metal]['ore'] = `thermal:raw_${metal}`;
+				metals[metal]['ingot'] = `thermal:${metal}_ingot`;
+			} else {
+			if(create_metals.includes(metal)) {
+				metals[metal]['ore'] = `create:raw_${metal}`;
+				metals[metal]['ingot'] = `create:${metal}_ingot`;
+			} else {
+				console.log(`[AMMONIUM@KUBEJS][ERROR]: could not find ore/ingots for ${metal}`);
+			}}}}
+		
+		}
+		
+		// crushed ores
+		if(create_metals.includes(metal)) {
+			metals[metal]['crushed'] = `create:crushed_raw_${metal}`;
+		} else {
+			metals[metal]['crushed'] = `kubejs:crushed_raw_${metal}`;
+		}
+		
+		// everything else
+		if(mekanism_metals.includes(metal)) {
+			metals[metal]['dirty_slurry'] = `mekanism:dirty_${metal}`;
+			metals[metal]['clean_slurry'] = `mekanism:clean_${metal}`;
+			metals[metal]['shard'] = `mekanism:shard_${metal}`;
+			metals[metal]['crystal'] = `mekanism:crystal_${metal}`;
+			metals[metal]['dust'] = `mekanism:dust_${metal}`;
+			metals[metal]['dirty_dust'] = `mekanism:dirty_dust_${metal}`;
+			metals[metal]['clump'] = `mekanism:clump_${metal}`;
+		} else {
+			metals[metal]['dirty_slurry'] = `moremekanismprocessing:dirty_${metal}`;
+			metals[metal]['clean_slurry'] = `moremekanismprocessing:clean_${metal}`;
+			metals[metal]['shard'] = `moremekanismprocessing:shard_${metal}`;
+			metals[metal]['crystal'] = `moremekanismprocessing:crystal_${metal}`;
+			metals[metal]['dirty_dust'] = `moremekanismprocessing:dirty_dust_${metal}`;
+			metals[metal]['clump'] = `moremekanismprocessing:clump_${metal}`;
+			if(thermal_metals.includes(metal)){
+				metals[metal]['dust'] = `thermal:${metal}_dust`;
+			} else {
+				metals[metal]['dust'] = `kubejs:${metal}_dust`;
+			}
+		}
+		
+	})
+	
+	console.log('[AMMONIUM@KUBEJS]:Ore processing calculations finished. Metal name registries:');
+	
+	for(var metal in metals) {
+		console.log(metal);
+		for(var stage in metals[metal]) {
+			console.log(`${stage} -> ${metals[metal][stage]}`);
+		}
+	}
+	
+	console.log('[AMMONIUM@KUBEJS]:End of list.');
+	
+	console.log('[AMMONIUM@KUBEJS]:Adding ore processing recipes:');
+	// The KubeJS Mekanism 1.20.1 addon mis-deserializes valid washing
+	// fluidInput JSON. Equivalent machine recipes are generated as static
+	// datapack files by scripts/generate_ore_processing_data.py.
+	if (false) {
+	for(var metal in metals) {
+		event.custom({
+		  type: 'mekanism:dissolution',
+		  itemInput: {
+			amount: 3,
+			ingredient: {
+			  item: metals[metal]['ore']
+			}
+		  },
+		  gasInput: {
+			amount: 1,
+			gas: 'mekanism:sulfuric_acid'
+		  },
+		  output: {
+			slurry: metals[metal]['dirty_slurry'],
+			amount: 2000,
+			chemicalType: 'slurry'
+		  }
+		});
+		
+		// Wait until this is fixed, it sends chemicalInput but expects gasInput
+		// event.recipes.mekanism.dissolution({slurry: metals[metal]['dirty_slurry'], amount: 2000, chemicalType: 'slurry'}, {gas: 'mekanism:sulfuric_acid', amount: 1}, 
+		// {item: metals[metal]['ore'], amount: 3});
+		
+		event.custom({
+			  type: 'mekanism:washing',
+			  fluidInput: {
+				amount:5,
+				tag:'minecraft:water'
+			  },
+			  slurryInput: {
+				slurry: metals[metal]['dirty_slurry'],
+				amount:1
+			  },
+			  output: {
+				slurry:metals[metal]['clean_slurry'],
+				amount:1
+			  }
+		});
+		
+		event.custom({
+			type:"mekanism:crystallizing",
+			chemicalType:"slurry",
+			input:{
+				amount:200,
+				slurry:metals[metal]['clean_slurry']
+			},
+			output:{
+				item:metals[metal]['crystal']
+			}
+		});
+		
+		event.custom({
+			type:"mekanism:injecting",
+			itemInput:{
+				ingredient:{
+					item:metals[metal]['crystal']
+				}
+			},
+			chemicalInput:{
+				amount:1,
+				gas:"mekanism:hydrogen_chloride"
+			},
+			output:{
+				item:metals[metal]['shard']
+			}
+		});
+	
+		event.custom({
+			type:"mekanism:injecting",
+			itemInput:{
+				amount:3,
+				ingredient:{
+					item:metals[metal]['ore']
+				}
+			},
+			chemicalInput:{
+				amount:1,
+				gas:"mekanism:hydrogen_chloride"
+			},
+			output:{
+				item:metals[metal]['shard'],
+				count:8
+			}
+		});
+		
+		event.custom({
+			type:"mekanism:purifying",
+			itemInput:{
+				ingredient:{
+					item:metals[metal]['shard']
+				}
+			},
+			chemicalInput:{
+				amount:1,
+				gas:"mekanism:oxygen"
+			},
+			output:{
+				item:metals[metal]['clump']
+			}
+		});
+		
+		event.custom({
+			type:"mekanism:purifying",
+			itemInput:{
+				ingredient:{
+					item:metals[metal]['ore']
+				}
+			},
+			chemicalInput:{
+				amount:1,
+				gas:"mekanism:oxygen"
+			},
+			output:{
+				item:metals[metal]['clump'],
+				count:2}});
+				
+		event.recipes.create.crushing([Item.of(metals[metal]['crushed']), Item.of(metals[metal]['crushed']).withChance(0.3)], metals[metal]['clump']);
+		event.recipes.mekanism.crushing(Item.of(metals[metal]['dirty_dust'], 2), metals[metal]['crushed']);
+		
+		event.recipes.thermal.pulverizer(Item.of(metals[metal]['dust']).withChance(1.2), metals[metal]['dirty_dust']).energy(4000);
+		
+    }
+	}
+
+	for (const metal in metals) {
+		event.recipes.create.crushing(
+			[Item.of(metals[metal]['crushed']), Item.of(metals[metal]['crushed']).withChance(0.3)],
+			metals[metal]['clump']
+		);
+		event.recipes.mekanism.crushing(Item.of(metals[metal]['dirty_dust'], 2), metals[metal]['crushed']);
+		event.recipes.thermal.pulverizer(Item.of(metals[metal]['dust']).withChance(1.2), metals[metal]['dirty_dust']).energy(4000);
+	}
+	
+	['iron', 'gold', 'osmium', 'copper', 'tin', 'lead', 'uranium'].forEach((metal) => {
+		event.remove({id: `mekanism:processing/${metal}/dirty_dust/from_clump`});
+		event.remove({id: `mekanism:processing/${metal}/slurry/dirty/from_raw_ore`});
+		event.remove({id: `mekanism:processing/${metal}/slurry/clean`});
+		event.remove({id: `mekanism:processing/${metal}/crystal/from_slurry`});
+		event.remove({id: `mekanism:processing/${metal}/shard/from_raw_ore`});
+		event.remove({id: `mekanism:processing/${metal}/shard/from_crystal`});
+		event.remove({id: `mekanism:processing/${metal}/clump/from_shard`});
+		event.remove({id: `mekanism:processing/${metal}/clump/from_raw_ore`});
+	});
+		
+	['aluminum', 'silver', 'nickel', 'zinc'].forEach((metal) => {
+		event.custom({
+			type:"mekanism:enriching",
+			input:{
+				ingredient:{
+					item:metals[metal]['dirty_dust']
+				}
+			},
+			output:{
+				item:metals[metal]['dust']
+			}
+		});
+		
+		event.custom({
+			type:"mekanism:enriching",
+			input:{
+				amount:3,
+				ingredient:{
+					item:metals[metal]['ore']
+				}
+			},
+			output:{
+				item:metals[metal]['dust'],
+				count:4
+			}
+		});
+	
+		event.smelting(metals[metal]['ingot'], metals[metal]['dust']);
+	});
+	
+	create_metals.forEach((metal) => {
+		event.remove({id: `create:splashing/crushed_raw_${metal}`});
+	});
+	
+	event.recipes.thermal.pulverizer([Item.of('kubejs:aluminum_dust').withChance(1.25), Item.of('mekanism:dust_iron').withChance(0.1)], '#forge:raw_materials/aluminum').energy(4000);
+	event.recipes.mekanism.enriching(Item.of('thermal:silver_dust', 4), Item.of('thermal:raw_silver', 3));
+
+	event.remove({id: 'mekanism:processing/bronze/ingot/from_dust_blasting'});
+	event.remove({id: 'mekanism:processing/bronze/ingot/from_dust_smelting'});
+	
+	// cleaning and unifying
+	let quickReplace = (from, to) => {
+		event.replaceOutput({output: from}, from, to);
+		event.shapeless(to, from);
+	}
+
+	quickReplace('thermal:iron_dust', metals['iron']['dust']);
+	quickReplace('thermal:copper_dust', metals['copper']['dust']);
+	quickReplace('thermal:tin_dust', metals['tin']['dust']);
+	quickReplace('thermal:lead_dust', metals['lead']['dust']);
+	quickReplace('thermal:gold_dust', metals['gold']['dust']);
+
+	quickReplace('immersiveengineering:dust_iron', metals['iron']['dust']);
+	quickReplace('immersiveengineering:dust_copper', metals['copper']['dust']);
+	quickReplace('immersiveengineering:dust_aluminum', metals['aluminum']['dust']);
+	quickReplace('immersiveengineering:dust_lead', metals['lead']['dust']);
+	quickReplace('immersiveengineering:dust_nickel', metals['nickel']['dust']);
+	quickReplace('immersiveengineering:dust_silver', metals['silver']['dust']);
+	quickReplace('immersiveengineering:dust_gold', metals['gold']['dust']);
+	
+	quickReplace('mekanism:dust_bronze', 'thermal:bronze_dust');
+
+	console.log('[AMMONIUM@KUBEJS]:Ore processing recipes done.');
+})
+
+ServerEvents.tags('item', event => {
+	// Repair malformed optional integrations shipped by old 1.20.1 addon
+	// builds. These values point at mods/items that are not present.
+	event.remove('createchromaticreturn:durasteel_sand', [
+		'create:sand_paper', 'createaddition:red_sand_paper'
+	]);
+	event.remove('createchromaticreturn:sandpaper', [
+		'create:red_sand_paper', 'create:sand_paper'
+	]);
+	event.remove('createchromaticreturn:industrium_sd', [
+		'sliceanddice:slicer', 'sliceanddice:sprinkler'
+	]);
+	event.remove('createchromaticreturn:industrium_ei', [
+		'create_enchantment_industry:disenchanter', 'createaddition:printer'
+	]);
+	event.remove('curios:charm', [
+		'createchromaticreturn:shadow_charm',
+		'createchromaticreturn:multiplite_charm',
+		'createchromaticreturn:durasteel_charm',
+		'createchromaticreturn:silkstrum_charm',
+		'createchromaticreturn:industrium_charm',
+		'createchromaticreturn:refined_charm'
+	]);
+})
+
+
+
+ServerEvents.tags('item', event => {
+  // event.get('forge:chunks')
+})

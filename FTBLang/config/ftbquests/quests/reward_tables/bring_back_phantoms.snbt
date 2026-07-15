@@ -1,0 +1,11 @@
+{
+	id: "4C44343861CF603F"
+	order_index: 8
+	title: "{ftbquests.loot_table.5495574862062641215.title}"
+	loot_size: 1
+	rewards: [{
+		command: "/gamerule doInsomnia true"
+		player_command: false
+		type: "command"
+	}]
+}

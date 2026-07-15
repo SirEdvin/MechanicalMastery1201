@@ -1,0 +1,1 @@
+{"type":"mekanism:injecting","itemInput":{"amount":3,"ingredient":{"item":"thermal:raw_nickel"}},"chemicalInput":{"amount":1,"gas":"mekanism:hydrogen_chloride"},"output":{"item":"moremekanismprocessing:shard_nickel","count":8}}

@@ -6,6 +6,8 @@ README.md
 LICENSE.md
 PORTING.md
 AGENTS.md
+docs/
+scripts/
 *.zip
 *.mrpack
 .upstream/

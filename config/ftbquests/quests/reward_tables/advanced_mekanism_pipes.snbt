@@ -1,0 +1,11 @@
+{
+	id: "286D5CD5D45F0BAD"
+	order_index: 0
+	title: "{ftbquests.loot_table.2913086607439367085.title}"
+	loot_size: 1
+	rewards: [
+		{ item: "mekanism:advanced_universal_cable", count: 16 }
+		{ item: "mekanism:advanced_mechanical_pipe", count: 16 }
+		{ item: "mekanism:advanced_logistical_transporter", count: 16 }
+	]
+}

@@ -1,0 +1,11 @@
+{
+	id: "45ED32861BD08EB5"
+	order_index: 10
+	title: "{ftbquests.loot_table.5038739109671112373.title}"
+	loot_size: 1
+	rewards: [{
+		command: "/weather clear"
+		player_command: false
+		type: "command"
+	}]
+}

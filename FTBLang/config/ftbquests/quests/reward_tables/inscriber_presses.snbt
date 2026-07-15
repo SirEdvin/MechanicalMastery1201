@@ -1,0 +1,12 @@
+{
+	id: "359E6496F5540E0B"
+	order_index: 12
+	title: "{ftbquests.loot_table.3863636129854262795.title}"
+	loot_size: 1
+	rewards: [
+		{ item: "ae2:silicon_press" }
+		{ item: "ae2:logic_processor_press" }
+		{ item: "ae2:engineering_processor_press" }
+		{ item: "ae2:calculation_processor_press" }
+	]
+}

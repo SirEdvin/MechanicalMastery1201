@@ -1,0 +1,1 @@
+{"type":"mekanism:injecting","itemInput":{"amount":3,"ingredient":{"item":"create:raw_zinc"}},"chemicalInput":{"amount":1,"gas":"mekanism:hydrogen_chloride"},"output":{"item":"moremekanismprocessing:shard_zinc","count":8}}

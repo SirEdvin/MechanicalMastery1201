@@ -1,0 +1,7 @@
+{
+  "criteria": {
+    "disabled_broken_upstream_recipe": {
+      "trigger": "minecraft:impossible"
+    }
+  }
+}

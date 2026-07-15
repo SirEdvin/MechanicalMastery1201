@@ -1,0 +1,1 @@
+{"type":"mekanism:purifying","itemInput":{"ingredient":{"item":"thermal:raw_nickel"}},"chemicalInput":{"amount":1,"gas":"mekanism:oxygen"},"output":{"item":"moremekanismprocessing:clump_nickel","count":2}}

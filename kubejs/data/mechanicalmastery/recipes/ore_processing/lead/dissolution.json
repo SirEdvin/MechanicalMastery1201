@@ -1,0 +1,1 @@
+{"type":"mekanism:dissolution","itemInput":{"amount":3,"ingredient":{"item":"mekanism:raw_lead"}},"gasInput":{"amount":1,"gas":"mekanism:sulfuric_acid"},"output":{"amount":2000,"slurry":"mekanism:dirty_lead","chemicalType":"slurry"}}

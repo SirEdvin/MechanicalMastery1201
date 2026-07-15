@@ -1,0 +1,11 @@
+{
+	id: "58A26B32E5F47DFF"
+	order_index: 9
+	title: "{ftbquests.loot_table.6386785087915326975.title}"
+	loot_size: 1
+	rewards: [{
+		command: "/gamerule doWeatherCycle false"
+		player_command: false
+		type: "command"
+	}]
+}

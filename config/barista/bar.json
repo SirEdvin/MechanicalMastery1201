@@ -1,0 +1,14 @@
+{
+  "moduleList": [
+    {
+      "name": "icon",
+      "display": true,
+      "context": "icon.png"
+    },
+    {
+      "name": "text",
+      "display": true,
+      "context": "Mechanical Mastery | A 1.18 modpack by Ammonium"
+    }
+  ]
+}

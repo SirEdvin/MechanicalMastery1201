@@ -1,0 +1,13 @@
+name = "Barista - Window Title Editor"
+filename = "Barsita-1.20-1.1.2.jar"
+side = "client"
+
+[download]
+hash-format = "sha1"
+hash = "0f399f11920e1c3994f507b6968b3956a5487e07"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 4580717
+project-id = 552324
