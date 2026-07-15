@@ -1,11 +1,26 @@
-# Copyright and licensing
+# Creative Commons Attribution-NonCommercial 3.0 Unported
 
-Mechanical Mastery and its original pack-specific content are Copyright © their respective copyright holders, including the original author **ammoniumx**. **All rights reserved.**
+**SPDX identifier:** `CC-BY-NC-3.0`
 
-No explicit open-source license or redistribution grant was found in the supplied Mechanical Mastery r1.5.1 archive or on its upstream CurseForge project metadata during creation of this port. This repository therefore does not grant a license to copy, redistribute, sublicense, or commercially exploit upstream-authored scripts, quests, configuration, artwork, textures, templates, or other creative content.
+Mechanical Mastery and this adapted 1.20.1 port are licensed under the **Creative Commons Attribution-NonCommercial 3.0 Unported License**.
 
-Third-party Minecraft mods and libraries retain their own licenses. They are represented by Packwiz metadata and should be downloaded from their approved upstream hosts rather than committed as binaries.
+You are free to:
 
-Original port-specific contributions, if any, are not offered under a broader license unless a file or later release explicitly says otherwise.
+- **Share** — copy and redistribute the material in any medium or format.
+- **Adapt** — remix, transform, and build upon the material.
+
+Under these terms:
+
+- **Attribution** — Give appropriate credit to the original Mechanical Mastery author, **ammoniumx**, provide a link to the license, and indicate that this repository is an unofficial modified port to Minecraft 1.20.1. Attribution must not imply endorsement.
+- **NonCommercial** — Do not use the material for commercial purposes.
+- **No additional restrictions** — Do not apply legal terms or technological measures that restrict others from exercising the rights granted by the license.
+
+Canonical license deed:
+https://creativecommons.org/licenses/by-nc/3.0/
+
+Full legal code:
+https://creativecommons.org/licenses/by-nc/3.0/legalcode
+
+Third-party Minecraft mods and libraries remain under their respective licenses. Mod binaries are not relicensed by this repository and are downloaded from their approved upstream hosts through Packwiz metadata.
 
 Minecraft is a trademark of Microsoft Corporation. This project is unofficial and is not affiliated with or endorsed by Mojang Studios or Microsoft.

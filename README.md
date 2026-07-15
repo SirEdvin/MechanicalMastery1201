@@ -2,7 +2,7 @@
 
 An **unofficial, work-in-progress Forge 1.20.1 source port** of [Mechanical Mastery](https://www.curseforge.com/minecraft/modpacks/mechanical-mastery) by **ammoniumx**, maintained as a reproducible [Packwiz](https://packwiz.infra.link/) project.
 
-> This repository is private while licensing and port correctness are being validated. It is not an official release and is not endorsed by the original author.
+> This is an unofficial work-in-progress port. It is not an official release and is not endorsed by the original author.
 
 ## Upstream
 
@@ -22,4 +22,4 @@ The pack is not considered playable until clean-client and dedicated-server laun
 
 ## Licensing
 
-No explicit open-source license was found in the supplied archive or upstream CurseForge project metadata. Accordingly, upstream-authored scripts, quests, configs, textures, and other pack content remain **all rights reserved by their respective copyright holders**. See [LICENSE.md](LICENSE.md). Mod binaries are not committed; Packwiz metadata downloads them from their approved upstream hosts.
+The original Mechanical Mastery project is licensed under **Creative Commons Attribution-NonCommercial 3.0 Unported (`CC-BY-NC-3.0`)**. This unofficial port preserves that license, credits **ammoniumx**, links the original project, and identifies the changes as a Minecraft 1.20.1 adaptation. See [LICENSE.md](LICENSE.md). Mod binaries are not committed; Packwiz metadata downloads them from their approved upstream hosts under their respective licenses.
