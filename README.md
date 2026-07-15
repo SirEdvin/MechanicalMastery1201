@@ -22,4 +22,4 @@ The pack is not considered playable until clean-client and dedicated-server laun
 
 ## Licensing
 
-The original Mechanical Mastery project is licensed under **Creative Commons Attribution-NonCommercial 3.0 Unported (`CC-BY-NC-3.0`)**. This unofficial port preserves that license, credits **ammoniumx**, links the original project, and identifies the changes as a Minecraft 1.20.1 adaptation. See [LICENSE.md](LICENSE.md). Mod binaries are not committed; Packwiz metadata downloads them from their approved upstream hosts under their respective licenses.
+The original Mechanical Mastery project is licensed under **Creative Commons Attribution-NonCommercial 3.0 Unported (`CC-BY-NC-3.0`)**. This unofficial port preserves that license, credits **ammoniumx**, links the original project, and identifies the changes as a Minecraft 1.20.1 adaptation. See [LICENSE](LICENSE). Mod binaries are not committed; Packwiz metadata downloads them from their approved upstream hosts under their respective licenses.
