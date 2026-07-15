@@ -38,6 +38,12 @@ The updated dedicated server reached `Done (15.994s)`. UnlimitedPeripheralWorks 
 
 Cloud Solutions 0.3.3 leaves an executor thread alive after Minecraft has saved and stopped the world, so the Java process may require termination after shutdown. This is an upstream lifecycle issue in that alpha mod version; world saving completed before the process was terminated.
 
+## Alpha 3 EMC repair
+
+The original 1.18.2 pack used a pregenerated EMC cache while disabling every live ProjectE mapper. The stale cache was intentionally not carried into 1.20.1, but the disabled mapper configuration was, causing fresh installations to generate and reuse an empty cache with zero EMC values.
+
+Alpha 3 replaces that obsolete configuration with ProjectE 1.20.1's generated mapper defaults and disables pregenerated-cache mode. This also repairs existing alpha installations because ProjectE recalculates instead of reusing their empty `pregenerated_emc.json`. Validation registered **5,856 EMC values**.
+
 ## Remaining upstream warnings
 
 The server log still contains non-fatal warnings/errors emitted internally by selected third-party builds, including missing mixin metadata and Advanced Peripherals' optional Powah ComputerCraft integration methods. They do not prevent mod loading, recipe loading, quest loading, world creation, or server startup. No pack-owned KubeJS or recipe failure remained in the final validation run.

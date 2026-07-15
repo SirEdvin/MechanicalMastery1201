@@ -1,12 +1,12 @@
 name = "Mechanical Mastery 1.20.1 Port"
 author = "ammoniumx; 1.20.1 port maintained by SirEdvin"
-version = "0.1.0-alpha.2"
+version = "0.1.0-alpha.3"
 pack-format = "packwiz:1.1.0"
 
 [index]
 file = "index.toml"
 hash-format = "sha256"
-hash = "e6667f2b0548c836bd63c4784dfef2b4aa7c720d84bcd433a63df2a2567f65fc"
+hash = "14caef0b355fab29706aa02bfc62499a6b053648048ca01b59b4b46ea945f4e6"
 
 [versions]
 forge = "47.4.21"
