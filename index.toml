@@ -2100,6 +2100,11 @@ hash = "a4470ff99a3e0b1163df88284ad4740b03767a0ba10c4ed54757ea52315417c2"
 metafile = true
 
 [[files]]
+file = "mods/create-deco.pw.toml"
+hash = "fee58a333eaf51d4862fee34fe8ba7cb70140500023e06aca3c9fcf0e0f34719"
+metafile = true
+
+[[files]]
 file = "mods/create-ender-transmission.pw.toml"
 hash = "fa5f6451ab9d80a6df6f24967b99a36da92fefe12ffc6e1978727be4c1777734"
 metafile = true
@@ -2182,6 +2187,11 @@ metafile = true
 [[files]]
 file = "mods/ender-storage-1-8.pw.toml"
 hash = "638f7c447dbe7dc2e85e4bf89d70fb41632db940a57de498094f2be57fa6c18d"
+metafile = true
+
+[[files]]
+file = "mods/engineers-decor-ported.pw.toml"
+hash = "46cb477f4a9b2f9b068cc0d3ca3a4a99ee00f08c4892202fb5c3ae8449f3618f"
 metafile = true
 
 [[files]]
@@ -2762,6 +2772,11 @@ metafile = true
 [[files]]
 file = "mods/torchmaster.pw.toml"
 hash = "51e82d9320effbd610ccfe4571c048c7d0f9c98362b9884faabfaa6f63aa9737"
+metafile = true
+
+[[files]]
+file = "mods/touhou-little-maid.pw.toml"
+hash = "95b0993af1e462a164a31c4e0f92c6b01c0bbc397db54dba87a3d97e5b424692"
 metafile = true
 
 [[files]]
