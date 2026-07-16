@@ -62,7 +62,7 @@ hash = "b0c59010c90941c182d102061a395c80fb89a6e526944210b71fe7928835f31e"
 
 [[files]]
 file = "FTBLang/config/ftbquests/quests/chapters/tier_2.snbt"
-hash = "db17e44bd792b756526b87cff05cef675807028f161c32056ed51ee20962bddb"
+hash = "3b091caa8a429062b9ccb825b4a4685931d80bfd3cbd7de1ef73650ce1062729"
 
 [[files]]
 file = "FTBLang/config/ftbquests/quests/chapters/tier_3.snbt"
@@ -594,7 +594,7 @@ hash = "b0c59010c90941c182d102061a395c80fb89a6e526944210b71fe7928835f31e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tier_2.snbt"
-hash = "db17e44bd792b756526b87cff05cef675807028f161c32056ed51ee20962bddb"
+hash = "3b091caa8a429062b9ccb825b4a4685931d80bfd3cbd7de1ef73650ce1062729"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tier_3.snbt"
@@ -791,6 +791,10 @@ hash = "4318cdb50bcbcc356cfec6dfa4e0d20745c1d68b8f43bff597500ea4015649ce"
 [[files]]
 file = "config/kleeslabs-common.toml"
 hash = "653b16a0567a9b35914be8e18612b639861111684616fa0f34308d9f0b44edca"
+
+[[files]]
+file = "config/maid_useful_task-common.toml"
+hash = "257c2f6aacc6d5e668144c0ecad403e30860ac1fd58fae0951c3ad9769e67473"
 
 [[files]]
 file = "config/mcjtylib-client.toml"
@@ -1133,6 +1137,10 @@ file = "config/torchmaster.toml"
 hash = "bdfab2d08131672b712a580abe32edc0caf8e510934bc504a933478c27ac8176"
 
 [[files]]
+file = "config/touhou_little_maid-common.toml"
+hash = "adb89ba6edefd193abae220620d8b66d948bfa5f3c82d91341933e42770bff17"
+
+[[files]]
 file = "config/trashcans-common.toml"
 hash = "fe5a6b7611945c20c356f34813150e9893ab1a2ea9694740c3cc5d0367d96ad1"
 
@@ -1181,6 +1189,10 @@ file = "defaultconfigs/ftbultimine/ftbultimine-server.snbt"
 hash = "b0a289ca8d5061ae2a6d823488d26f591fb2fdcc5bb39533b96ac377da978dc2"
 
 [[files]]
+file = "defaultconfigs/touhou_little_maid-server.toml"
+hash = "9f49b544a8286fc97c618b7b20c2a041a89b04d01a296ed379e8cd84f7e0b612"
+
+[[files]]
 file = "icon.png"
 hash = "9627d0af5aaead788d585e5c367a6ca6b05512fc257f87d6abd3cfacabbdbedd"
 
@@ -1190,11 +1202,11 @@ hash = "801703f280e4ff26fb4be02067cb583a79f7618bc0966b11d55b80492fddb56b"
 
 [[files]]
 file = "kubejs/assets/ftbquestlocalizer/lang/en_us.json"
-hash = "4a24115ec42e8dcc2c84c9d65dd4b5258cbbfde8619de65051f9bcc9fc3df36d"
+hash = "f5ac40dd673d00836e7c1371a9cc257179971a584c7f3791ad157430cbb582eb"
 
 [[files]]
 file = "kubejs/assets/ftbquestlocalizer/lang/pt_br.json"
-hash = "df17540508bd44347b0a8e7a99ba4ca0ceb0200947b89b75cfac83ea1597802f"
+hash = "5403026b95cb1131e0c1f15b886ce6d6e8af79a3c34e74ff3702755182fcb889"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/aluminum_dust.png"
@@ -1870,7 +1882,7 @@ hash = "5a92fc6936aaf4d6b492041f2dcadd5aa0f111865b49cb6c2afb522cc63bebbb"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "a18c5c1d0d859386c279e9a3feb561d7ac3200ed2f23a8450355cfa1de16fd7b"
+hash = "fad44b238a120dcfc495506fda28416fa62b83365e233f0e02ea01023d3fea55"
 
 [[files]]
 file = "kubejs/server_scripts/thermal/lapidary_dynamo.js"
@@ -2425,6 +2437,11 @@ hash = "e8ffbf5788712fac841e1bb0bff8969697f99be47d6f1c3f41ebe9ac965016d3"
 metafile = true
 
 [[files]]
+file = "mods/maid-useful-tasks.pw.toml"
+hash = "e41a8b5a1b0cea30be2fd1c456ebaf59519208c022078d9f017a62e2e9a79af9"
+metafile = true
+
+[[files]]
 file = "mods/mcjtylib.pw.toml"
 hash = "cad191760503c4f85107c334d987b3aec7286396134f2f3b4f8b6a4eaafee44e"
 metafile = true
@@ -2767,6 +2784,16 @@ metafile = true
 [[files]]
 file = "mods/toast-control.pw.toml"
 hash = "34ae3ed4e00f9a9d8483b9cb1cb48ea45b43d60e2aaf2f03dc01d85f9b954f93"
+metafile = true
+
+[[files]]
+file = "mods/toms-storage.pw.toml"
+hash = "131c818cca79586fdca0535062a63581e7c438efd108be4403ab8faea92e6368"
+metafile = true
+
+[[files]]
+file = "mods/toms_storage_create_recipes.pw.toml"
+hash = "0092d556d915173f5d9e1fa9b6314ee38cddbacf5b21631e11851c015182f0d8"
 metafile = true
 
 [[files]]

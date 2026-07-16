@@ -975,6 +975,33 @@
 				title: "{ftbquests.chapter.tier_2.quest619D1281059B0F35.task.7237110962307793782.title}"
 			}]
 		}
+		{
+			title: "{ftbquests.chapter.tier_2.questC0C9B2601B16F9B6.title}"
+			x: 3.5d
+			y: -3.5d
+			description: ["{ftbquests.chapter.tier_2.questC0C9B2601B16F9B6.description1}"]
+			dependencies: ["5F73D5F328C236A9"]
+			optional: true
+			id: "C0C9B2601B16F9B6"
+			tasks: [
+				{
+					id: "92CF8386AF8654CE"
+					type: "item"
+					item: "toms_storage:ts.inventory_connector"
+				}
+				{
+					id: "511D88D09DC9511D"
+					type: "item"
+					item: "toms_storage:ts.crafting_terminal"
+				}
+			]
+			rewards: [{
+				id: "B8E38D59918CA220"
+				type: "item"
+				item: "toms_storage:ts.inventory_cable"
+				count: 16
+			}]
+		}
 	]
 	quest_links: [ ]
 }

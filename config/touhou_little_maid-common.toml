@@ -1,0 +1,91 @@
+# Pack-owned defaults for Touhou Little Maid 1.5.3.
+# Forge loads this COMMON config on both the client and dedicated server.
+
+[maid]
+GlobalMaidSoundFrequency = 100
+GlobalMaidShowChatBubble = true
+MaidTamedItem = "minecraft:cake"
+MaidTemptationItem = "minecraft:cake"
+EnableMaidCurios = true
+MaidWorkRange = 12
+MaidIdleRange = 6
+MaidSleepRange = 6
+MaidNonHomeRange = 8
+BowRange = 48
+CrossbowRange = 64
+DanmakuRange = 64
+TridentRange = 48
+FeedAnimalMaxNumber = 50
+MaidChangeModel = true
+MaidGomokuOwnerLimit = true
+OwnerMaxMaidNum = 2147483647
+MaidBackpackBlackList = []
+MaidAttackIgnore = ["mekanism:robit"]
+MaidRangedAttackIgnore = []
+ReplaceAllayPercent = 0.2
+EnableEmoji = true
+EmojiCheckRate = 1200
+ImageEmojiWeight = 10
+KaomojiEmojiWeight = 10
+MaidWorkMealsBlockList = ["minecraft:pufferfish", "minecraft:poisonous_potato", "minecraft:rotten_flesh", "minecraft:spider_eye", "minecraft:chorus_fruit"]
+MaidHomeMealsBlockList = ["minecraft:pufferfish", "minecraft:poisonous_potato", "minecraft:rotten_flesh", "minecraft:spider_eye", "minecraft:chorus_fruit"]
+MaidHealMealsBlockList = ["minecraft:pufferfish", "minecraft:poisonous_potato", "minecraft:rotten_flesh", "minecraft:spider_eye"]
+MaidWorkMealsBlockListRegEx = []
+MaidHomeMealsBlockListRegEx = []
+MaidHealMealsBlockListRegEx = []
+MaidEatenReturnContainerList = []
+MaidGunLongDistance = 64
+MaidGunMediumDistance = 48
+MaidGunNearDistance = 32
+
+[chair]
+ChairChangeModel = true
+ChairCanDestroyedByAnyone = true
+
+[misc]
+MaidFairyPowerPoint = 0.16
+MaidFairySpawnProbability = 70
+MaidFairyBlacklistDimension = ["minecraft:the_nether", "minecraft:the_end", "twilightforest:twilight_forest"]
+PlayerDeathLossPowerPoint = 1.0
+GiveSoulSpell = true
+GivePatchouliBook = true
+ShrineLampEffectCost = 0.9
+ShrineLampMaxStorage = 100.0
+ShrineLampMaxRange = 6
+CloseOptifineWarning = false
+ScarecrowRange = 48
+UseNewMaidFairyModel = true
+EnableModelIconCache = false
+InvulnerableParticleEffect = true
+
+[vanilla]
+ReplaceSlimeModel = false
+ReplaceXPTexture = false
+ReplaceTotemTexture = false
+ReplaceXPBottleTexture = false
+
+[render]
+EnableCompassTip = true
+EnableGoldenAppleTip = true
+EnablePotionTip = true
+EnableMilkBucketTip = true
+EnableGlassBottleTip = true
+EnableNameTagTip = true
+EnableLeadTip = true
+EnableSaddleTip = true
+EnableShearsTip = true
+
+[ai]
+LLMEnabled = true
+AutoGenSettingEnabled = true
+LLMProxyAddress = ""
+MaidHistoryCompressTokenLimit = 48
+MaxTokensPerPlayer = 2147483647
+TTSEnabled = true
+TTSLanguage = "en_us"
+TTSProxyAddress = ""
+STTEnabled = true
+STTType = "PLAYER2"
+STTMicrophone = ""
+MaidCanChatDistance = 12
+STTProxyAddress = ""

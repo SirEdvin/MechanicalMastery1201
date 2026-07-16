@@ -1,0 +1,7 @@
+# Defaults copied into newly created worlds as
+# <world>/serverconfig/touhou_little_maid-server.toml.
+
+ClientPackDownloadUrls = []
+MaidAITimeDebug = false
+MaidBackupIntervalSeconds = 180
+MaidBackupMaxCount = 3
