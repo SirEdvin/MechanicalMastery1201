@@ -41,9 +41,9 @@ let metals = {};
 		
 		// crushed ores
 		if(create_metals.includes(metal)) {
-			metals[metal]['crushed'] = `create:crushed_${metal}_ore`;
+			metals[metal]['crushed'] = `create:crushed_raw_${metal}`;
 		} else {
-			metals[metal]['crushed'] = `kubejs:crushed_${metal}_ore`;
+			metals[metal]['crushed'] = `kubejs:crushed_raw_${metal}`;
 		}
 		
 		// everything else
@@ -239,7 +239,7 @@ ServerEvents.recipes( event => {
 	);
 	
 	event.recipes.create.splashing([Item.of('ae2:certus_quartz_crystal').withChance(0.75), Item.of('ae2:charged_certus_quartz_crystal').withChance(0.25)], 'ae2:sky_dust')
-	event.remove({id: 'create:compat/ae2/milling/sky_stone_block'});
+	event.remove({id: 'create:milling/compat/ae2/sky_stone_block'});
 	event.recipes.create.milling(['ae2:sky_dust', 'ae2:sky_stone_block'], 'ae2:sky_stone_block');
 
 	event.remove({id: 'create:milling/sandstone'});
@@ -293,9 +293,26 @@ ServerEvents.recipes( event => {
 	event.replaceInput({id: 'immersiveengineering:crafting/hammer'}, 'minecraft:string', 'minecraft:iron_nugget');
 	event.replaceInput({id: 'projectexpansion:infinite_steak'}, 'minecraft:cooked_beef', 'minecraft:wheat');
 	event.replaceInput({id: 'projecte:body_stone'}, 'projecte:red_matter', 'projecte:mobius_fuel');
-	event.replaceInput({id: 'createchromaticreturn:refined_mixture_recipe'}, 'minecraft:phantom_membrane', 'projecte:mobius_fuel');
-	event.replaceInput({id: 'createchromaticreturn:refined_mixture_recipe'}, 'minecraft:shulker_shell', 'mekanism:hdpe_sheet');
-	event.replaceInput({id: 'createchromaticreturn:chromatic_compound_recipe'}, 'createchromaticreturn:raw_nugget', 'create:andesite_alloy');
+	// Preserve the original refined-radiance gates and batch sizes against the
+	// replacement mod's changed 1.20.1 recipes.
+	event.remove({id: 'createchromaticreturn:refined_mixture_recipe'});
+	event.recipes.create.mixing(Fluid.of('createchromaticreturn:refined_mixture', 250), [
+		'projecte:mobius_fuel', 'projecte:mobius_fuel', 'projecte:mobius_fuel', 'projecte:mobius_fuel',
+		'minecraft:glowstone_dust', 'minecraft:glowstone_dust', 'minecraft:glowstone_dust', 'minecraft:glowstone_dust',
+		'minecraft:glowstone_dust', 'minecraft:glowstone_dust', 'minecraft:glowstone_dust', 'minecraft:glowstone_dust',
+		'mekanism:hdpe_sheet', 'mekanism:hdpe_sheet', 'mekanism:hdpe_sheet', 'mekanism:hdpe_sheet',
+		'minecraft:gold_ingot', 'minecraft:gold_ingot', 'minecraft:gold_ingot', 'minecraft:gold_ingot',
+		'minecraft:gold_ingot', 'minecraft:gold_ingot', 'minecraft:gold_ingot', 'minecraft:gold_ingot',
+		Fluid.of('minecraft:water', 1000)
+	]).superheated().id('createchromaticreturn:refined_mixture_recipe');
+
+	event.remove({id: 'createchromaticreturn:chromatic_compound_recipe'});
+	event.recipes.create.mixing('createchromaticreturn:chromatic_compound', [
+		'create:andesite_alloy', 'create:andesite_alloy', 'create:andesite_alloy',
+		'createchromaticreturn:glowing_ingot', 'createchromaticreturn:glowing_ingot', 'createchromaticreturn:glowing_ingot',
+		'create:polished_rose_quartz', 'create:polished_rose_quartz', 'create:polished_rose_quartz',
+		'create:powdered_obsidian', 'create:powdered_obsidian', 'create:powdered_obsidian'
+	]).superheated().id('createchromaticreturn:chromatic_compound_recipe');
 	event.replaceInput({id: 'rftoolsutility:crafter1'}, 'minecraft:crafting_table', 'thermal:machine_crafter');
 	event.replaceInput({id: 'pipez:gas_pipe'}, 'minecraft:redstone', 'minecraft:glowstone_dust');
 	event.replaceInput({id: 'pipez:energy_pipe'}, 'minecraft:redstone', 'minecraft:glowstone_dust');
@@ -463,7 +480,7 @@ ServerEvents.recipes( event => {
 		' E '
 		], {
 			A: 'projectexpansion:final_star',
-			B: Item.of('mekanism:ultimate_energy_cube', '{mekData:{EnergyContainers:[{Container:0b,stored:"256000000"}]}}'),
+			B: Item.of('mekanism:ultimate_energy_cube', '{mekData:{EnergyContainers:[{Container:0b,stored:"256000000"}]}}').strongNBT(),
 			C: 'fluxnetworks:flux_plug',
 			D: 'fluxnetworks:flux_point',
 			E: 'kubejs:enriched_black_essence'
@@ -617,8 +634,8 @@ ServerEvents.recipes( event => {
 	event.shapeless(Item.of('minecraft:andesite', 2), [Item.of('minecraft:cobblestone', 2), Item.of('projecte:high_covalence_dust', 2)]);
 	event.shapeless(Item.of('minecraft:andesite', 8), [Item.of('minecraft:cobblestone', 8), Item.of('minecraft:quartz', 1)]);
 	event.shapeless('kubejs:cube1', ['#forge:gears/aluminum', Item.of('#forge:rods/copper', 2), '#forge:gears/iron']);
-	event.shapeless('kubejs:diamond_plate', ['#forge:gems/diamond', '#forge:gems/diamond', Item.of('immersiveengineering:hammer').ignoreNBT()])
-	.damageIngredient(Item.of('immersiveengineering:hammer').ignoreNBT(), 1);
+	event.shapeless('kubejs:diamond_plate', ['#forge:gems/diamond', '#forge:gems/diamond', 'immersiveengineering:hammer'])
+	.damageIngredient('immersiveengineering:hammer', 1);
 	event.shapeless('create:blaze_burner', ['create:empty_blaze_burner', 'kubejs:blaze_effigy']);
 	event.shapeless('mekanism:creative_fluid_tank','mekanism:creative_fluid_tank');
 	event.shapeless('mekanism:creative_chemical_tank','mekanism:creative_chemical_tank');
@@ -823,21 +840,42 @@ ServerEvents.recipes( event => {
 				duration:1000
 			});
 
-	// Darkness Essence used to be a custom Mekanism infuse type. The 1.20.1
-	// KubeJS bridge cannot reliably register chemicals, so preserve the same
-	// item-gated progression with Mekanism's combining machine instead.
+	// Darkness Essence used to be a custom Mekanism infuse type. Preserve its
+	// exact item economics without registering an unsupported custom chemical.
 	event.custom({
 		type: 'mekanism:metallurgic_infusing',
 		chemicalInput: { amount: 1, tag: 'mekanism:refined_obsidian' },
 		itemInput: { ingredient: { item: 'minecraft:redstone' } },
 		output: { item: 'kubejs:coated_redstone' }
 	});
-	event.recipes.mekanism.combining('kubejs:enriched_black_essence', 'kubejs:black_essence', 'mekanism:enriched_refined_obsidian');
-	event.recipes.mekanism.combining('extendedcrafting:black_iron_ingot', 'minecraft:iron_ingot', 'kubejs:black_essence');
+	event.custom({
+		type: 'mekanism:metallurgic_infusing',
+		chemicalInput: { amount: 40, tag: 'mekanism:refined_obsidian' },
+		itemInput: { ingredient: { item: 'kubejs:black_essence' } },
+		output: { item: 'kubejs:enriched_black_essence' }
+	}).id('mechanicalmastery:darkness/enrich_black_essence');
+	event.recipes.mekanism.combining('extendedcrafting:black_iron_ingot', 'minecraft:iron_ingot', 'kubejs:black_essence')
+		.id('mechanicalmastery:darkness/black_iron_ingot');
+	event.custom({
+		type: 'mekanism:combining',
+		mainInput: { amount: 20, ingredient: { item: 'minecraft:iron_ingot' } },
+		extraInput: { ingredient: { item: 'kubejs:enriched_black_essence' } },
+		output: { item: 'extendedcrafting:black_iron_ingot', count: 20 }
+	}).id('mechanicalmastery:darkness/black_iron_ingot_from_enriched_essence');
 	
 	event.recipes.mekanism.purifying('kubejs:basilic_reagent', 'thermal:earth_charge', {gas: 'mekanism:sulfuric_acid', amount: 1});
-	event.recipes.mekanism.combining('kubejs:enriched_basilic_reagent', 'kubejs:basilic_reagent', 'kubejs:enriched_black_essence');
-	event.recipes.mekanism.combining('minecraft:wither_skeleton_skull', 'minecraft:skeleton_skull', 'kubejs:enriched_black_essence');
+	event.custom({
+		type: 'mekanism:combining',
+		mainInput: { amount: 5, ingredient: { item: 'kubejs:basilic_reagent' } },
+		extraInput: { ingredient: { item: 'kubejs:enriched_black_essence' } },
+		output: { item: 'kubejs:enriched_basilic_reagent', count: 5 }
+	}).id('mechanicalmastery:darkness/enriched_basilic_reagent');
+	event.custom({
+		type: 'mekanism:combining',
+		mainInput: { amount: 5, ingredient: { item: 'minecraft:skeleton_skull' } },
+		extraInput: { ingredient: { item: 'kubejs:enriched_black_essence' } },
+		output: { item: 'minecraft:wither_skeleton_skull', count: 5 }
+	}).id('mechanicalmastery:darkness/wither_skeleton_skull');
 	
 	// Repair Create Chromatic Return's old 1.20.1 crushed-ore recipes. The
 	// bundled recipes still reference Create's pre-1.20 crushed_*_ore IDs.
@@ -875,7 +913,9 @@ ServerEvents.recipes( event => {
 	event.remove({id: 'projectexpansion:star/final_star_shard'});
 	event.remove({id: 'projectexpansion:star/final_star'});
 	event.remove({id: 'industrialforegoing:ore_laser_base'});
-	event.remove({id: 'createchromaticreturn:creative_motor'});
+	event.remove({id: 'createchromaticreturn:motor_recipe'});
+	event.remove({id: 'createchromaticreturn:creative_flour_recipe'});
+	event.remove({id: 'createchromaticreturn:creative_cake_recipe'});
 	event.remove({id: 'thermal:machines/pyrolyzer/pyrolyzer_coal'});
 	event.remove({id: 'createchromaticreturn:cf_to_gp'});
 	event.remove({id: 'createchromaticreturn:gp_to_bp'});

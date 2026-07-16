@@ -1,4 +1,4 @@
-# Validation report — 0.1.0-alpha.4
+# Validation report — 0.1.0-alpha.5
 
 Validated on Minecraft 1.20.1, Forge 47.4.21, and Java 17.
 
@@ -63,3 +63,24 @@ The server log still contains non-fatal warnings/errors emitted internally by se
 ## Scope note
 
 This validation establishes clean installation, registry/data loading, recipe construction, quest loading, skyblock world creation, and dedicated-server operation. It is not a literal human playthrough of all five quest tiers; the port remains marked alpha for player regression feedback.
+
+## Migration repair validation — 2026-07-16
+
+A full upstream comparison found that the previously inspected client directory was installed from an obsolete Packwiz index and had never been launched. It lacked all 85 indexed `mechanicalmastery:` static recipe files, which explained the report that no custom recipes were available. A fresh client-side Packwiz installation now receives the complete current index and all pack recipe data.
+
+The repair batch also:
+
+- removes Create Chromatic Return's active alternate creative motor and creative blaze cake recipes;
+- restores the original refined-radiance ingredient gates and batch sizes against the replacement mod's current recipe IDs;
+- removes current Create compatibility splashing and AE2 milling recipe IDs;
+- removes More Mekanism Processing's overlapping ore-processing routes while retaining nugget packing and registered chemicals/items;
+- preserves the original Darkness Essence 20:1 and 5:1 processing economics through batch Combining recipes;
+- requires the charged Ultimate Energy Cube NBT in the creative energy cube recipe;
+- restores random three-to-five Thermal rod bonus drops;
+- migrates active configs to current schemas and removes orphaned 1.18 mod configs;
+- migrates Skyblock Builder's split config schema and replaces the absent Emendatus starter item with 16 vanilla coal;
+- updates resource metadata to pack format 15 and removes the intentionally dropped Quark Programmer Art resource pack.
+
+The final clean server-side Packwiz installation contained 652 indexed files. Forge reached `Done (27.924s)`, KubeJS loaded 7/7 server scripts with zero errors or warnings, and recipe processing added 233 recipes, removed 316 recipes, modified 74 recipes, and reported zero failed recipes. Extended Crafting loaded 19 singularities, ProjectE loaded and registered 78 EMC values, FTB Quests loaded 200 quests and 13 reward tables, and Skyblock Builder loaded the repaired `island1.nbt` template. CurseForge and Modrinth exports both completed successfully.
+
+The selected Create Chromatic Return build still logs invalid optional-addon tag entries before KubeJS removes them from the final tag collections. KubeJS also logs adapter fallback warnings for valid native Mekanism washing recipes, including Mekanism's own recipes. These are third-party parser/load-order warnings; the recipes remain loaded through the vanilla serializers and no pack recipe fails.

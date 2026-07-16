@@ -1,5 +1,5 @@
 // Ported to LootJS for KubeJS 6 / Minecraft 1.20.1.
-// The original pools rolled 3-5 rods; LootJS random count preserves that range.
+// The original pools rolled 3-5 rods.
 LootJS.modifiers(event => {
   const boostedRods = [
     ['minecraft:blaze', 'minecraft:blaze_rod'],
@@ -10,6 +10,13 @@ LootJS.modifiers(event => {
 
   boostedRods.forEach(([entity, rod]) => {
     event.addEntityLootModifier(entity)
-      .addLoot(LootEntry.of(Item.of(rod, 4)))
+      .addLoot(LootEntry.of(rod).customFunction({
+        function: 'minecraft:set_count',
+        count: {
+          type: 'minecraft:uniform',
+          min: 3,
+          max: 5
+        }
+      }))
   })
 })

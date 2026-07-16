@@ -7,6 +7,9 @@
 	#Small Connector max input in FE/t (Energy transfer).
 	#Range: > 0
 	small_connector_max_input = 1024
+	#Small Connector With Light energy consumption in FE/t.
+	#Range: > 0
+	small_light_connector_consumption = 1
 	#Large Connector max wire length in blocks.
 	#Range: 0 ~ 256
 	large_connector_wire_length = 32
@@ -24,6 +27,8 @@
 	#Ignore checking if block face can support connector.
 	connector_ignore_face_check = true
 
+#Make sure config changes are duplicated on both Clients and the Server when running a dedicated Server,
+# as the config isnt synced between Clients and Server.
 #General Settings
 [general]
 	#Max stress for the Alternator and Electric Motor (in SU at 256 RPM).
@@ -32,6 +37,8 @@
 	#Forge Energy conversion rate (in FE/t at 256 RPM, value is the FE/t generated and consumed is at 256rpm).
 	#Range: > 0
 	fe_at_max_rpm = 480
+	#If audio should be enabled or not.
+	audio_enabled = true
 
 #Portable Energy Interface
 [portable_energy_interface]

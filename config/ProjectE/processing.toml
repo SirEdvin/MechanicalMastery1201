@@ -22,3 +22,12 @@
 	[processors.MekanismContentsProcessor]
 		enabled = true
 
+	#Takes the different sherds into account for each decorated pot.
+	[processors.DecoratedPotProcessor]
+		enabled = true
+		persistent = true
+
+	#Calculates EMC value of trimmed armor.
+	[processors.ArmorTrimProcessor]
+		enabled = true
+		persistent = true

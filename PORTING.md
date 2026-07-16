@@ -12,8 +12,8 @@
 - KubeJS scripts were migrated from the KubeJS 5 `onEvent` API to KubeJS 6 typed events.
 - The 1.20.1 `KubeJS Mekanism UNOFFICIAL` addon provides Mekanism recipe schemas.
 - `More Mekanism Processing` supplies real 1.20.1 Mekanism registries for aluminum, silver, nickel, and zinc slurry/crystal/shard/clump processing. The original KubeJS chemical-registry bridge did not reliably register these chemicals.
-- The former custom `darkness_essence` infusion chain is represented with item-gated Mekanism Combining recipes. This preserves Black Essence progression without introducing an unregistered chemical.
-- The modern Create Chromatic Return project/file replaces the original 1.18 project entry. Its obsolete crushed-ore recipes are disabled and recreated against `create:crushed_raw_*` IDs.
+- The former custom `darkness_essence` infusion chain is represented with item-gated Mekanism Combining recipes. Batch recipes preserve the original 1.18 economics: one enriched essence processes either 20 black iron ingots or five advanced reagent/skull inputs.
+- The modern Create Chromatic Return project/file replaces the original 1.18 project entry. Its obsolete crushed-ore recipes are disabled and recreated against `create:crushed_raw_*` IDs. Replacement refined-radiance recipes preserve the original Mobius Fuel, HDPE, Andesite Alloy, and batch-size gates, while the addon's alternate creative motor and creative blaze cake recipes are removed.
 - Time in a Bottle uses the maintained Forge 1.20.1 project and `tiab:time_in_a_bottle`.
 - LootJS replaces the removed entity-loot event API.
 - Client-only mods are marked `side = "client"` in Packwiz metadata and are excluded from dedicated-server installations.
@@ -30,6 +30,7 @@
 - PackMenu assets
 - Default configs and deliberate gameplay configuration
 - Mechanical Essence, effigy, ore-processing, creative-item, and final-star recipe chains
+- Current 1.20.1 config schemas with authored ProjectE, Cable Tiers, Creative Crafter, Extended Crafting, and Skyblock Builder policy reapplied
 
 ## Validation gate
 

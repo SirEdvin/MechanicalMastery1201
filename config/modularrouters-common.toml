@@ -60,6 +60,8 @@
 	fluid2BaseRange = 12
 	#Should Puller modules show particle effects when working?
 	pullerParticles = true
+	#Dimension ID's which the Sender Mk3 cannot send to or from, and the Player Module cannot operate (both router dimension and player dimension are checked). This can be wildcarded, e.g. 'somemod:*' blacklists all dimensions added by the mod 'somemod'
+	dimensionBlacklist = []
 
 [Router]
 	#Hard minimum tick interval for a router regardless of Speed Upgrades
