@@ -58,11 +58,11 @@ hash = "08e5e27927c7c7d7eeae5fc4e3573fa473e12ae624555e4a15a69f5d92898be6"
 
 [[files]]
 file = "FTBLang/config/ftbquests/quests/chapters/tier_1.snbt"
-hash = "b0c59010c90941c182d102061a395c80fb89a6e526944210b71fe7928835f31e"
+hash = "95f5de00441dafacdd9b9c62336c1c33c3c8c712ebdc73d6d471fdb0f38b67e6"
 
 [[files]]
 file = "FTBLang/config/ftbquests/quests/chapters/tier_2.snbt"
-hash = "3b091caa8a429062b9ccb825b4a4685931d80bfd3cbd7de1ef73650ce1062729"
+hash = "21f1c492b8468d54f6f06f37bfa66982c24b373aa8cdb0b4c61665c68a6c536b"
 
 [[files]]
 file = "FTBLang/config/ftbquests/quests/chapters/tier_3.snbt"
@@ -590,11 +590,11 @@ hash = "08e5e27927c7c7d7eeae5fc4e3573fa473e12ae624555e4a15a69f5d92898be6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tier_1.snbt"
-hash = "b0c59010c90941c182d102061a395c80fb89a6e526944210b71fe7928835f31e"
+hash = "95f5de00441dafacdd9b9c62336c1c33c3c8c712ebdc73d6d471fdb0f38b67e6"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tier_2.snbt"
-hash = "3b091caa8a429062b9ccb825b4a4685931d80bfd3cbd7de1ef73650ce1062729"
+hash = "21f1c492b8468d54f6f06f37bfa66982c24b373aa8cdb0b4c61665c68a6c536b"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tier_3.snbt"
@@ -1202,11 +1202,11 @@ hash = "801703f280e4ff26fb4be02067cb583a79f7618bc0966b11d55b80492fddb56b"
 
 [[files]]
 file = "kubejs/assets/ftbquestlocalizer/lang/en_us.json"
-hash = "f5ac40dd673d00836e7c1371a9cc257179971a584c7f3791ad157430cbb582eb"
+hash = "98b8fd9535ee4674050f056f5f682d028e60471814a9da1b96f66408ba230166"
 
 [[files]]
 file = "kubejs/assets/ftbquestlocalizer/lang/pt_br.json"
-hash = "5403026b95cb1131e0c1f15b886ce6d6e8af79a3c34e74ff3702755182fcb889"
+hash = "dcda82f73e151396e671cf1bf91bdb3858926f0de4f62866372410d189cba93b"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/aluminum_dust.png"
@@ -1882,7 +1882,7 @@ hash = "5a92fc6936aaf4d6b492041f2dcadd5aa0f111865b49cb6c2afb522cc63bebbb"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "fad44b238a120dcfc495506fda28416fa62b83365e233f0e02ea01023d3fea55"
+hash = "7fe98fe52ba0441c3eb3acd58a24ed7209411a49d0f4ea96612e8ffbd1a88449"
 
 [[files]]
 file = "kubejs/server_scripts/thermal/lapidary_dynamo.js"
@@ -2109,6 +2109,11 @@ metafile = true
 [[files]]
 file = "mods/create-chromaticreturn.pw.toml"
 hash = "a4470ff99a3e0b1163df88284ad4740b03767a0ba10c4ed54757ea52315417c2"
+metafile = true
+
+[[files]]
+file = "mods/create-contraption-terminals.pw.toml"
+hash = "45181af6516b3adc99f7d564763ee0db8eb70cd133a09d3266a903a9f755c5a8"
 metafile = true
 
 [[files]]
@@ -2492,6 +2497,11 @@ hash = "6bcf7a39bad33980cfd720cc78b1e2fe703f7cf0635c00a59948a561c66bf2e0"
 metafile = true
 
 [[files]]
+file = "mods/more-immersive-wires.pw.toml"
+hash = "5852a96f18ca4c2edc81e5755c4aeece7203a742723d023918a57c82bfba658b"
+metafile = true
+
+[[files]]
 file = "mods/more-mekanism-processing.pw.toml"
 hash = "2d05a8126772a08888c0039eec4d5fe2d9e58a28535a1856c8876f5c03c7a168"
 metafile = true
@@ -2788,12 +2798,7 @@ metafile = true
 
 [[files]]
 file = "mods/toms-storage.pw.toml"
-hash = "131c818cca79586fdca0535062a63581e7c438efd108be4403ab8faea92e6368"
-metafile = true
-
-[[files]]
-file = "mods/toms_storage_create_recipes.pw.toml"
-hash = "0092d556d915173f5d9e1fa9b6314ee38cddbacf5b21631e11851c015182f0d8"
+hash = "edfafd11282b46cca84cce70807e85f8b11e918ead6a1ef7aa7d9e216d98ece3"
 metafile = true
 
 [[files]]

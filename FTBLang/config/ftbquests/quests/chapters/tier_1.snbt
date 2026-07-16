@@ -742,6 +742,26 @@
 				count: 4
 			}]
 		}
+		{
+			title: "{ftbquests.chapter.tier_1.quest92CF8386AF8654CE.title}"
+			x: 4.0d
+			y: -3.0d
+			description: ["{ftbquests.chapter.tier_1.quest92CF8386AF8654CE.description1}"]
+			dependencies: ["5D6996CC9444ADE7"]
+			optional: true
+			id: "92CF8386AF8654CE"
+			tasks: [{
+				id: "6A7D9B19A90D6A21"
+				type: "item"
+				item: "toms_storage:ts.inventory_connector"
+			}]
+			rewards: [{
+				id: "B8E38D59918CA220"
+				type: "item"
+				item: "toms_storage:ts.inventory_cable"
+				count: 16
+			}]
+		}
 	]
 	quest_links: [ ]
 }

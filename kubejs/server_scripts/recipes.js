@@ -73,14 +73,6 @@ let metals = {};
 ServerEvents.recipes( event => {
 	console.log('[AMMONIUM@KUBEJS]: Adding custom recipes...');
 
-	// Tom's Simple Storage is the local pre-digital storage step. Remote
-	// terminals stay disabled so AE2 and Refined Storage retain that upgrade.
-	[
-		'toms_storage:wireless_terminal',
-		'toms_storage:adv_wireless_terminal',
-		'toms_storage:adv_wireless_terminal_from_smithing'
-	].forEach(id => event.remove({id: id}));
-	
 	// REPLACING RECIPES
 	event.remove({id: 'thermal:machine_frame'})
 	event.shaped('thermal:machine_frame', [

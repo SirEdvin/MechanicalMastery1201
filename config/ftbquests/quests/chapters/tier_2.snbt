@@ -980,26 +980,13 @@
 			x: 3.5d
 			y: -3.5d
 			description: ["{ftbquests.chapter.tier_2.questC0C9B2601B16F9B6.description1}"]
-			dependencies: ["5F73D5F328C236A9"]
+			dependencies: ["3E70974646D13160"]
 			optional: true
 			id: "C0C9B2601B16F9B6"
-			tasks: [
-				{
-					id: "92CF8386AF8654CE"
-					type: "item"
-					item: "toms_storage:ts.inventory_connector"
-				}
-				{
-					id: "511D88D09DC9511D"
+			tasks: [{
+				id: "511D88D09DC9511D"
 					type: "item"
 					item: "toms_storage:ts.crafting_terminal"
-				}
-			]
-			rewards: [{
-				id: "B8E38D59918CA220"
-				type: "item"
-				item: "toms_storage:ts.inventory_cable"
-				count: 16
 			}]
 		}
 	]
