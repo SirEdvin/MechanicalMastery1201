@@ -1,10 +1,6 @@
 hash-format = "sha256"
 
 [[files]]
-file = ".opencode/memory/project.md"
-hash = "b43f12ede22d557a2e7eae82fa679b549c2ea641e19ee7697d7545287d71cd33"
-
-[[files]]
 file = "FTBLang/backup/de_de.json"
 hash = "1ce0f878a9685543b01964ba55adde342c2f2f88c43c5aa96112889f9d812eef"
 

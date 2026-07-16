@@ -1,4 +1,4 @@
-# Validation report — 0.1.0-alpha.1
+# Validation report — 0.1.0-alpha.4
 
 Validated on Minecraft 1.20.1, Forge 47.4.21, and Java 17.
 
@@ -50,9 +50,15 @@ Alpha 4 restores the original pack's intended EMC policy rather than deriving va
 
 Consequently, only the explicit base resources and progression items selected by Mechanical Mastery receive EMC. Crafted derivatives do not acquire automatically generated EMC values.
 
+## Alpha 4 clean revalidation — 2026-07-16
+
+A fresh server-side Packwiz installation was created from the refreshed local pack index and launched with Java 17. Forge reached `Done (23.364s)` on a newly generated world. The run loaded 7/7 KubeJS server scripts with 0 script-load errors or warnings, applied 239 recipe additions, 213 removals, and 74 modifications with 0 failed pack mutations, loaded 78 pregenerated EMC values and registered exactly 78 EMC values, and loaded 1 chapter group, 8 chapters, 200 quests, and 13 reward tables. Shutdown saved all dimensions successfully.
+
+Both distribution formats were regenerated and inspected. The CurseForge ZIP and Modrinth MRPACK contain the ProjectE mapping policy, curated EMC table, quests, and authored content, while excluding local `.opencode/`, `work/`, and `build/` state.
+
 ## Remaining upstream warnings
 
-The server log still contains non-fatal warnings/errors emitted internally by selected third-party builds, including missing mixin metadata and Advanced Peripherals' optional Powah ComputerCraft integration methods. They do not prevent mod loading, recipe loading, quest loading, world creation, or server startup. No pack-owned KubeJS or recipe failure remained in the final validation run.
+The server log still contains non-fatal warnings/errors emitted internally by selected third-party builds, including missing mixin metadata, Create Chromatic Return tags that reference absent optional addons, KubeJS adapter fallbacks for valid Mekanism/Thermal recipe schemas, an incomplete optional Mekanism sodium rotary recipe, Reborn Storage's obsolete Patchouli book metadata, and Advanced Peripherals' optional Powah ComputerCraft integration methods. They do not prevent mod loading, recipe loading, quest loading, world creation, or server startup. No pack-owned KubeJS mutation failed in the final validation run.
 
 ## Scope note
 

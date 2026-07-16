@@ -25,6 +25,7 @@ build/
 # IDE/OS
 .idea/
 .vscode/
+.opencode/
 .DS_Store
 
 # Local audit/work files

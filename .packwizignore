@@ -1,6 +1,7 @@
 # Packwiz internal/project exclusions
 .git/
 .github/
+.opencode/
 build/
 README.md
 LICENSE.md
