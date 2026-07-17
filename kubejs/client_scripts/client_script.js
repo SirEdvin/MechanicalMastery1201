@@ -9,6 +9,11 @@ JEIEvents.hideItems( event => {
 		event.hide(`projecte:collector_mk${num}`);	
 	});
 
+  event.hide('toms_storage:ts.wireless_terminal')
+  event.hide('toms_storage:ts.adv_wireless_terminal')
+  event.hide("createmetallurgy:coke")
+  event.hide("createmetallurgy:coke_block")
+
   ['basic', 'dark', 'red', 'magenta', 'pink', 'purple', 'violet',
   'blue', 'cyan', 'green', 'lime', 'yellow', 'orange', 'white', 'fading']
   .forEach(num => {	

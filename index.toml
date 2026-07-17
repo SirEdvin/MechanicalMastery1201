@@ -1927,6 +1927,11 @@ hash = "19f470521e7119c5fc1754e40e40b171eeef11335c54167cb482998c0737e979"
 metafile = true
 
 [[files]]
+file = "mods/almostunified.pw.toml"
+hash = "8e9376087852491eb52037279506fefc45e174303530630e8b8afa571b1bd697"
+metafile = true
+
+[[files]]
 file = "mods/appleskin.pw.toml"
 hash = "8d0321177fed4a0b48554c40158b43db62f6cdaa768f584ef6a11575dfaa6223"
 metafile = true
@@ -2127,6 +2132,21 @@ hash = "fa5f6451ab9d80a6df6f24967b99a36da92fefe12ffc6e1978727be4c1777734"
 metafile = true
 
 [[files]]
+file = "mods/create-low-heated.pw.toml"
+hash = "6a343f59709db4c0a8766efd0a90ac4a374b4baa399e8fc6cf73715c52fcc5d7"
+metafile = true
+
+[[files]]
+file = "mods/create-metallurgy.pw.toml"
+hash = "2ddef4570a10255b5c8e7ab976d9d43a266d8b985337ca8a41862b193151499d"
+metafile = true
+
+[[files]]
+file = "mods/create-new-age.pw.toml"
+hash = "36debf62fcd0100249feb97de9ff0353c2e80dabcebe7f8941091f457000d9c7"
+metafile = true
+
+[[files]]
 file = "mods/create.pw.toml"
 hash = "9d7971a7af2ff4a96a0e5aede76f9cf8dc978da601e2754f79d6ec8631125bb9"
 metafile = true
@@ -2182,8 +2202,8 @@ hash = "d47b5e5441de64d4d065ffac5c157535cf08ba2f7e84ee6c90d04c2ee532f322"
 metafile = true
 
 [[files]]
-file = "mods/effortless-building.pw.toml"
-hash = "600cc8ce311412b396d339243d95c9e332bf8acdf3a84adba817e19446e3f370"
+file = "mods/effortless.pw.toml"
+hash = "feb8d4a8b02b80a0fb51ac0e84ba36a1b7576a823af68ec5579acded5aa834a6"
 metafile = true
 
 [[files]]
@@ -2277,11 +2297,6 @@ hash = "6f23ef511a34d6729362ae4a92c2f0ca61915db5b70ef1adef2d9c7efd6fbb35"
 metafile = true
 
 [[files]]
-file = "mods/framed-compacting-drawers.pw.toml"
-hash = "187bf861f43bc59e65cdd3ad5fbb8bc2042ad43d53de11f32002d565faf9d174"
-metafile = true
-
-[[files]]
 file = "mods/framedblocks.pw.toml"
 hash = "a06a97ba002c875926da3c83ef2027388c4e8a66e01b8bf1fd3d69be54bd6e64"
 metafile = true
@@ -2359,11 +2374,6 @@ metafile = true
 [[files]]
 file = "mods/inventory-tweaks-refoxed.pw.toml"
 hash = "d182a82c1f048fc78ca7621c7555da5737d028d46f50e413059ca1c2b8a2e8c2"
-metafile = true
-
-[[files]]
-file = "mods/iron-chests.pw.toml"
-hash = "4aba12c2a18205fe6d25d1af817ee8c0baa580a74048cb30c659f6be66f31d2e"
 metafile = true
 
 [[files]]
@@ -2727,13 +2737,18 @@ hash = "2e1e072c31233ac4739bb84eb1aaf3ff0c1c54ebdd7da5f8da6fb2d0a65ef792"
 metafile = true
 
 [[files]]
-file = "mods/squat-grow.pw.toml"
-hash = "7832f19493b4fa402c59c32c44860df73bbf14c9a1c5a08adfbd90463f44fbea"
+file = "mods/sophisticated-storage-create-integration.pw.toml"
+hash = "1916f4e58931444bff6ddad4baa337329b99019c04a43aaa3b47b44cb5d11832"
 metafile = true
 
 [[files]]
-file = "mods/storage-drawers.pw.toml"
-hash = "371b68e257eaca322ca4e95f4aa8d95441d84110b69243dda818f743a0111ba5"
+file = "mods/sophisticated-storage.pw.toml"
+hash = "523817a3ce081a7327c3d076a6ffa0dda9745b97515f0e929c368727ddac32e2"
+metafile = true
+
+[[files]]
+file = "mods/squat-grow.pw.toml"
+hash = "7832f19493b4fa402c59c32c44860df73bbf14c9a1c5a08adfbd90463f44fbea"
 metafile = true
 
 [[files]]
@@ -2754,6 +2769,11 @@ metafile = true
 [[files]]
 file = "mods/thermal-expansion.pw.toml"
 hash = "1603a2d57a71762925e57c61ae45649bf6aab128295a31efec214b0676c79024"
+metafile = true
+
+[[files]]
+file = "mods/thermal-extra.pw.toml"
+hash = "f4ca0f3fdcc88c63d23aba855f5e7e1787525536b4729851b4b752119f9e2ac1"
 metafile = true
 
 [[files]]

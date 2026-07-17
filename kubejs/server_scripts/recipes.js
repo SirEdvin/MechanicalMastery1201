@@ -436,13 +436,13 @@ ServerEvents.recipes( event => {
 			A: '#forge:ingots/aluminum'
 		});
 		
-	event.shaped('storagedrawers:creative_vending_upgrade', [
+	event.shaped('functionalstorage:creative_vending_upgrade', [
 		'CAC',
 		'ABA',
 		'CAC'
 		], {
 			A: 'projectexpansion:final_power_flower',
-			B: 'storagedrawers:upgrade_template',
+			B: 'functionalstorage:netherite_upgrade',
 			C: 'projectexpansion:final_star'
 		}
 	);
