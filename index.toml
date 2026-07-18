@@ -1213,6 +1213,22 @@ file = "kubejs/assets/ftbquestlocalizer/lang/pt_br.json"
 hash = "6aeaa27b02c93de511f90e855037c45f613aa500d720b8876ee474f9f6914f88"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/block/cube1_block.png"
+hash = "c6e773f5c75968d7a09a7bb29265b88202581b1dc7537b5100e857c7e9641e1d"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/cube2_block.png"
+hash = "5cc91b6ce188192f563e01d6f7d10bd1f175b688b31bd3e68d2f6a0e903c4769"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/cube3_block.png"
+hash = "c21e2976b521f800604aae246bd47b99555ee97af76d081bca2925ff660f57e8"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/cube4_block.png"
+hash = "601cd57253fb95d14c5cbc0b55fc0ccf68e65a8142a0dae20334c6b84f8861c0"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/aluminum_dust.png"
 hash = "99d8b38735eb220f495c5a06c9098f4911f0739dd04479ce667ebf2ed2a4e8ec"
 
@@ -1890,7 +1906,7 @@ hash = "a036fd0df311a5203c8e74a49e1d9dfb7814708f5367eabacd0c6027cb836fcd"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "ec96e32c7097db58bedcc6347d062a2fb4eeeea234122dd82bebc54af13329ed"
+hash = "53f86de34b6975c0a573273f529fe57fac17d605443cbeadba4dbd2b8307ca61"
 
 [[files]]
 file = "kubejs/server_scripts/thermal/lapidary_dynamo.js"
@@ -1902,7 +1918,7 @@ hash = "a77cde62dc96dfec20e8cd2a5c9fe37f8ceeeeb7f226df9f2b29ad429e9addef"
 
 [[files]]
 file = "kubejs/startup_scripts/script.js"
-hash = "354d0c8241f49295fb99af8f34c21b0469eddd90b759e0464b88aeacda8cabe7"
+hash = "da4979f650f06f1af0873a8f48530f910c27406872dd189ead1f7e654c9dfeea"
 
 [[files]]
 file = "mods/advanced-peripherals.pw.toml"
