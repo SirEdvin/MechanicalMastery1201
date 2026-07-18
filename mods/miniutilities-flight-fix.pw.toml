@@ -1,0 +1,13 @@
+name = "MiniUtilities Flight Fix"
+filename = "miniutilities-4.1.2.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6c9891f0071eacdbdfadde22dfa01afff15b08ee"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7793583
+project-id = 1225290

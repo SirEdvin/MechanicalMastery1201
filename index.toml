@@ -2603,8 +2603,8 @@ hash = "7c411a566d022680769ddb8323984fff292ddeb35e7d8fcfe2cc41b9885d9557"
 metafile = true
 
 [[files]]
-file = "mods/miniutilities.pw.toml"
-hash = "b4de643d9afc6dd22530c60be8a6d16fc0c6a14e3d7ff4a644230b45151e997a"
+file = "mods/miniutilities-flight-fix.pw.toml"
+hash = "daea1a8c0103308f0bb697c7348ae01f147c0c75ed69bca1144d9d40046e250e"
 metafile = true
 
 [[files]]
