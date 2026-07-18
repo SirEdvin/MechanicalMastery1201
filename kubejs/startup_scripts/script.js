@@ -188,10 +188,10 @@ StartupEvents.registry('item', event => {
 StartupEvents.registry('block', event => {
 	// Register new blocks here
 	// event.create('example_block').material('wood').hardness(1.0).displayName('Example Block')
-	event.create('cube1_block').displayName('Block of Basic Mechanical Essence').textureAll('kubejs:item/cube1');
-	event.create('cube2_block').displayName('Block of Regular Mechanical Essence').textureAll('kubejs:item/cube2');
-	event.create('cube3_block').displayName('Block of Improved Mechanical Essence').textureAll('kubejs:item/cube3');
-	event.create('cube4_block').displayName('Block of Advanced Mechanical Essence').textureAll('kubejs:item/cube4');
+	event.create('cube1_block').displayName('Block of Basic Mechanical Essence').textureAll('kubejs:block/cube1_block');
+	event.create('cube2_block').displayName('Block of Regular Mechanical Essence').textureAll('kubejs:block/cube2_block');
+	event.create('cube3_block').displayName('Block of Improved Mechanical Essence').textureAll('kubejs:block/cube3_block');
+	event.create('cube4_block').displayName('Block of Advanced Mechanical Essence').textureAll('kubejs:block/cube4_block');
 })
 
 ItemEvents.modification( event => {
