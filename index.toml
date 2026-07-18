@@ -1889,6 +1889,10 @@ file = "kubejs/server_scripts/ore_processing.js"
 hash = "5a92fc6936aaf4d6b492041f2dcadd5aa0f111865b49cb6c2afb522cc63bebbb"
 
 [[files]]
+file = "kubejs/server_scripts/powah_create_new_age_compat.js"
+hash = "a036fd0df311a5203c8e74a49e1d9dfb7814708f5367eabacd0c6027cb836fcd"
+
+[[files]]
 file = "kubejs/server_scripts/recipes.js"
 hash = "8aef46070a0b0a73c9a79614e435b67935d05aaf0ee7bfeb303f16f08cf375c8"
 
@@ -2072,6 +2076,11 @@ metafile = true
 [[files]]
 file = "mods/comforts.pw.toml"
 hash = "58bf97ca61f74ea9a540f6e6090aef631155748c49b83a7a338b34d8dece9109"
+metafile = true
+
+[[files]]
+file = "mods/compact-crafting-fork.pw.toml"
+hash = "8a159464293f50c0690993485d1348599ec3fa55e7edbb1540ca731545ce0a66"
 metafile = true
 
 [[files]]
@@ -2382,11 +2391,6 @@ metafile = true
 [[files]]
 file = "mods/inventory-tweaks-refoxed.pw.toml"
 hash = "d182a82c1f048fc78ca7621c7555da5737d028d46f50e413059ca1c2b8a2e8c2"
-metafile = true
-
-[[files]]
-file = "mods/iron-jetpacks.pw.toml"
-hash = "c3265a04984be048307745587dab58deb0466efd99a40d335f23696fb4f9947e"
 metafile = true
 
 [[files]]
