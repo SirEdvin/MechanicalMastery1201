@@ -250,7 +250,7 @@ hash = "9b81c365477dd81be43d4792427c1b502a032c50751b0cb6f3ebbb3acf393be4"
 
 [[files]]
 file = "config/ProjectE/pregenerated_emc.json"
-hash = "4a138b5f62e52649011f3e6997c7c32915324f386ff2549b134b880c310dd684"
+hash = "34f5284ff5d9070b4fbe0b644211feb04fbc171c143508e1bec187721150a020"
 
 [[files]]
 file = "config/ProjectE/processing.toml"
@@ -1213,16 +1213,48 @@ file = "kubejs/assets/ftbquestlocalizer/lang/pt_br.json"
 hash = "6aeaa27b02c93de511f90e855037c45f613aa500d720b8876ee474f9f6914f88"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/block/cube1_5a_block.png"
+hash = "fe9812ff8d97c915047393dab532b2978f4ea97def354995480241a9c4657918"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/cube1_5b_block.png"
+hash = "293743a064ddda10dc1ddae85e000cc3d58da813729cf2a95898df3c1947d4ad"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/block/cube1_block.png"
 hash = "c6e773f5c75968d7a09a7bb29265b88202581b1dc7537b5100e857c7e9641e1d"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/cube2_5a_block.png"
+hash = "c7a5e76e781860ff02bc0bf0c831ea91f3a33e5b434ee0d7892b116fd59a0152"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/cube2_5b_block.png"
+hash = "4b23f52bbd1e372b613b6b529fcc0b3e7d735618622ae91b768d95eba2ea3b9c"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/cube2_block.png"
 hash = "5cc91b6ce188192f563e01d6f7d10bd1f175b688b31bd3e68d2f6a0e903c4769"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/block/cube3_5a_block.png"
+hash = "72575eb3f22ad2cd23194529cf55ae7069883c799cb539c1db12a1cf5e0f1b2d"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/cube3_5b_block.png"
+hash = "2a2b5cda07eb9acd2797a2e2153022e4e2c2908af9216093b586be7741fd4ff1"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/block/cube3_block.png"
 hash = "c21e2976b521f800604aae246bd47b99555ee97af76d081bca2925ff660f57e8"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/cube4_5a_block.png"
+hash = "993d61065f9aa2061f66a86649bb10bed4388c619a0edb608c6421e558f6b9ee"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/block/cube4_5b_block.png"
+hash = "efc7bcd874dd240c23b8438d4c23f33e72464a603341593d0d2e49faa76d7ef4"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/cube4_block.png"
@@ -1309,12 +1341,44 @@ file = "kubejs/assets/kubejs/textures/item/cube1.png"
 hash = "8b2eb568ae4e605d0a9910b54915d944d646466ef05c29dbbc4fbe1ab694e378"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/cube1_5a.png"
+hash = "37d611268aaf8bdef8696889f45a657a09c03b0e0eb9e1d8fbd29f5026213b4f"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/cube1_5a_packaged.png"
+hash = "0abd8b78d497484877c164e33c6bdf6787b0be842421442f507492f69b2cd1cf"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/cube1_5b.png"
+hash = "6dcdf2fb758633b64ade3dee8bae90b47cd7a03e0d11f3ba7d9dae090cd5a8ad"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/cube1_5b_packaged.png"
+hash = "40927c6c08a30c3db5272cafd32ce4e68d68f43e6d59bb1fbcc57dcd4ccd0477"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/cube1_packaged.png"
 hash = "df5d549d87866e98fbfebccbada7fc7a66e829c4903b7ee7bc760924563bcf12"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/cube2.png"
 hash = "bd195860f688a47f1c8325a7a9716614d9dee9a4b5d61a9f6c529621b0a3d469"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/cube2_5a.png"
+hash = "30ebc2e2df08dc6a168d0336bbb9b2623144d771174e478d74cd82a30076de9d"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/cube2_5a_packaged.png"
+hash = "de614648d24bbb937829fe908c5c6ac20b43b46564b2a9fc3596838cc9d7c4b7"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/cube2_5b.png"
+hash = "6740fa4be36741f35667ac2915eb48a7e56598081cf537b56816336fe48c62f8"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/cube2_5b_packaged.png"
+hash = "0767b14e3d7ecbf6daeb4b045a73feac9b212de653ff703ff7b65ef2bd9211d9"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/cube2_packaged.png"
@@ -1325,12 +1389,36 @@ file = "kubejs/assets/kubejs/textures/item/cube3.png"
 hash = "17c19bb29402da9d5f37c52545be2ad9de528c98c194dd0093b2acb3ed290190"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/cube3_5a.png"
+hash = "2d5ca471f69664f88082108fa7e03b14afded884ecf9dc03fd6443b83a9672c6"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/cube3_5a_packaged.png"
+hash = "814ba909c16d7f0a584c02cb7e9fc5b571b0fec0b4859831e7607d399793ee30"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/cube3_5b.png"
+hash = "a25b9887b75b2f496bfef5791ae61cef9c9e7f31f05438a1d5a9d161389f312b"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/cube3_5b_packaged.png"
+hash = "af4be7f0fa80dfacfe16a3051b55cd3b0d8849f21149aa4251509bf174041914"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/cube3_packaged.png"
 hash = "8965c62d4335166d007f12a9a65f2f1f38bb205349d84e6a56320f8c743c7597"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/cube4.png"
 hash = "fd194f42bd1ba16054159c25a0f70aeadadbeb7cde7fc7e4f88c3fbd8e705664"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/cube4_5a.png"
+hash = "73c0efd56f9fedbb3aa993dfcbaf2fa3294b439b626c2c9e9c2b63d9784337c5"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/cube4_5b.png"
+hash = "305cbffe2ad70ae332d2118f2d12cec94a9809f65c9d31ab9fcded63c99c071e"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/cube4_inert.png"
@@ -1906,7 +1994,7 @@ hash = "a036fd0df311a5203c8e74a49e1d9dfb7814708f5367eabacd0c6027cb836fcd"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "53f86de34b6975c0a573273f529fe57fac17d605443cbeadba4dbd2b8307ca61"
+hash = "2bc9026a020b298747b3dc0d9fe0e50c974785341d8dca9ba4bf714a237bca28"
 
 [[files]]
 file = "kubejs/server_scripts/thermal/lapidary_dynamo.js"
@@ -1918,7 +2006,7 @@ hash = "a77cde62dc96dfec20e8cd2a5c9fe37f8ceeeeb7f226df9f2b29ad429e9addef"
 
 [[files]]
 file = "kubejs/startup_scripts/script.js"
-hash = "da4979f650f06f1af0873a8f48530f910c27406872dd189ead1f7e654c9dfeea"
+hash = "f52d70a7aa25afc829cce1f89e7278b9cff8a7d9e8ab1f849c99ccd611424514"
 
 [[files]]
 file = "mods/advanced-peripherals.pw.toml"
