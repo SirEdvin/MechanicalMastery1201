@@ -1994,7 +1994,7 @@ hash = "a036fd0df311a5203c8e74a49e1d9dfb7814708f5367eabacd0c6027cb836fcd"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "b3a9bd5c4da35aa1b958e5e7c38e027542db9c5444bbab3fa638429c936fd23e"
+hash = "785e361ad1db5a3a23ca3b2e665dc412ced22807bfa4bdf9797a58683f186329"
 
 [[files]]
 file = "kubejs/server_scripts/thermal/lapidary_dynamo.js"
