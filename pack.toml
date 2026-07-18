@@ -1,6 +1,6 @@
 name = "Mechanical Mastery 1.20.1 Port"
 author = "ammoniumx; 1.20.1 port maintained by SirEdvin"
-version = "0.1.0-beta.2"
+version = "0.1.0-beta.3"
 pack-format = "packwiz:1.1.0"
 
 [index]
