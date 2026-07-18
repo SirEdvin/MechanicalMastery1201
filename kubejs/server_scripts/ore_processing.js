@@ -111,14 +111,15 @@ ServerEvents.recipes( event => {
 			metals[metal]['clump']
 		);
 		event.recipes.create.milling(
-			[Item.of(metals[metal]['dirty_dust']), Item.of(metals[metal]['dirty_dust']).withChance(0.25)],
+			[Item.of(metals[metal]['dirty_dust']), Item.of(metals[metal]['dirty_dust']).withChance(0.1)],
 			metals[metal]['crushed']
-		);
+		).id(`kubejs:milling/crushed_raw_${metal}`);
 		const washingOutputs = [Item.of(metals[metal]['dust'])];
 		if (createMetallurgyByproducts[metal]) {
 			washingOutputs.push(Item.of(createMetallurgyByproducts[metal]).withChance(0.1));
 		}
-		event.recipes.create.splashing(washingOutputs, metals[metal]['dirty_dust']);
+		event.recipes.create.splashing(washingOutputs, metals[metal]['dirty_dust'])
+			.id(`kubejs:splashing/dirty_${metal}_dust`);
 		event.recipes.mekanism.crushing(Item.of(metals[metal]['dirty_dust'], 2), metals[metal]['crushed']);
 		event.recipes.thermal.pulverizer(Item.of(metals[metal]['dust']).withChance(1.2), metals[metal]['dirty_dust']).energy(4000);
 	}
@@ -127,17 +128,17 @@ ServerEvents.recipes( event => {
 		event.remove({id: `createmetallurgy:milling/crushed_raw_${metal}`});
 	});
 	event.recipes.create.milling(
-		[Item.of('createmetallurgy:dirty_tungsten_dust'), Item.of('createmetallurgy:dirty_tungsten_dust').withChance(0.25)],
+		[Item.of('createmetallurgy:dirty_tungsten_dust'), Item.of('createmetallurgy:dirty_tungsten_dust').withChance(0.1)],
 		'createmetallurgy:crushed_raw_tungsten'
-	);
+	).id('kubejs:milling/crushed_raw_tungsten');
 
-	for (const metal in createMetallurgyByproducts) {
+	['copper', 'gold', 'iron', 'tungsten', 'zinc'].forEach((metal) => {
 		event.remove({id: `createmetallurgy:splashing/dirty_${metal}_dust`});
-		event.recipes.create.splashing(
-			[`createmetallurgy:${metal}_dust`, Item.of(createMetallurgyByproducts[metal]).withChance(0.1)],
-			`createmetallurgy:dirty_${metal}_dust`
-		);
-	}
+	});
+	event.recipes.create.splashing(
+		['createmetallurgy:tungsten_dust', Item.of(createMetallurgyByproducts.tungsten).withChance(0.1)],
+		'createmetallurgy:dirty_tungsten_dust'
+	).id('kubejs:splashing/dirty_tungsten_dust');
 	
 	['iron', 'gold', 'osmium', 'copper', 'tin', 'lead', 'uranium'].forEach((metal) => {
 		event.remove({id: `mekanism:processing/${metal}/dirty_dust/from_clump`});

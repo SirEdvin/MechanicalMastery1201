@@ -1969,6 +1969,10 @@ file = "kubejs/jsconfig.json"
 hash = "70f26cbe24e0349047f8824b478a1aa94167048bd4dc85af86e84d85e649c535"
 
 [[files]]
+file = "kubejs/server_scripts/compact_crafting.js"
+hash = "814a01422edcda5f16c7f715556e9259c68226f9802f3fcc29ad8fe3343f7595"
+
+[[files]]
 file = "kubejs/server_scripts/entity.loot_tables.js"
 hash = "bcc89d1dfa206c85d823138cd3af488af11cc992bf230c9bfea3b01448a074f9"
 
@@ -1986,7 +1990,7 @@ hash = "59eba26e470dd18b400989e5d75665fb6592f58ceb8d894a906fbc611ce3801c"
 
 [[files]]
 file = "kubejs/server_scripts/ore_processing.js"
-hash = "cd63666889416b838445d8c6cac15aac718cd98dab59c4cbccdcd655b393c711"
+hash = "97ba014cea83d013673fdd51ed3a8552bdbfea0cb9121f5e2c98921a5828232d"
 
 [[files]]
 file = "kubejs/server_scripts/powah_create_new_age_compat.js"
