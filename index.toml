@@ -1894,7 +1894,7 @@ hash = "a036fd0df311a5203c8e74a49e1d9dfb7814708f5367eabacd0c6027cb836fcd"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "8aef46070a0b0a73c9a79614e435b67935d05aaf0ee7bfeb303f16f08cf375c8"
+hash = "d34cff71ef9bacd6ce09b67e261b5e988e6c95586ec095373847464237b3e5ab"
 
 [[files]]
 file = "kubejs/server_scripts/thermal/lapidary_dynamo.js"
@@ -1906,7 +1906,7 @@ hash = "a77cde62dc96dfec20e8cd2a5c9fe37f8ceeeeb7f226df9f2b29ad429e9addef"
 
 [[files]]
 file = "kubejs/startup_scripts/script.js"
-hash = "edadbd7c813834343515130aad7da58a008627a0e0a7f041ffe8b2ce88b8ef82"
+hash = "a1801cb65d2d362331bcf2a55e6aa8c2a029291adc280f46ac3211ddc4931f56"
 
 [[files]]
 file = "mods/advanced-peripherals.pw.toml"
