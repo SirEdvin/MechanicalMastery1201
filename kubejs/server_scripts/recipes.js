@@ -731,7 +731,8 @@ ServerEvents.recipes( event => {
 		],
 		catalyst: {
 			id: 'minecraft:gold_nugget',
-			Count: 1
+			Count: 1,
+			nbt: {}
 		},
 		components: {
 			G: {
