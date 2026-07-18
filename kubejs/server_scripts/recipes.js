@@ -602,8 +602,14 @@ ServerEvents.recipes( event => {
 	[Fluid.of('industrialforegoing:ether_gas', 500), 'kubejs:incomplete_time_augment']);
 	
 	cube_packaging('kubejs:cube1_packaged', 'kubejs:cube1', 600);
+	cube_packaging('kubejs:cube1_5a_packaged', 'kubejs:cube1_5a', 500);
+	cube_packaging('kubejs:cube1_5b_packaged', 'kubejs:cube1_5b', 500);
 	cube_packaging('kubejs:cube2_packaged', 'kubejs:cube2', 400);
+	cube_packaging('kubejs:cube2_5a_packaged', 'kubejs:cube2_5a', 300);
+	cube_packaging('kubejs:cube2_5b_packaged', 'kubejs:cube2_5b', 300);
 	cube_packaging('kubejs:cube3_packaged', 'kubejs:cube3', 200);
+	cube_packaging('kubejs:cube3_5a_packaged', 'kubejs:cube3_5a', 150);
+	cube_packaging('kubejs:cube3_5b_packaged', 'kubejs:cube3_5b', 150);
 	cube_packaging('kubejs:cube4_packaged', 'kubejs:cube4', 100);
 	
 	event.recipes.create.mixing('kubejs:cube2', ['kubejs:cube1', '#forge:gears/steel', Item.of('#forge:rods/bronze', 2), '#forge:gears/invar']);
@@ -634,7 +640,7 @@ ServerEvents.recipes( event => {
 	event.shapeless(Item.of('minecraft:andesite', 2), [Item.of('minecraft:cobblestone', 2), Item.of('projecte:high_covalence_dust', 2)]);
 	event.shapeless(Item.of('minecraft:andesite', 8), [Item.of('minecraft:cobblestone', 8), Item.of('minecraft:quartz', 1)]);
 	event.shapeless('kubejs:cube1', ['#forge:gears/aluminum', Item.of('#forge:rods/copper', 2), '#forge:gears/iron']);
-	['1', '2', '3', '4'].forEach(tier => {
+	['1', '1_5a', '1_5b', '2', '2_5a', '2_5b', '3', '3_5a', '3_5b', '4', '4_5a', '4_5b'].forEach(tier => {
 		event.shaped(`kubejs:cube${tier}_block`, [
 			'CC',
 			'CC'

@@ -88,13 +88,27 @@ StartupEvents.registry('item', event => {
 	// event.create('example_item').displayName('Example Item')
 	event.create('cube1').displayName('Basic Mechanical Essence');
 	event.create('cube1_packaged').displayName('Basic Mechanical Crystal');
+	event.create('cube1_5a').displayName('Magenta Mechanical Essence');
+	event.create('cube1_5a_packaged').displayName('Magenta Mechanical Crystal');
+	event.create('cube1_5b').displayName('Indigo Mechanical Essence');
+	event.create('cube1_5b_packaged').displayName('Indigo Mechanical Crystal');
 	event.create('cube2').displayName('Regular Mechanical Essence');
 	event.create('cube2_packaged').displayName('Regular Mechanical Crystal');
+	event.create('cube2_5a').displayName('Turquoise Mechanical Essence');
+	event.create('cube2_5a_packaged').displayName('Turquoise Mechanical Crystal');
+	event.create('cube2_5b').displayName('Green Mechanical Essence');
+	event.create('cube2_5b_packaged').displayName('Green Mechanical Crystal');
 	event.create('cube3').displayName('Improved Mechanical Essence');
 	event.create('cube3_packaged').displayName('Improved Mechanical Crystal');
+	event.create('cube3_5a').displayName('Burnished Coral Mechanical Essence');
+	event.create('cube3_5a_packaged').displayName('Burnished Coral Mechanical Crystal');
+	event.create('cube3_5b').displayName('Rose Mechanical Essence');
+	event.create('cube3_5b_packaged').displayName('Rose Mechanical Crystal');
 	event.create('cube4').displayName('Advanced Mechanical Essence');
 	event.create('cube4_packaged').displayName('Advanced Mechanical Crystal');
 	event.create('cube4_inert').displayName('Inert Advanced Mechanical Essence').tooltip('So close, yet so far...');
+	event.create('cube4_5a').displayName('Fuchsia Mechanical Essence');
+	event.create('cube4_5b').displayName('Crimson Mechanical Essence');
 	
 	event.create('press_rod_die').displayName('Rod Die');
 	event.create('oil_clump').displayName('Oil clump');
@@ -188,9 +202,17 @@ StartupEvents.registry('block', event => {
 	// Register new blocks here
 	// event.create('example_block').material('wood').hardness(1.0).displayName('Example Block')
 	event.create('cube1_block').displayName('Block of Basic Mechanical Essence').textureAll('kubejs:block/cube1_block');
+	event.create('cube1_5a_block').displayName('Block of Magenta Mechanical Essence').textureAll('kubejs:block/cube1_5a_block');
+	event.create('cube1_5b_block').displayName('Block of Indigo Mechanical Essence').textureAll('kubejs:block/cube1_5b_block');
 	event.create('cube2_block').displayName('Block of Regular Mechanical Essence').textureAll('kubejs:block/cube2_block');
+	event.create('cube2_5a_block').displayName('Block of Turquoise Mechanical Essence').textureAll('kubejs:block/cube2_5a_block');
+	event.create('cube2_5b_block').displayName('Block of Green Mechanical Essence').textureAll('kubejs:block/cube2_5b_block');
 	event.create('cube3_block').displayName('Block of Improved Mechanical Essence').textureAll('kubejs:block/cube3_block');
+	event.create('cube3_5a_block').displayName('Block of Burnished Coral Mechanical Essence').textureAll('kubejs:block/cube3_5a_block');
+	event.create('cube3_5b_block').displayName('Block of Rose Mechanical Essence').textureAll('kubejs:block/cube3_5b_block');
 	event.create('cube4_block').displayName('Block of Advanced Mechanical Essence').textureAll('kubejs:block/cube4_block');
+	event.create('cube4_5a_block').displayName('Block of Fuchsia Mechanical Essence').textureAll('kubejs:block/cube4_5a_block');
+	event.create('cube4_5b_block').displayName('Block of Crimson Mechanical Essence').textureAll('kubejs:block/cube4_5b_block');
 })
 
 ItemEvents.modification( event => {
