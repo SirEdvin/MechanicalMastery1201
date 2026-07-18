@@ -91,10 +91,17 @@ ServerEvents.recipes( event => {
 	// scripts/generate_ore_processing_data.py because the KubeJS Mekanism
 	// adapter cannot deserialize the valid washing fluid input schema.
 	const createMetallurgyByproducts = {
+		aluminum: 'mekanism:dust_iron',
 		copper: 'minecraft:clay_ball',
 		gold: 'minecraft:quartz',
 		iron: 'minecraft:redstone',
+		lead: 'thermal:silver_dust',
+		nickel: 'mekanism:dust_copper',
+		osmium: 'mekanism:dust_iron',
+		silver: 'thermal:lead_dust',
+		tin: 'thermal:apatite',
 		tungsten: 'minecraft:gold_nugget',
+		uranium: 'minecraft:slime_ball',
 		zinc: 'minecraft:gunpowder'
 	};
 

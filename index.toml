@@ -1986,7 +1986,7 @@ hash = "59eba26e470dd18b400989e5d75665fb6592f58ceb8d894a906fbc611ce3801c"
 
 [[files]]
 file = "kubejs/server_scripts/ore_processing.js"
-hash = "c3547f952d1c147507f1ce4c0b7d318e68128ca84d99c3ab4541ba657101788a"
+hash = "cd63666889416b838445d8c6cac15aac718cd98dab59c4cbccdcd655b393c711"
 
 [[files]]
 file = "kubejs/server_scripts/powah_create_new_age_compat.js"
