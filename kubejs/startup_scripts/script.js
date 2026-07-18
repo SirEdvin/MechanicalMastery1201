@@ -108,7 +108,6 @@ StartupEvents.registry('item', event => {
 	event.create('dormant_effigy').displayName('Dormant effigy').tooltip('The power to create life, just not fully awoken');
 	
 	event.create('steel_gear').displayName('Steel Gear');
-	event.create('bronze_rod').displayName('Bronze Rod');
 	event.create('diamond_rod').displayName('Diamond Rod');
 	event.create('diamond_plate').displayName('Diamond Plate');
 	event.create('aluminum_gear').displayName('Aluminum Gear');

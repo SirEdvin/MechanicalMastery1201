@@ -1253,10 +1253,6 @@ file = "kubejs/assets/kubejs/textures/item/blizz_effigy.png"
 hash = "3a313582538c849357bf4a4072fe58c0f0b191e0e97a27d007e234dd372df1d8"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/item/bronze_rod.png"
-hash = "728e7bd39119e6a8fb3fe828e92dac5d6bcb4e0b50386a5d6465d9d7dfc3f867"
-
-[[files]]
 file = "kubejs/assets/kubejs/textures/item/clump_aluminum.png"
 hash = "f1bdd9fb791b88bf030d9f7a264cfe3d77488b39e02d2f801bfd96b984b8cbee"
 
@@ -1894,7 +1890,7 @@ hash = "a036fd0df311a5203c8e74a49e1d9dfb7814708f5367eabacd0c6027cb836fcd"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "8aef46070a0b0a73c9a79614e435b67935d05aaf0ee7bfeb303f16f08cf375c8"
+hash = "ec96e32c7097db58bedcc6347d062a2fb4eeeea234122dd82bebc54af13329ed"
 
 [[files]]
 file = "kubejs/server_scripts/thermal/lapidary_dynamo.js"
@@ -1906,7 +1902,7 @@ hash = "a77cde62dc96dfec20e8cd2a5c9fe37f8ceeeeb7f226df9f2b29ad429e9addef"
 
 [[files]]
 file = "kubejs/startup_scripts/script.js"
-hash = "edadbd7c813834343515130aad7da58a008627a0e0a7f041ffe8b2ce88b8ef82"
+hash = "354d0c8241f49295fb99af8f34c21b0469eddd90b759e0464b88aeacda8cabe7"
 
 [[files]]
 file = "mods/advanced-peripherals.pw.toml"
