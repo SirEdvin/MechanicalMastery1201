@@ -1269,10 +1269,6 @@ file = "kubejs/assets/kubejs/textures/item/blizz_effigy.png"
 hash = "3a313582538c849357bf4a4072fe58c0f0b191e0e97a27d007e234dd372df1d8"
 
 [[files]]
-file = "kubejs/assets/kubejs/textures/item/bronze_rod.png"
-hash = "728e7bd39119e6a8fb3fe828e92dac5d6bcb4e0b50386a5d6465d9d7dfc3f867"
-
-[[files]]
 file = "kubejs/assets/kubejs/textures/item/clump_aluminum.png"
 hash = "f1bdd9fb791b88bf030d9f7a264cfe3d77488b39e02d2f801bfd96b984b8cbee"
 
@@ -1902,7 +1898,7 @@ hash = "59eba26e470dd18b400989e5d75665fb6592f58ceb8d894a906fbc611ce3801c"
 
 [[files]]
 file = "kubejs/server_scripts/ore_processing.js"
-hash = "5a92fc6936aaf4d6b492041f2dcadd5aa0f111865b49cb6c2afb522cc63bebbb"
+hash = "ddc22e56306bbd1c1de20218092f89e085f79c60c1e7a04ff46173b8b0b6bf82"
 
 [[files]]
 file = "kubejs/server_scripts/powah_create_new_age_compat.js"
@@ -1910,7 +1906,7 @@ hash = "a036fd0df311a5203c8e74a49e1d9dfb7814708f5367eabacd0c6027cb836fcd"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "d34cff71ef9bacd6ce09b67e261b5e988e6c95586ec095373847464237b3e5ab"
+hash = "53f86de34b6975c0a573273f529fe57fac17d605443cbeadba4dbd2b8307ca61"
 
 [[files]]
 file = "kubejs/server_scripts/thermal/lapidary_dynamo.js"
@@ -1922,7 +1918,7 @@ hash = "a77cde62dc96dfec20e8cd2a5c9fe37f8ceeeeb7f226df9f2b29ad429e9addef"
 
 [[files]]
 file = "kubejs/startup_scripts/script.js"
-hash = "8f3285a5c239280f3ad864736ead102e11be7d45f5b0ea6fd51eb5471cac6c9c"
+hash = "da4979f650f06f1af0873a8f48530f910c27406872dd189ead1f7e654c9dfeea"
 
 [[files]]
 file = "mods/advanced-peripherals.pw.toml"

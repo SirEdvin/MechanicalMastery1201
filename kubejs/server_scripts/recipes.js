@@ -413,7 +413,7 @@ ServerEvents.recipes( event => {
 		});
 	});
 	
-	event.shaped('kubejs:bronze_rod', [
+	event.shaped('thermal_extra:bronze_rod', [
 		'I',
 		'I'
 		], {
@@ -668,7 +668,7 @@ ServerEvents.recipes( event => {
 	event.recipes.thermal.press(['kubejs:steel_gear'], [Item.of('#forge:ingots/steel', 4), 'thermal:press_gear_die']).energy(2400);
 	event.recipes.thermal.press(['thermal:diamond_gear'], [Item.of('#forge:gems/diamond', 4), 'thermal:press_gear_die']).energy(2400);
 	event.recipes.thermal.press(['kubejs:aluminum_gear'], [Item.of('#forge:ingots/aluminum', 4), 'thermal:press_gear_die']).energy(2400);
-	event.recipes.thermal.press([Item.of('kubejs:bronze_rod', 2)], ['#forge:ingots/bronze', 'kubejs:press_rod_die']).energy(600);
+	event.recipes.thermal.press([Item.of('thermal_extra:bronze_rod', 2)], ['#forge:ingots/bronze', 'kubejs:press_rod_die']).energy(600);
 	event.recipes.thermal.press([Item.of('createaddition:copper_rod', 2)], ['#forge:ingots/copper', 'kubejs:press_rod_die']).energy(600);
 	event.recipes.thermal.press([Item.of('createaddition:gold_rod', 2)], ['#forge:ingots/gold', 'kubejs:press_rod_die']).energy(600);
 	event.recipes.thermal.press('kubejs:diamond_rod', ['#forge:gems/diamond', 'kubejs:press_rod_die']).energy(600);
@@ -826,7 +826,7 @@ ServerEvents.recipes( event => {
 			tag: "forge:ingots/bronze"
 		},
 		result: {
-			item: "kubejs:bronze_rod",
+			item: "thermal_extra:bronze_rod",
 			count: 2
 		}
 	});
@@ -1007,8 +1007,6 @@ ServerEvents.tags('item', event => {
 	event.get('forge:slimeballs').add('kubejs:oil_clump');
 	event.get('forge:gears/steel').add('kubejs:steel_gear');
 	event.get('forge:gears').add('kubejs:steel_gear');
-	event.get('forge:rods/bronze').add('kubejs:bronze_rod');
-	event.get('forge:rods').add('kubejs:bronze_rod');
 	event.get('forge:rods/diamond').add('kubejs:diamond_rod');
 	event.get('forge:rods').add('kubejs:diamond_rod');
 	event.get('forge:plates/diamond').add('kubejs:diamond_plate');

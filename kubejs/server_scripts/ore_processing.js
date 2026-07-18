@@ -96,9 +96,21 @@ ServerEvents.recipes( event => {
 			[Item.of(metals[metal]['crushed']), Item.of(metals[metal]['crushed']).withChance(0.3)],
 			metals[metal]['clump']
 		);
+		event.recipes.create.milling(
+			[Item.of(metals[metal]['dirty_dust']), Item.of(metals[metal]['dirty_dust']).withChance(0.1)],
+			metals[metal]['crushed']
+		);
 		event.recipes.mekanism.crushing(Item.of(metals[metal]['dirty_dust'], 2), metals[metal]['crushed']);
 		event.recipes.thermal.pulverizer(Item.of(metals[metal]['dust']).withChance(1.2), metals[metal]['dirty_dust']).energy(4000);
 	}
+
+	['copper', 'gold', 'iron', 'tungsten', 'zinc'].forEach((metal) => {
+		event.remove({id: `createmetallurgy:milling/crushed_raw_${metal}`});
+	});
+	event.recipes.create.milling(
+		[Item.of('createmetallurgy:dirty_tungsten_dust'), Item.of('createmetallurgy:dirty_tungsten_dust').withChance(0.1)],
+		'createmetallurgy:crushed_raw_tungsten'
+	);
 	
 	['iron', 'gold', 'osmium', 'copper', 'tin', 'lead', 'uranium'].forEach((metal) => {
 		event.remove({id: `mekanism:processing/${metal}/dirty_dust/from_clump`});
