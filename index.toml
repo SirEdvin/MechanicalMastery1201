@@ -1986,7 +1986,7 @@ hash = "59eba26e470dd18b400989e5d75665fb6592f58ceb8d894a906fbc611ce3801c"
 
 [[files]]
 file = "kubejs/server_scripts/ore_processing.js"
-hash = "ddc22e56306bbd1c1de20218092f89e085f79c60c1e7a04ff46173b8b0b6bf82"
+hash = "cd63666889416b838445d8c6cac15aac718cd98dab59c4cbccdcd655b393c711"
 
 [[files]]
 file = "kubejs/server_scripts/powah_create_new_age_compat.js"
@@ -1994,7 +1994,7 @@ hash = "a036fd0df311a5203c8e74a49e1d9dfb7814708f5367eabacd0c6027cb836fcd"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "2bc9026a020b298747b3dc0d9fe0e50c974785341d8dca9ba4bf714a237bca28"
+hash = "b3a9bd5c4da35aa1b958e5e7c38e027542db9c5444bbab3fa638429c936fd23e"
 
 [[files]]
 file = "kubejs/server_scripts/thermal/lapidary_dynamo.js"
