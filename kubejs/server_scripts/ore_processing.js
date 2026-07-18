@@ -97,7 +97,7 @@ ServerEvents.recipes( event => {
 			metals[metal]['clump']
 		);
 		event.recipes.create.milling(
-			[Item.of(metals[metal]['dirty_dust']), Item.of(metals[metal]['dirty_dust']).withChance(0.1)],
+			[Item.of(metals[metal]['dirty_dust']), Item.of(metals[metal]['dirty_dust']).withChance(0.25)],
 			metals[metal]['crushed']
 		);
 		event.recipes.mekanism.crushing(Item.of(metals[metal]['dirty_dust'], 2), metals[metal]['crushed']);
@@ -108,9 +108,24 @@ ServerEvents.recipes( event => {
 		event.remove({id: `createmetallurgy:milling/crushed_raw_${metal}`});
 	});
 	event.recipes.create.milling(
-		[Item.of('createmetallurgy:dirty_tungsten_dust'), Item.of('createmetallurgy:dirty_tungsten_dust').withChance(0.1)],
+		[Item.of('createmetallurgy:dirty_tungsten_dust'), Item.of('createmetallurgy:dirty_tungsten_dust').withChance(0.25)],
 		'createmetallurgy:crushed_raw_tungsten'
 	);
+
+	const createMetallurgyByproducts = {
+		copper: 'minecraft:clay_ball',
+		gold: 'minecraft:quartz',
+		iron: 'minecraft:redstone',
+		tungsten: 'minecraft:gold_nugget',
+		zinc: 'minecraft:gunpowder'
+	};
+	for (const metal in createMetallurgyByproducts) {
+		event.remove({id: `createmetallurgy:splashing/dirty_${metal}_dust`});
+		event.recipes.create.splashing(
+			[`createmetallurgy:${metal}_dust`, Item.of(createMetallurgyByproducts[metal]).withChance(0.1)],
+			`createmetallurgy:dirty_${metal}_dust`
+		);
+	}
 	
 	['iron', 'gold', 'osmium', 'copper', 'tin', 'lead', 'uranium'].forEach((metal) => {
 		event.remove({id: `mekanism:processing/${metal}/dirty_dust/from_clump`});
