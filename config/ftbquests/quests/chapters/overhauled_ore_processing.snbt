@@ -1,198 +1,174 @@
 {
-	id: "44EDDD35E8CC68F2"
-	group: ""
-	order_index: 2
-	filename: "overhauled_ore_processing"
-	title: "{ftbquests.chapter.overhauled_ore_processing.title}"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "overhauled_ore_processing"
+	group: ""
+	id: "44EDDD35E8CC68F2"
+	order_index: 2
+	quest_links: [ ]
 	quests: [
 		{
-			title: "{ftbquests.chapter.overhauled_ore_processing.questA6DCD0DA11C6642.title}"
-			x: 0.0d
-			y: 2.0d
-			shape: "square"
 			description: ["{ftbquests.chapter.overhauled_ore_processing.questA6DCD0DA11C6642.description1}"]
-			optional: true
 			id: "0A6DCD0DA11C6642"
+			optional: true
+			shape: "square"
 			tasks: [{
 				id: "739F6F2F289363EC"
-				type: "item"
 				item: {
+					Count: 1
 					id: "itemfilters:tag"
-					Count: 1b
 					tag: {
 						value: "forge:ingots"
 					}
 				}
+				type: "item"
 			}]
+			title: "{ftbquests.chapter.overhauled_ore_processing.questA6DCD0DA11C6642.title}"
+			x: 0.0d
+			y: 2.0d
 		}
 		{
-			title: "{ftbquests.chapter.overhauled_ore_processing.quest53FE9CDC8A72CA5C.title}"
-			x: 1.5d
-			y: 2.0d
-			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest53FE9CDC8A72CA5C.subtitle}"
 			dependencies: ["0A6DCD0DA11C6642"]
 			id: "53FE9CDC8A72CA5C"
-			tasks: [
-				{
-					id: "75F441893A3E5830"
-					type: "item"
-					title: "{ftbquests.chapter.overhauled_ore_processing.quest53FE9CDC8A72CA5C.task.8499490454398457904.title}"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "forge:dusts"
-						}
-					}
-				}
-				{
-					id: "48E02F0D9429DB0E"
-					type: "item"
-					item: {
-						id: "itemfilters:or"
-						Count: 1b
-						tag: {
-							items: [
-								{
-									id: "thermal:machine_pulverizer"
-									Count: 1b
-								}
-								{
-									id: "mekanism:enrichment_chamber"
-									Count: 1b
-								}
-							]
-						}
-					}
-				}
-			]
 			rewards: [{
 				id: "5A38A316648103DD"
 				type: "xp"
 				xp: 100
 			}]
+			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest53FE9CDC8A72CA5C.subtitle}"
+			tasks: [
+				{
+					id: "75F441893A3E5830"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:dusts"
+						}
+					}
+					title: "{ftbquests.chapter.overhauled_ore_processing.quest53FE9CDC8A72CA5C.task.8499490454398457904.title}"
+					type: "item"
+				}
+				{
+					id: "48E02F0D9429DB0E"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "thermal:machine_pulverizer"
+								}
+								{
+									Count: 1b
+									id: "mekanism:enrichment_chamber"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.overhauled_ore_processing.quest53FE9CDC8A72CA5C.title}"
+			x: 1.5d
+			y: 2.0d
 		}
 		{
-			title: "{ftbquests.chapter.overhauled_ore_processing.quest3F5B3402F07BFDB3.title}"
-			x: 6.0d
-			y: 2.0d
-			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest3F5B3402F07BFDB3.subtitle}"
 			dependencies: ["2DD85B456F8E35B6"]
 			id: "3F5B3402F07BFDB3"
+			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest3F5B3402F07BFDB3.subtitle}"
 			tasks: [
 				{
 					id: "39FAEE2A6DFDC326"
-					type: "item"
 					item: "create:crushing_wheel"
+					type: "item"
 				}
 				{
 					id: "197BCDF580A92D4F"
-					type: "item"
 					item: {
+						Count: 1
 						id: "itemfilters:tag"
-						Count: 1b
 						tag: {
 							value: "create:crushed_raw_materials"
 						}
 					}
+					type: "item"
 				}
 			]
+			title: "{ftbquests.chapter.overhauled_ore_processing.quest3F5B3402F07BFDB3.title}"
+			x: 6.0d
+			y: 2.0d
 		}
 		{
-			title: "{ftbquests.chapter.overhauled_ore_processing.quest5B3E3AFD70AA55DA.title}"
-			x: 9.0d
-			y: 2.0d
-			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest5B3E3AFD70AA55DA.subtitle}"
-			description: ["{ftbquests.chapter.overhauled_ore_processing.quest5B3E3AFD70AA55DA.description1}"]
 			dependencies: ["3C29B9915BC52C91"]
+			description: ["{ftbquests.chapter.overhauled_ore_processing.quest5B3E3AFD70AA55DA.description1}"]
 			id: "5B3E3AFD70AA55DA"
-			tasks: [
-				{
-					id: "767AA6269C6DD815"
-					type: "item"
-					item: "mekanism:purification_chamber"
-				}
-				{
-					id: "2C34B6177F52C9C6"
-					type: "item"
-					title: "{ftbquests.chapter.overhauled_ore_processing.quest5B3E3AFD70AA55DA.task.3185371048494418374.title}"
-					item: {
-						id: "itemfilters:tag"
-						Count: 1b
-						tag: {
-							value: "mekanism:clumps"
-						}
-					}
-				}
-			]
 			rewards: [{
 				id: "10E09E3B3F5B1ED2"
 				type: "xp"
 				xp: 100
 			}]
-		}
-		{
-			title: "{ftbquests.chapter.overhauled_ore_processing.quest3654F4DD1B835750.title}"
-			x: 10.5d
-			y: 2.0d
-			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest3654F4DD1B835750.subtitle}"
-			dependencies: ["5B3E3AFD70AA55DA"]
-			id: "3654F4DD1B835750"
+			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest5B3E3AFD70AA55DA.subtitle}"
 			tasks: [
 				{
-					id: "0CF270F3EDFEAB69"
+					id: "767AA6269C6DD815"
+					item: "mekanism:purification_chamber"
 					type: "item"
-					item: "mekanism:chemical_injection_chamber"
 				}
 				{
-					id: "23B37A20D7A70503"
-					type: "item"
-					title: "{ftbquests.chapter.overhauled_ore_processing.quest3654F4DD1B835750.task.2572534093634274563.title}"
+					id: "2C34B6177F52C9C6"
 					item: {
+						Count: 1
 						id: "itemfilters:tag"
-						Count: 1b
 						tag: {
-							value: "mekanism:shards"
+							value: "mekanism:clumps"
 						}
 					}
+					title: "{ftbquests.chapter.overhauled_ore_processing.quest5B3E3AFD70AA55DA.task.3185371048494418374.title}"
+					type: "item"
 				}
 			]
+			title: "{ftbquests.chapter.overhauled_ore_processing.quest5B3E3AFD70AA55DA.title}"
+			x: 9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5B3E3AFD70AA55DA"]
+			id: "3654F4DD1B835750"
 			rewards: [{
 				id: "1FCB7BE293D0BB79"
 				type: "xp"
 				xp: 100
 			}]
-		}
-		{
-			title: "{ftbquests.chapter.overhauled_ore_processing.quest45522B13D9D5FE22.title}"
-			x: 12.0d
-			y: 2.0d
-			shape: "gear"
-			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest45522B13D9D5FE22.subtitle}"
-			description: ["{ftbquests.chapter.overhauled_ore_processing.quest45522B13D9D5FE22.description1}"]
-			dependencies: ["3654F4DD1B835750"]
-			id: "45522B13D9D5FE22"
+			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest3654F4DD1B835750.subtitle}"
 			tasks: [
 				{
-					id: "36BB2F485CAEF2E7"
+					id: "0CF270F3EDFEAB69"
+					item: "mekanism:chemical_injection_chamber"
 					type: "item"
-					item: "mekanism:chemical_dissolution_chamber"
 				}
 				{
-					id: "0E772D8DB9CE06AA"
-					type: "item"
-					title: "{ftbquests.chapter.overhauled_ore_processing.quest45522B13D9D5FE22.task.1042351925490484906.title}"
+					id: "23B37A20D7A70503"
 					item: {
+						Count: 1
 						id: "itemfilters:tag"
-						Count: 1b
 						tag: {
-							value: "mekanism:crystals"
+							value: "mekanism:shards"
 						}
 					}
+					title: "{ftbquests.chapter.overhauled_ore_processing.quest3654F4DD1B835750.task.2572534093634274563.title}"
+					type: "item"
 				}
 			]
+			title: "{ftbquests.chapter.overhauled_ore_processing.quest3654F4DD1B835750.title}"
+			x: 10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3654F4DD1B835750"]
+			description: ["{ftbquests.chapter.overhauled_ore_processing.quest45522B13D9D5FE22.description1}"]
+			id: "45522B13D9D5FE22"
 			rewards: [
 				{
 					id: "4E5CABCCAEC1CB08"
@@ -201,81 +177,101 @@
 				}
 				{
 					id: "27289410C2DB107A"
-					type: "item"
 					item: "kubejs:cube3_packaged"
+					type: "item"
 				}
 			]
+			shape: "gear"
+			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest45522B13D9D5FE22.subtitle}"
+			tasks: [
+				{
+					id: "36BB2F485CAEF2E7"
+					item: "mekanism:chemical_dissolution_chamber"
+					type: "item"
+				}
+				{
+					id: "0E772D8DB9CE06AA"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "mekanism:crystals"
+						}
+					}
+					title: "{ftbquests.chapter.overhauled_ore_processing.quest45522B13D9D5FE22.task.1042351925490484906.title}"
+					type: "item"
+				}
+			]
+			title: "{ftbquests.chapter.overhauled_ore_processing.quest45522B13D9D5FE22.title}"
+			x: 12.0d
+			y: 2.0d
 		}
 		{
+			dependencies: ["53FE9CDC8A72CA5C"]
+			id: "69334BC3FEC45E88"
+			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest69334BC3FEC45E88.subtitle}"
+			tasks: [{
+				id: "1F43661FC880E703"
+				item: "minecraft:flint"
+				type: "item"
+			}]
 			title: "{ftbquests.chapter.overhauled_ore_processing.quest69334BC3FEC45E88.title}"
 			x: 3.0d
 			y: 0.0d
-			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest69334BC3FEC45E88.subtitle}"
-			dependencies: ["53FE9CDC8A72CA5C"]
-			id: "69334BC3FEC45E88"
-			tasks: [{
-				id: "1F43661FC880E703"
-				type: "item"
-				item: "minecraft:flint"
-			}]
 		}
 		{
+			dependencies: ["53FE9CDC8A72CA5C"]
+			id: "07194DDB411AFDBE"
+			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest7194DDB411AFDBE.subtitle}"
+			tasks: [{
+				id: "0D1893079FFC92FB"
+				item: "thermal:basalz_powder"
+				type: "item"
+			}]
 			title: "{ftbquests.chapter.overhauled_ore_processing.quest7194DDB411AFDBE.title}"
 			x: 3.0d
 			y: 1.0d
-			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest7194DDB411AFDBE.subtitle}"
-			dependencies: ["53FE9CDC8A72CA5C"]
-			id: "07194DDB411AFDBE"
-			tasks: [{
-				id: "0D1893079FFC92FB"
-				type: "item"
-				item: "thermal:basalz_powder"
-			}]
 		}
 		{
+			dependencies: ["53FE9CDC8A72CA5C"]
+			id: "71015BE55E0EF504"
+			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest71015BE55E0EF504.subtitle}"
+			tasks: [{
+				id: "11DB810DB86E7503"
+				item: "thermal:earth_charge"
+				type: "item"
+			}]
 			title: "{ftbquests.chapter.overhauled_ore_processing.quest71015BE55E0EF504.title}"
 			x: 3.0d
 			y: 2.0d
-			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest71015BE55E0EF504.subtitle}"
-			dependencies: ["53FE9CDC8A72CA5C"]
-			id: "71015BE55E0EF504"
-			tasks: [{
-				id: "11DB810DB86E7503"
-				type: "item"
-				item: "thermal:earth_charge"
-			}]
 		}
 		{
+			dependencies: ["53FE9CDC8A72CA5C"]
+			id: "7986E28D02F23868"
+			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest7986E28D02F23868.subtitle}"
+			tasks: [{
+				id: "7A9FD278EE78EBF4"
+				item: "kubejs:basilic_reagent"
+				type: "item"
+			}]
 			title: "{ftbquests.chapter.overhauled_ore_processing.quest7986E28D02F23868.title}"
 			x: 3.0d
 			y: 3.0d
-			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest7986E28D02F23868.subtitle}"
-			dependencies: ["53FE9CDC8A72CA5C"]
-			id: "7986E28D02F23868"
-			tasks: [{
-				id: "7A9FD278EE78EBF4"
-				type: "item"
-				item: "kubejs:basilic_reagent"
-			}]
 		}
 		{
+			dependencies: ["53FE9CDC8A72CA5C"]
+			id: "2AAD31BA89F48BFC"
+			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest2AAD31BA89F48BFC.subtitle}"
+			tasks: [{
+				id: "06957F501491A80E"
+				item: "kubejs:enriched_basilic_reagent"
+				type: "item"
+			}]
 			title: "{ftbquests.chapter.overhauled_ore_processing.quest2AAD31BA89F48BFC.title}"
 			x: 3.0d
 			y: 4.0d
-			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest2AAD31BA89F48BFC.subtitle}"
-			dependencies: ["53FE9CDC8A72CA5C"]
-			id: "2AAD31BA89F48BFC"
-			tasks: [{
-				id: "06957F501491A80E"
-				type: "item"
-				item: "kubejs:enriched_basilic_reagent"
-			}]
 		}
 		{
-			title: "{ftbquests.chapter.overhauled_ore_processing.quest2DD85B456F8E35B6.title}"
-			x: 4.5d
-			y: 2.0d
-			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest2DD85B456F8E35B6.subtitle}"
 			dependencies: [
 				"69334BC3FEC45E88"
 				"07194DDB411AFDBE"
@@ -284,77 +280,81 @@
 				"2AAD31BA89F48BFC"
 			]
 			id: "2DD85B456F8E35B6"
+			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest2DD85B456F8E35B6.subtitle}"
 			tasks: [
 				{
 					id: "7712E5F7B00ABA10"
-					type: "item"
 					item: "mekanism:crusher"
+					type: "item"
 				}
 				{
 					id: "0DC061D2707F7E16"
-					type: "item"
 					item: {
+						Count: 1
 						id: "itemfilters:tag"
-						Count: 1b
 						tag: {
 							value: "mekanism:dirty_dusts"
 						}
 					}
+					type: "item"
 				}
 			]
+			title: "{ftbquests.chapter.overhauled_ore_processing.quest2DD85B456F8E35B6.title}"
+			x: 4.5d
+			y: 2.0d
 		}
 		{
-			x: 7.5d
-			y: 2.0d
-			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest3C29B9915BC52C91.subtitle}"
-			description: ["{ftbquests.chapter.overhauled_ore_processing.quest3C29B9915BC52C91.description1}"]
 			dependencies: ["3F5B3402F07BFDB3"]
+			description: ["{ftbquests.chapter.overhauled_ore_processing.quest3C29B9915BC52C91.description1}"]
 			id: "3C29B9915BC52C91"
+			subtitle: "{ftbquests.chapter.overhauled_ore_processing.quest3C29B9915BC52C91.subtitle}"
 			tasks: [{
 				id: "1D06A2C2AF9DECA4"
-				type: "checkmark"
 				title: "{ftbquests.chapter.overhauled_ore_processing.quest3C29B9915BC52C91.task.2091538034013891748.title}"
+				type: "checkmark"
 			}]
+			x: 7.5d
+			y: 2.0d
 		}
 		{
+			dependencies: ["45522B13D9D5FE22"]
+			id: "7EFF27C03DDC04BF"
+			optional: true
+			tasks: [{
+				id: "279A41E7CD1A5597"
+				item: "mekanism:sulfuric_acid_bucket"
+				type: "item"
+			}]
 			title: "{ftbquests.chapter.overhauled_ore_processing.quest7EFF27C03DDC04BF.title}"
 			x: 12.0d
 			y: 3.5d
-			dependencies: ["45522B13D9D5FE22"]
-			optional: true
-			id: "7EFF27C03DDC04BF"
-			tasks: [{
-				id: "279A41E7CD1A5597"
-				type: "item"
-				item: "mekanism:sulfuric_acid_bucket"
-			}]
 		}
 		{
+			dependencies: ["3654F4DD1B835750"]
+			id: "26407132F7520320"
+			optional: true
+			tasks: [{
+				id: "7D5B8F2E36930AF6"
+				item: "mekanism:hydrogen_chloride_bucket"
+				type: "item"
+			}]
 			title: "{ftbquests.chapter.overhauled_ore_processing.quest26407132F7520320.title}"
 			x: 10.5d
 			y: 3.5d
-			dependencies: ["3654F4DD1B835750"]
-			optional: true
-			id: "26407132F7520320"
-			tasks: [{
-				id: "7D5B8F2E36930AF6"
-				type: "item"
-				item: "mekanism:hydrogen_chloride_bucket"
-			}]
 		}
 		{
+			dependencies: ["5B3E3AFD70AA55DA"]
+			id: "2EB50A85B6F4D37D"
+			optional: true
+			tasks: [{
+				id: "655517B5352AB9A6"
+				item: "mekanism:oxygen_bucket"
+				type: "item"
+			}]
 			title: "{ftbquests.chapter.overhauled_ore_processing.quest2EB50A85B6F4D37D.title}"
 			x: 9.0d
 			y: 3.5d
-			dependencies: ["5B3E3AFD70AA55DA"]
-			optional: true
-			id: "2EB50A85B6F4D37D"
-			tasks: [{
-				id: "655517B5352AB9A6"
-				type: "item"
-				item: "mekanism:oxygen_bucket"
-			}]
 		}
 	]
-	quest_links: [ ]
+	title: "{ftbquests.chapter.overhauled_ore_processing.title}"
 }

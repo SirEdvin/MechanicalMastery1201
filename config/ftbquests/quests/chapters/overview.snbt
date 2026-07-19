@@ -1,101 +1,133 @@
 {
-	id: "77FF66ED47CBD889"
-	group: ""
-	order_index: 0
-	filename: "overview"
-	title: "{ftbquests.chapter.overview.title}"
-	icon: "minecraft:totem_of_undying"
-	default_quest_shape: ""
 	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "overview"
+	group: ""
+	icon: "minecraft:totem_of_undying"
+	id: "77FF66ED47CBD889"
+	order_index: 0
+	quest_links: [ ]
 	quests: [
 		{
-			x: -5.0d
-			y: 0.5d
-			subtitle: "{ftbquests.chapter.overview.questA440BFFAD3F083E.subtitle}"
 			description: ["{ftbquests.chapter.overview.questA440BFFAD3F083E.description1}"]
 			id: "0A440BFFAD3F083E"
+			subtitle: "{ftbquests.chapter.overview.questA440BFFAD3F083E.subtitle}"
 			tasks: [{
 				id: "3BB2FA8389857375"
-				type: "checkmark"
 				title: "{ftbquests.chapter.overview.questA440BFFAD3F083E.task.4301776036947129205.title}"
+				type: "checkmark"
 			}]
+			x: -5.0d
+			y: 0.5d
 		}
 		{
-			icon: "thermal:machine_frame"
-			x: -3.5d
-			y: 0.5d
 			dependencies: ["0A440BFFAD3F083E"]
+			icon: "thermal:machine_frame"
 			id: "6F0F8C3F6B5E2310"
 			tasks: [{
 				id: "2C584B6EE7B58636"
-				type: "checkmark"
 				title: "{ftbquests.chapter.overview.quest6F0F8C3F6B5E2310.task.3195386875325285942.title}"
+				type: "checkmark"
 			}]
+			x: -3.5d
+			y: 0.5d
 		}
 		{
-			icon: "create:crushing_wheel"
-			x: -2.0d
-			y: 0.5d
-			shape: "square"
 			dependencies: [
 				"6F0F8C3F6B5E2310"
 				"7A0CB1037E6BE4D7"
 			]
+			icon: "create:crushing_wheel"
 			id: "2A9795581CE1CACF"
+			shape: "square"
 			tasks: [{
 				id: "3BCA0B433ED08A4D"
-				type: "checkmark"
 				title: "{ftbquests.chapter.overview.quest2A9795581CE1CACF.task.4308268376977869389.title}"
+				type: "checkmark"
 			}]
+			x: -2.0d
+			y: 0.5d
 		}
 		{
-			icon: "mekanism:basic_control_circuit"
-			x: -0.5d
-			y: 0.5d
-			shape: "pentagon"
 			dependencies: [
 				"78775CE81571FAC9"
 				"2A9795581CE1CACF"
 			]
+			icon: "mekanism:basic_control_circuit"
 			id: "636712D15DD7E2E8"
+			shape: "pentagon"
 			tasks: [{
 				id: "71B39DED89D5A45C"
-				type: "checkmark"
 				title: "{ftbquests.chapter.overview.quest636712D15DD7E2E8.task.8193065790662354012.title}"
+				type: "checkmark"
 			}]
+			x: 0.0d
+			y: 0.5d
 		}
 		{
-			icon: "mekanism:elite_control_circuit"
-			x: 1.0d
-			y: 0.5d
-			shape: "hexagon"
 			dependencies: [
 				"636712D15DD7E2E8"
 				"1A67C9B9ABB4E969"
 			]
+			icon: "mekanism:elite_control_circuit"
 			id: "7B8B9AE6979535D8"
+			shape: "hexagon"
 			tasks: [{
 				id: "15A723F6047E80F3"
-				type: "checkmark"
 				title: "{ftbquests.chapter.overview.quest7B8B9AE6979535D8.task.1560255335451492595.title}"
+				type: "checkmark"
 			}]
+			x: 2.0d
+			y: 0.5d
 		}
 		{
-			title: "{ftbquests.chapter.overview.quest72E0FB7ABA0FF258.title}"
-			icon: "projectexpansion:final_star"
-			x: 2.5d
-			y: 0.5d
-			shape: "gear"
 			dependencies: [
 				"7B8B9AE6979535D8"
 				"157D4C0E9C7A0928"
 			]
+			icon: "projectexpansion:final_star"
 			id: "72E0FB7ABA0FF258"
+			shape: "gear"
 			tasks: [{
 				id: "3DA63D196473D774"
 				type: "checkmark"
 			}]
+			title: "{ftbquests.chapter.overview.quest72E0FB7ABA0FF258.title}"
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"6F0F8C3F6B5E2310"
+				"7A0CB1037E6BE4D7"
+			]
+			icon: "thermal:machine_press"
+			id: "1493B871D6A22B7B"
+			tasks: [{
+				id: "7648CFBDA8A1541E"
+				title: "Tier 1.5: Even more thermal"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2A9795581CE1CACF"
+				"78775CE81571FAC9"
+				"1493B871D6A22B7B"
+			]
+			icon: "create_new_age:basic_energiser"
+			id: "27F0512A61FE829C"
+			shape: "square"
+			tasks: [{
+				id: "3DA883378BA4EBBC"
+				title: "Tier 2.5: New age of Create"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.0d
 		}
 	]
-	quest_links: [ ]
+	title: "{ftbquests.chapter.overview.title}"
 }

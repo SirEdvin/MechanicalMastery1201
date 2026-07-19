@@ -578,95 +578,99 @@ hash = "7e88163a0edc7f75f7b0d79bc700f262cb80d6bf522f1dc150369069e54805da"
 
 [[files]]
 file = "config/ftbquests/quests/chapter_groups.snbt"
-hash = "e57d8311aec9f524911ed1313cabf138bb7fa5a2d3ba985a00a2a267ff35ef78"
+hash = "27df1e6714837f81439c6ec4aaed88b3e721de273762c0ca16d90334dd92e244"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/configuration_panel.snbt"
-hash = "d95e878e13ac8d8f220a818699f1892766557a7480c78fbc6ec2e1976fb39cb5"
+hash = "267d93dedf22c9a59f7d0a648b795de61970d28924b64c83f554063b02ccb4b2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/overhauled_ore_processing.snbt"
-hash = "dc0acb31ca449225b99bf3751994624a961d51a299df3198da367917881afa1f"
+hash = "5874f0a8137d521cbc9d005942065b2223e27b09460947b47afe9680d71a2833"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/overview.snbt"
-hash = "08e5e27927c7c7d7eeae5fc4e3573fa473e12ae624555e4a15a69f5d92898be6"
+hash = "6eb15466a9d777ee0159135a9c1fd7603d27f1a218a27b33ffcaa9188a6d3b1e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tier_1.snbt"
-hash = "f616da0f27869c7c567534c8d3c2d7abe2b359e819be306a37ffa49aa1299c82"
+hash = "219442387008fa8187dd3311afcdd09e74ab5f8ebf28207e7fb6348a2a27f8c7"
+
+[[files]]
+file = "config/ftbquests/quests/chapters/tier_15_even_more_thermal.snbt"
+hash = "65aa55b59998772b643dcbce7bcdd22ef26b6bce0eb571f5f82056b761b5ca39"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tier_2.snbt"
-hash = "0faafa57f74bc84992f87f91b08c90760860a453ad289172e701c4abbc64dac0"
+hash = "e7ba527b0bacaa11a4244ce0604a170dfe835ed6a5d287ea617cf9aaa971b24e"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tier_3.snbt"
-hash = "041701b979a0b60284c4bae23c7807a78972de917100c40f25b2e3e131717e23"
+hash = "ae644f5293ffdfacb2901858df59f047137535f89df954fcc09c13cd363f8ada"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tier_4.snbt"
-hash = "a3071bf1a498a5207a8bceb400b4309a4f6216551542aae7ea2e118ab687545c"
+hash = "acf12d8a4547eb5e9269785f9dcc429cd2aeac61ceeac1dd79ad21c498a54fe2"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tier_5_endgaem.snbt"
-hash = "da1d9f25ec9e47c39124788e496898f887f9be4ebf756581bcd42f377163219a"
+hash = "fdda13ca48fbf2cb07019dace0d68e4f3da2a08c21c758328c920b286dca4718"
 
 [[files]]
 file = "config/ftbquests/quests/data.snbt"
-hash = "2b671ba980af739f0850e66523c6de2e54e53ba8290100a5e8aacb76628f517e"
+hash = "394aaafadc04cbed603f121a4b382c338bc4a7b60a1827b09532f3038f7d754f"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/activate_daylight_cycle.snbt"
-hash = "80574047fe590289640d368ceb8889253bba1da261ce3ed93dd3d75bd06c0af6"
+hash = "0b8550ab111cccd5573540dc697ab43ec2a8d4ee9e4d5f860770fc609de179ae"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/activate_keepinventory.snbt"
-hash = "b6042e4ac6a01959044a8d7fbcbd5acf0aba71892e372442cc44735abf330e04"
+hash = "77b91eba2432239e2b5e441b780005c8bc466b79e3d94319ad9fc4eb78eeeac2"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/advanced_mekanism_pipes.snbt"
-hash = "03ab5f1491b7cf709cdf7807995c29b210471daa31bb1e5c89d2fddc5a297103"
+hash = "7fef96c835c370cf72a6125f730c10b25f4464430d465fc57ae8f6a5fbad092a"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/bring_back_phantoms.snbt"
-hash = "b4f7d87c7d43a3de059679e4dca778853ad43f80a6907b3ea77f002adef4902c"
+hash = "ca0adb038c4787fb1938e94a0b94dfd1b2aeb4074b0bde659c3cd704f393b8b6"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/clear_weather.snbt"
-hash = "9383670caa9e520c92d20dddbd3c2c2ab7aefeba247c7638dec467ae52abf667"
+hash = "1b451475252590e187b5988d36d16fb2e152ff2982b470391ae4a7701f114212"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/deactivate_keepinventory.snbt"
-hash = "83f55a4b13b60b38e5cc1be5ea9862b77324d1fa173c52fae03acdcb7cdf732a"
+hash = "fc8c943a4ecd20783d0653ead771736b86cc13bdae6861ab8b222a32a9d4025b"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/inscriber_presses.snbt"
-hash = "ffa9d7bc80e0dd1bea39c9b5f5d5dcb4fafae5a095342332b374a40ce3c63aa1"
+hash = "7143af3a26674d82a0f28d6ad9c259883aad4d6550d7da4132208ffbb1547632"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/make_noon.snbt"
-hash = "e12e721645bd05d0ad226b24d4287b7193d6327ee7ed266001a91bafd95a5350"
+hash = "d3e2652763dc32b774e6c2a7eae6fa51991eb05b3118306338aecef8dba5bdb2"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/no_daylight_cycle.snbt"
-hash = "523dc24dc3d8157af1bdfc42a4b0c1e8024295d866acec60f27465b52a78844f"
+hash = "c8f3b6541db34d0d6982372733de445cf76d7b05e2bc9a8d6c450e499c2ab796"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/press_dies.snbt"
-hash = "016c3bd077327e857b3c2590726ec284688ab80cdef546c3305880edf544460d"
+hash = "ca875215b68038038ec59547a05c05dff0be6f844c6b4183eddc4c753df1a897"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/reactivate_weather_cycle.snbt"
-hash = "8e4e34fc755c870169e45e919528410d54c60c4ff5eb555072cd433f09295885"
+hash = "f0497b7fd6c7e63fc49f9d655403cf6db37462a2a7fa1a70906b3c0640a885ea"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/remove_phantoms.snbt"
-hash = "358c7307e9fb74c93563cbc8185d06ad055419d851a3c88142df16d0a9b4dc17"
+hash = "e5472a31882dba273b84a22e0b1a627bba6bbcac45b1735fcc8cab3f8f9dff80"
 
 [[files]]
 file = "config/ftbquests/quests/reward_tables/stop_weather_cycle.snbt"
-hash = "a048412702864f2b813007a1d758d061e174170599a406d162384956934b6bf4"
+hash = "c78bd97d3a2136ad08d70470dbdbd460a2668593249fa79f749b2f02e6cac9bb"
 
 [[files]]
 file = "config/gamemenumodoption-client.toml"
@@ -1345,6 +1349,10 @@ file = "kubejs/assets/kubejs/textures/item/cube1_5a.png"
 hash = "37d611268aaf8bdef8696889f45a657a09c03b0e0eb9e1d8fbd29f5026213b4f"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/cube1_5a_nugget.png"
+hash = "88dad1045280cfeff6723e9a5bc298ce7386598220c393d9c6b0608cdba621d4"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/cube1_5a_packaged.png"
 hash = "0abd8b78d497484877c164e33c6bdf6787b0be842421442f507492f69b2cd1cf"
 
@@ -1357,8 +1365,20 @@ file = "kubejs/assets/kubejs/textures/item/cube1_5b_packaged.png"
 hash = "40927c6c08a30c3db5272cafd32ce4e68d68f43e6d59bb1fbcc57dcd4ccd0477"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/cube1_gear.png"
+hash = "833a74fc762d507af48caf0d10dcf51e67d4549b60e3ee7c1d7fb698b4ab0cff"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/cube1_nugget.png"
+hash = "11a0e560be0370a25cc9abd8a2ee9fc981681fec5557fe0152afd58462ce0356"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/cube1_packaged.png"
 hash = "df5d549d87866e98fbfebccbada7fc7a66e829c4903b7ee7bc760924563bcf12"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/cube1_rod.png"
+hash = "b2ff7e0f35925ba5d4be57bc8167912aca727a848d1bf5ae4e1ee3184056c7a2"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/cube2.png"
@@ -1998,7 +2018,7 @@ hash = "a036fd0df311a5203c8e74a49e1d9dfb7814708f5367eabacd0c6027cb836fcd"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "785e361ad1db5a3a23ca3b2e665dc412ced22807bfa4bdf9797a58683f186329"
+hash = "04cb3f664f076e9a315227a6c7f5072ec46abd527408cc3df4e55972f032a53f"
 
 [[files]]
 file = "kubejs/server_scripts/thermal/lapidary_dynamo.js"
@@ -2010,7 +2030,7 @@ hash = "a77cde62dc96dfec20e8cd2a5c9fe37f8ceeeeb7f226df9f2b29ad429e9addef"
 
 [[files]]
 file = "kubejs/startup_scripts/script.js"
-hash = "f52d70a7aa25afc829cce1f89e7278b9cff8a7d9e8ab1f849c99ccd611424514"
+hash = "95bd2e1cc1f1a558f672b977e03cb99a5df65362fdd867e314a340e37f1d6d64"
 
 [[files]]
 file = "mods/advanced-peripherals.pw.toml"

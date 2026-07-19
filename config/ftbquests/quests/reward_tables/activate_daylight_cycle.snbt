@@ -1,11 +1,10 @@
 {
 	id: "2B65F5EA5A99641A"
-	order_index: 4
-	title: "{ftbquests.loot_table.3127175903169831962.title}"
 	loot_size: 1
+	order_index: 4
 	rewards: [{
 		command: "/gamerule doDaylightCycle true"
-		player_command: false
 		type: "command"
 	}]
+	title: "{ftbquests.loot_table.3127175903169831962.title}"
 }

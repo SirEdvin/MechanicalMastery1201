@@ -88,10 +88,10 @@ StartupEvents.registry('item', event => {
 	// event.create('example_item').displayName('Example Item')
 	event.create('cube1').displayName('Basic Mechanical Essence');
 	event.create('cube1_packaged').displayName('Basic Mechanical Crystal');
-	event.create('cube1_5a').displayName('Magenta Mechanical Essence');
-	event.create('cube1_5a_packaged').displayName('Magenta Mechanical Crystal');
-	event.create('cube1_5b').displayName('Indigo Mechanical Essence');
-	event.create('cube1_5b_packaged').displayName('Indigo Mechanical Crystal');
+	event.create('cube1_5a').displayName('Basic Compacting Mechanical Essence').tooltip("It seems much smaller that it actually is...");
+	event.create('cube1_5a_packaged').displayName('Basic Compacting Mechanical Crystal');
+	event.create('cube1_5b').displayName('Basic Logistic Mechanical Essence').tooltip("Even just lookint at her makes you want to move items by hands...");
+	event.create('cube1_5b_packaged').displayName('Basic Logistic Mechanical Crystal');
 	event.create('cube2').displayName('Regular Mechanical Essence');
 	event.create('cube2_packaged').displayName('Regular Mechanical Crystal');
 	event.create('cube2_5a').displayName('Turquoise Mechanical Essence');
@@ -109,6 +109,12 @@ StartupEvents.registry('item', event => {
 	event.create('cube4_inert').displayName('Inert Advanced Mechanical Essence').tooltip('So close, yet so far...');
 	event.create('cube4_5a').displayName('Fuchsia Mechanical Essence');
 	event.create('cube4_5b').displayName('Crimson Mechanical Essence');
+
+	// Items for chapter 1.5
+	event.create("cube1_rod").displayName("Basic Mechanical Rod")
+	event.create("cube1_gear").displayName("Basic Mechanical Gear")
+	event.create("cube1_nugget").displayName("Small Basic Mechanical Essense")
+	event.create("cube1_5a_nugget").displayName("Small Basic Compacting Mechanical Essense")
 	
 	event.create('press_rod_die').displayName('Rod Die');
 	event.create('oil_clump').displayName('Oil clump');

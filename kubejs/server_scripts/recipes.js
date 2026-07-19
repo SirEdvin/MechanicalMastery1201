@@ -640,6 +640,22 @@ ServerEvents.recipes( event => {
 	event.shapeless(Item.of('minecraft:andesite', 2), [Item.of('minecraft:cobblestone', 2), Item.of('projecte:high_covalence_dust', 2)]);
 	event.shapeless(Item.of('minecraft:andesite', 8), [Item.of('minecraft:cobblestone', 8), Item.of('minecraft:quartz', 1)]);
 	event.shapeless('kubejs:cube1', ['#forge:gears/aluminum', Item.of('#forge:rods/copper', 2), '#forge:gears/iron']);
+	event.shapeless(Item.of('kubejs:cube1_rod', 2), ['kubejs:cube1']).id('kubejs:cube1_rod');
+	event.shaped('kubejs:cube1_gear', ['CC'], {
+		C: 'kubejs:cube1'
+	}).id('kubejs:cube1_gear');
+	[
+		['cube1', 'cube1_nugget'],
+		['cube1_5a', 'cube1_5a_nugget']
+	].forEach(([cube, nugget]) => {
+		event.shapeless(Item.of(`kubejs:${nugget}`, 4), [`kubejs:${cube}`]).id(`kubejs:${cube}_to_nuggets`);
+		event.shaped(`kubejs:${cube}`, [
+			'NN',
+			'NN'
+		], {
+			N: `kubejs:${nugget}`
+		}).id(`kubejs:${nugget}_to_cube`);
+	});
 	['1', '1_5a', '1_5b', '2', '2_5a', '2_5b', '3', '3_5a', '3_5b', '4', '4_5a', '4_5b'].forEach(tier => {
 		event.shaped(`kubejs:cube${tier}_block`, [
 			'CC',
@@ -682,6 +698,33 @@ ServerEvents.recipes( event => {
 	event.recipes.thermal.press([Item.of('immersiveengineering:stick_iron', 2)], ['#forge:ingots/iron', 'kubejs:press_rod_die']).energy(600);
 	event.recipes.thermal.press([Item.of('immersiveengineering:stick_steel', 2)], ['#forge:ingots/steel', 'kubejs:press_rod_die']).energy(600);
 	event.recipes.thermal.press([Item.of('immersiveengineering:stick_aluminum', 2)], ['#forge:ingots/aluminum', 'kubejs:press_rod_die']).energy(600);
+	event.recipes.thermal.press(Item.of('kubejs:cube1_rod', 2), ['kubejs:cube1', 'kubejs:press_rod_die']).energy(600)
+		.id('kubejs:thermal/press/cube1_rod');
+	event.recipes.thermal.press('kubejs:cube1_gear', [Item.of('kubejs:cube1', 2), 'thermal:press_gear_die']).energy(1200)
+		.id('kubejs:thermal/press/cube1_gear');
+	[
+		['cube1', 'cube1_nugget'],
+		['cube1_5a', 'cube1_5a_nugget']
+	].forEach(([cube, nugget]) => {
+		event.recipes.thermal.press(Item.of(`kubejs:${nugget}`, 4), [`kubejs:${cube}`, 'thermal:press_unpacking_die']).energy(600)
+			.id(`kubejs:thermal/press/${cube}_to_nuggets`);
+		event.recipes.thermal.press(`kubejs:${cube}`, [Item.of(`kubejs:${nugget}`, 4), 'thermal:press_packing_2x2_die']).energy(600)
+			.id(`kubejs:thermal/press/${nugget}_to_cube`);
+	});
+
+	event.recipes.create.cutting(Item.of('kubejs:cube1_rod', 2), 'kubejs:cube1')
+		.id('kubejs:create/cutting/cube1_rod');
+	event.recipes.create.compacting('kubejs:cube1_gear', Item.of('kubejs:cube1', 2))
+		.id('kubejs:create/compacting/cube1_gear');
+	[
+		['cube1', 'cube1_nugget'],
+		['cube1_5a', 'cube1_5a_nugget']
+	].forEach(([cube, nugget]) => {
+		event.recipes.create.milling(Item.of(`kubejs:${nugget}`, 4), `kubejs:${cube}`)
+			.id(`kubejs:create/milling/${cube}_to_nuggets`);
+		event.recipes.create.compacting(`kubejs:${cube}`, Item.of(`kubejs:${nugget}`, 4))
+			.id(`kubejs:create/compacting/${nugget}_to_cube`);
+	});
 	
 	event.recipes.thermal.crucible(Fluid.of('thermal:crude_oil', 125), 'kubejs:oil_clump').energy(400);
 	event.recipes.mekanism.purifying('kubejs:fission_pellet', '#forge:dusts/fluorite', {gas: 'mekanism:fissile_fuel', amount: 1});

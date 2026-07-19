@@ -1,3 +1,6 @@
 {
-	chapter_groups: [ ]
+	chapter_groups: [
+		{ id: "3EC90786E2303E3A", title: "Main story" }
+		{ id: "7DA5EB5E260ECA16", title: "Extra story" }
+	]
 }

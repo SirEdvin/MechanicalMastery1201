@@ -1,8 +1,7 @@
 {
 	id: "163D7437BC5B276B"
-	order_index: 1
-	title: "{ftbquests.loot_table.1602564825145878379.title}"
 	loot_size: 1
+	order_index: 1
 	rewards: [
 		{ item: "kubejs:press_rod_die" }
 		{ item: "thermal:press_coin_die" }
@@ -11,4 +10,5 @@
 		{ item: "thermal:press_packing_3x3_die" }
 		{ item: "thermal:press_unpacking_die" }
 	]
+	title: "{ftbquests.loot_table.1602564825145878379.title}"
 }
