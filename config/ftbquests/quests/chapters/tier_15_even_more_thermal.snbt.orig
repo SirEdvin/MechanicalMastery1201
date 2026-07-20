@@ -1,0 +1,98 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "tier_15_even_more_thermal"
+	group: "7DA5EB5E260ECA16"
+	icon: "kubejs:cube1_5a"
+	id: "7E1F76567EC3045D"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Now that you have basic essense, it is time to expand your capabilities with it. After all, this is a goal of all factories, build to build more."]
+			id: "13CD9AB761E4BB04"
+			rewards: [{
+				id: "79E6BD7B117EF859"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3D06976FCB8B5426"
+				item: "kubejs:cube1"
+				type: "item"
+			}]
+			title: "It is only the start"
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			id: "6FB0C8C6F63AD453"
+			tasks: [
+				{
+					id: "08597269015A0772"
+					item: "kubejs:cube1_5b"
+					type: "item"
+				}
+				{
+					id: "228B4A6BC905AD2C"
+					item: "kubejs:cube1_5b_packaged"
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 0.5d
+		}
+		{
+			id: "670DA5DEE1CEB51A"
+			tasks: [
+				{
+					id: "19D10DE92E724AA0"
+					item: "kubejs:cube1_5a"
+					type: "item"
+				}
+				{
+					id: "1EED9F6929A3A503"
+					item: "kubejs:cube1_5a_packaged"
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["13CD9AB761E4BB04"]
+			id: "6C6CEC31144C3104"
+			tasks: [{
+				id: "707A717DB6A6394D"
+				item: "kubejs:cube1_rod"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["13CD9AB761E4BB04"]
+			dependency_requirement: "one_completed"
+			id: "4C531FD8455FBE42"
+			tasks: [{
+				id: "5CAE3692861EF3B7"
+				item: "kubejs:cube1_gear"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["13CD9AB761E4BB04"]
+			id: "12B35BA91EB23973"
+			tasks: [{
+				id: "327D958500D08B08"
+				item: "kubejs:cube1_nugget"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+	]
+	title: "Tier 1.5: Even more Thermal"
+}

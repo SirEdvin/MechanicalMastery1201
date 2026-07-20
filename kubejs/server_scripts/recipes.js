@@ -267,6 +267,8 @@ ServerEvents.recipes( event => {
 	event.replaceInput({id: 'powah:crafting/dielectric_rod'}, 'minecraft:iron_bars', 'minecraft:iron_nugget');
 	event.replaceInput({id: 'powah:crafting/dielectric_rod_h'}, 'minecraft:iron_bars', 'minecraft:iron_nugget');
 	event.replaceInput({id: 'prettypipes:blank_module'}, 'minecraft:quartz', 'minecraft:iron_nugget');
+	event.replaceInput({id: 'computercraft:computer_normal'}, '#forge:dusts/redstone', 'kubejs:cube1_5b');
+	event.replaceInput({id: 'computercraft:computer_advanced'}, '#forge:dusts/redstone', 'kubejs:cube1_5b');
 	event.replaceInput({id: 'projecte:high_covalence_dust'}, 'minecraft:diamond', 'minecraft:gold_ingot');
 	event.replaceInput({id: 'projecte:condenser_mk1'}, 'minecraft:obsidian', 'minecraft:gold_ingot');
 	event.replaceInput({id: 'projecte:condenser_mk1'}, 'minecraft:diamond', 'projecte:high_covalence_dust');
@@ -631,6 +633,31 @@ ServerEvents.recipes( event => {
 	event.recipes.thermal.smelter('kubejs:black_hdpe_sheet', ['mekanism:hdpe_sheet', 'extendedcrafting:black_iron_ingot']).energy(2000);
 	event.recipes.thermal.smelter(Item.of('create:brass_ingot',2 ), ['#forge:ingots/copper', '#forge:ingots/zinc']).energy(2400);
 	event.recipes.thermal.smelter('minecraft:amethyst_shard', ['ae2:charged_certus_quartz_crystal', 'kubejs:cube3']).energy(24000);
+	let logisticEssenceStages = [
+		{input0: 'kubejs:cube1_gear', input1: 'kubejs:cube1_rod', output: 'kubejs:cube1_5b_1'},
+		{input0: 'kubejs:cube1_rod', input1: 'kubejs:cube1_5b_1', output: 'kubejs:cube1_5b_2'},
+		{input0: 'kubejs:cube1_rod', input1: 'kubejs:cube1_5b_2', output: 'kubejs:cube1_5b_3'}
+	];
+	logisticEssenceStages.forEach((stage, index) => {
+		event.recipes.thermal.smelter(stage.output, [stage.input0, stage.input1]).energy(2400)
+			.id(`kubejs:thermal/smelter/cube1_5b_${index + 1}`);
+		event.custom({
+			type: 'immersiveengineering:alloy',
+			input0: {item: stage.input0},
+			input1: {item: stage.input1},
+			result: {item: stage.output},
+			time: 200
+		}).id(`kubejs:immersiveengineering/alloy/cube1_5b_${index + 1}`);
+	});
+	let logisticEssenceOutputs = [
+		'kubejs:cube1_5b',
+		Item.of('kubejs:cube1_gear'),
+		Item.of('kubejs:cube1_rod').withChance(0.1)
+	];
+	event.recipes.thermal.pulverizer(logisticEssenceOutputs, 'kubejs:cube1_5b_3').energy(4000)
+		.id('kubejs:thermal/pulverizer/cube1_5b_3');
+	event.recipes.create.crushing(logisticEssenceOutputs, 'kubejs:cube1_5b_3')
+		.id('kubejs:create/crushing/cube1_5b_3');
 	event.recipes.thermal.sawmill('minecraft:blaze_rod', 'kubejs:blaze_effigy').energy(2000);
 	event.recipes.thermal.sawmill('thermal:blizz_rod', 'kubejs:blizz_effigy').energy(2000);
 	event.recipes.thermal.sawmill('thermal:blitz_rod', 'kubejs:blitz_effigy').energy(2000);
@@ -640,6 +667,28 @@ ServerEvents.recipes( event => {
 	event.shapeless(Item.of('minecraft:andesite', 2), [Item.of('minecraft:cobblestone', 2), Item.of('projecte:high_covalence_dust', 2)]);
 	event.shapeless(Item.of('minecraft:andesite', 8), [Item.of('minecraft:cobblestone', 8), Item.of('minecraft:quartz', 1)]);
 	event.shapeless('kubejs:cube1', ['#forge:gears/aluminum', Item.of('#forge:rods/copper', 2), '#forge:gears/iron']);
+	let basicLogisticStonecutting = [
+		{output: 'create:belt_connector', count: 6},
+		{output: 'create:andesite_funnel', count: 4},
+		{output: 'create:andesite_tunnel', count: 4},
+		{output: 'create:chute', count: 4},
+		{output: 'create:depot', count: 2},
+		{output: 'create:portable_storage_interface', count: 1},
+		{output: 'create:item_vault', count: 1},
+		{output: 'prettypipes:pipe', count: 4},
+		{output: 'prettypipes:blank_module', count: 1},
+		{output: 'prettypipes:low_extraction_module', count: 1},
+		{output: 'prettypipes:low_retrieval_module', count: 1},
+		{output: 'prettypipes:low_filter_module', count: 1},
+		{output: 'prettypipes:low_speed_module', count: 1},
+		{output: 'prettypipes:low_high_priority_module', count: 1},
+		{output: 'prettypipes:low_low_priority_module', count: 1}
+	];
+	basicLogisticStonecutting.forEach(recipe => {
+		let recipePath = recipe.output.replace(':', '/');
+		event.stonecutting(Item.of(recipe.output, recipe.count), 'kubejs:cube1_5b')
+			.id(`kubejs:stonecutting/basic_logistic_essence/${recipePath}`);
+	});
 	['1', '1_5a', '1_5b', '2', '2_5a', '2_5b', '3', '3_5a', '3_5b', '4', '4_5a', '4_5b'].forEach(tier => {
 		event.shaped(`kubejs:cube${tier}_block`, [
 			'CC',

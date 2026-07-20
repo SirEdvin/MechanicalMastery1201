@@ -32,6 +32,8 @@ CUBE_VARIANTS = (
     "4_5b",
 )
 
+LOGISTIC_TRANSITION_STEPS = 3
+
 
 def lightness_range(image: Image.Image) -> tuple[float, float]:
     pixels = cast(list[tuple[int, int, int, int]], list(image.get_flattened_data()))
@@ -132,9 +134,33 @@ def triangle(source_name: str, output_name: str) -> None:
     output.save(TEXTURES / output_name)
 
 
+def interpolate_texture(
+    start_name: str,
+    end_name: str,
+    output_name: str,
+    position: float,
+) -> None:
+    """Interpolate matching sprites while preserving their shared alpha mask."""
+    start = Image.open(TEXTURES / start_name).convert("RGBA")
+    end = Image.open(TEXTURES / end_name).convert("RGBA")
+    if start.size != end.size:
+        raise ValueError(f"Cannot interpolate textures of different sizes: {start.size} and {end.size}")
+
+    output = Image.blend(start, end, position)
+    output.putalpha(start.getchannel("A"))
+    output.save(TEXTURES / output_name)
+
+
 def main() -> None:
     recolor("diamond_rod.png", "cube1_rod.png", "cube1.png")
     recolor("aluminum_gear.png", "cube1_gear.png", "cube1.png")
+    for step in range(1, LOGISTIC_TRANSITION_STEPS + 1):
+        interpolate_texture(
+            "cube1.png",
+            "cube1_5b.png",
+            f"cube1_5b_{step}.png",
+            step / (LOGISTIC_TRANSITION_STEPS + 1),
+        )
     for variant in CUBE_VARIANTS:
         triangle(f"cube{variant}.png", f"cube{variant}_triangle.png")
 

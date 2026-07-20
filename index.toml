@@ -1361,6 +1361,18 @@ file = "kubejs/assets/kubejs/textures/item/cube1_5b.png"
 hash = "6dcdf2fb758633b64ade3dee8bae90b47cd7a03e0d11f3ba7d9dae090cd5a8ad"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/cube1_5b_1.png"
+hash = "d36dc4f0b1198be66e02101954b277351e3ed2ef274c75ec1e3ff9a5614418a7"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/cube1_5b_2.png"
+hash = "4caad5a83b46bb6929ebce4d92f9dc94cc49d677e5484fa0bb68775bc2b7ca38"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/cube1_5b_3.png"
+hash = "13aed65d6b42706df7582c1c3e9e888a4fe0589cb1c6d4cf7695719c726edd4d"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/cube1_5b_packaged.png"
 hash = "40927c6c08a30c3db5272cafd32ce4e68d68f43e6d59bb1fbcc57dcd4ccd0477"
 
@@ -2058,7 +2070,7 @@ hash = "a036fd0df311a5203c8e74a49e1d9dfb7814708f5367eabacd0c6027cb836fcd"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "ab5d2e1afb9373835eb4fca92bbf632fa07ff7f624e70f3d448840c3ff767a13"
+hash = "069141acc499174aeed46f54556fd76e2075797552fad0f6e5a317454926104d"
 
 [[files]]
 file = "kubejs/server_scripts/thermal/lapidary_dynamo.js"
@@ -2070,7 +2082,7 @@ hash = "a77cde62dc96dfec20e8cd2a5c9fe37f8ceeeeb7f226df9f2b29ad429e9addef"
 
 [[files]]
 file = "kubejs/startup_scripts/script.js"
-hash = "46101675635b244a632b9c5fc06440c23d29969ee65c60196474da6402245adc"
+hash = "8211631eb5331238784186bacd2f04fb4a5a7350e3e4adf16fec177ff443c222"
 
 [[files]]
 file = "mods/advanced-peripherals.pw.toml"

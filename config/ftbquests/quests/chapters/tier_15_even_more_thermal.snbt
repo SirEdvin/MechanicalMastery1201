@@ -26,7 +26,27 @@
 			y: 1.5d
 		}
 		{
+			dependencies: ["01B547AF26EBC021"]
+			description: [
+				"This is probably the first useful essense, finally. "
+				""
+				"Not only it produces more EMC, but it also simplifies craft of logistic devices and open way to some more advanced, like computers"
+			]
 			id: "6FB0C8C6F63AD453"
+			rewards: [
+				{
+					id: "1D0DBF9F3EFFCE45"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 5
+					id: "4DAA1BE5841C5E88"
+					item: "kubejs:cube1_5b"
+					type: "item"
+				}
+			]
+			subtitle: "Finally, first useful essense!"
 			tasks: [
 				{
 					id: "08597269015A0772"
@@ -39,7 +59,7 @@
 					type: "item"
 				}
 			]
-			x: 13.0d
+			x: 14.0d
 			y: 0.5d
 		}
 		{
@@ -56,8 +76,8 @@
 					type: "item"
 				}
 			]
-			x: 13.0d
-			y: 2.5d
+			x: 14.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["13CD9AB761E4BB04"]
@@ -92,6 +112,86 @@
 			}]
 			x: 6.0d
 			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6C6CEC31144C3104"
+				"4C531FD8455FBE42"
+			]
+			id: "7F6AD37713E44106"
+			rewards: [{
+				id: "68071F9049E9ED60"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Start of a long loop"
+			tasks: [{
+				id: "3B577DA9EE9A8900"
+				item: "kubejs:cube1_5b_1"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7F6AD37713E44106"]
+			id: "1C257848154F47FE"
+			rewards: [{
+				id: "0E53019D34A5B191"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Just a little bit more..."
+			tasks: [{
+				id: "2149C1862EE58511"
+				item: "kubejs:cube1_5b_2"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1C257848154F47FE"]
+			id: "01B547AF26EBC021"
+			rewards: [{
+				id: "7ED70286BF50A094"
+				type: "xp"
+				xp: 100
+			}]
+			subtitle: "Nearly there..."
+			tasks: [{
+				id: "2A818D46EC4F354B"
+				item: "kubejs:cube1_5b_3"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6FB0C8C6F63AD453"]
+			description: ["{\"text\":\"How to use computers? I dunno, but I heard the best way to start is something like \",\"extra\":[{\"text\":\"this wiki\",\"color\":\"aqua\",\"underlined\":true,\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://tweaked.cc/\"}},{\"text\":\".\"}]}"]
+			id: "0AC7D06D4A5D102D"
+			optional: true
+			rewards: [{
+				id: "68FC83A62EA93C5E"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "454F02A4EB48ACEC"
+					item: "computercraft:computer_normal"
+					type: "item"
+				}
+				{
+					id: "56DBD9005292D645"
+					item: "computercraft:computer_advanced"
+					type: "item"
+				}
+			]
+			title: "Computers?"
+			x: 14.0d
+			y: -1.5d
 		}
 	]
 	title: "Tier 1.5: Even more Thermal"
