@@ -640,22 +640,6 @@ ServerEvents.recipes( event => {
 	event.shapeless(Item.of('minecraft:andesite', 2), [Item.of('minecraft:cobblestone', 2), Item.of('projecte:high_covalence_dust', 2)]);
 	event.shapeless(Item.of('minecraft:andesite', 8), [Item.of('minecraft:cobblestone', 8), Item.of('minecraft:quartz', 1)]);
 	event.shapeless('kubejs:cube1', ['#forge:gears/aluminum', Item.of('#forge:rods/copper', 2), '#forge:gears/iron']);
-	event.shapeless(Item.of('kubejs:cube1_rod', 2), ['kubejs:cube1']).id('kubejs:cube1_rod');
-	event.shaped('kubejs:cube1_gear', ['CC'], {
-		C: 'kubejs:cube1'
-	}).id('kubejs:cube1_gear');
-	[
-		['cube1', 'cube1_nugget'],
-		['cube1_5a', 'cube1_5a_nugget']
-	].forEach(([cube, nugget]) => {
-		event.shapeless(Item.of(`kubejs:${nugget}`, 4), [`kubejs:${cube}`]).id(`kubejs:${cube}_to_nuggets`);
-		event.shaped(`kubejs:${cube}`, [
-			'NN',
-			'NN'
-		], {
-			N: `kubejs:${nugget}`
-		}).id(`kubejs:${nugget}_to_cube`);
-	});
 	['1', '1_5a', '1_5b', '2', '2_5a', '2_5b', '3', '3_5a', '3_5b', '4', '4_5a', '4_5b'].forEach(tier => {
 		event.shaped(`kubejs:cube${tier}_block`, [
 			'CC',
@@ -700,30 +684,82 @@ ServerEvents.recipes( event => {
 	event.recipes.thermal.press([Item.of('immersiveengineering:stick_aluminum', 2)], ['#forge:ingots/aluminum', 'kubejs:press_rod_die']).energy(600);
 	event.recipes.thermal.press(Item.of('kubejs:cube1_rod', 2), ['kubejs:cube1', 'kubejs:press_rod_die']).energy(600)
 		.id('kubejs:thermal/press/cube1_rod');
-	event.recipes.thermal.press('kubejs:cube1_gear', [Item.of('kubejs:cube1', 2), 'thermal:press_gear_die']).energy(1200)
+	event.recipes.thermal.press('kubejs:cube1_gear', [Item.of('kubejs:cube1', 4), 'thermal:press_gear_die']).energy(2400)
 		.id('kubejs:thermal/press/cube1_gear');
-	[
-		['cube1', 'cube1_nugget'],
-		['cube1_5a', 'cube1_5a_nugget']
-	].forEach(([cube, nugget]) => {
-		event.recipes.thermal.press(Item.of(`kubejs:${nugget}`, 4), [`kubejs:${cube}`, 'thermal:press_unpacking_die']).energy(600)
-			.id(`kubejs:thermal/press/${cube}_to_nuggets`);
-		event.recipes.thermal.press(`kubejs:${cube}`, [Item.of(`kubejs:${nugget}`, 4), 'thermal:press_packing_2x2_die']).energy(600)
-			.id(`kubejs:thermal/press/${nugget}_to_cube`);
+	let mechanicalEssenceVariants = [
+		'cube1', 'cube1_5a', 'cube1_5b',
+		'cube2', 'cube2_5a', 'cube2_5b',
+		'cube3', 'cube3_5a', 'cube3_5b',
+		'cube4', 'cube4_5a', 'cube4_5b'
+	];
+	mechanicalEssenceVariants.forEach(cube => {
+		let triangle = `${cube}_triangle`;
+		event.recipes.thermal.press(Item.of(`kubejs:${triangle}`, 4), [`kubejs:${cube}`, 'thermal:press_unpacking_die']).energy(600)
+			.id(`kubejs:thermal/press/${cube}_to_triangles`);
+		event.recipes.thermal.press(`kubejs:${cube}`, [Item.of(`kubejs:${triangle}`, 4), 'thermal:press_packing_2x2_die']).energy(600)
+			.id(`kubejs:thermal/press/${triangle}_to_cube`);
 	});
 
-	event.recipes.create.cutting(Item.of('kubejs:cube1_rod', 2), 'kubejs:cube1')
-		.id('kubejs:create/cutting/cube1_rod');
-	event.recipes.create.compacting('kubejs:cube1_gear', Item.of('kubejs:cube1', 2))
-		.id('kubejs:create/compacting/cube1_gear');
-	[
-		['cube1', 'cube1_nugget'],
-		['cube1_5a', 'cube1_5a_nugget']
-	].forEach(([cube, nugget]) => {
-		event.recipes.create.milling(Item.of(`kubejs:${nugget}`, 4), `kubejs:${cube}`)
-			.id(`kubejs:create/milling/${cube}_to_nuggets`);
-		event.recipes.create.compacting(`kubejs:${cube}`, Item.of(`kubejs:${nugget}`, 4))
-			.id(`kubejs:create/compacting/${nugget}_to_cube`);
+	mechanicalEssenceVariants.forEach(cube => {
+		let triangle = `${cube}_triangle`;
+		let molten = `kubejs:molten_${cube}`;
+		event.custom({
+			type: 'createmetallurgy:melting',
+			heatRequirement: 'heated',
+			ingredients: [{item: `kubejs:${cube}`}],
+			processingTime: 40,
+			results: [{amount: 400, fluid: molten}]
+		}).id(`kubejs:createmetallurgy/melting/${cube}`);
+		event.custom({
+			type: 'createmetallurgy:melting',
+			heatRequirement: 'heated',
+			ingredients: [{item: `kubejs:${triangle}`}],
+			processingTime: 10,
+			results: [{amount: 100, fluid: molten}]
+		}).id(`kubejs:createmetallurgy/melting/${triangle}`);
+		event.custom({
+			type: 'createmetallurgy:casting_in_table',
+			ingredients: [
+				{item: 'createmetallurgy:graphite_ingot_mold'},
+				{amount: 400, fluid: molten, nbt: {}}
+			],
+			processingTime: 60,
+			result: {item: `kubejs:${cube}`}
+		}).id(`kubejs:createmetallurgy/casting_in_table/${cube}`);
+		event.custom({
+			type: 'createmetallurgy:casting_in_table',
+			ingredients: [
+				{item: 'createmetallurgy:graphite_nugget_mold'},
+				{amount: 100, fluid: molten, nbt: {}}
+			],
+			processingTime: 15,
+			result: {item: `kubejs:${triangle}`}
+		}).id(`kubejs:createmetallurgy/casting_in_table/${triangle}`);
+	});
+	event.custom({
+		type: 'createmetallurgy:casting_in_table',
+		ingredients: [
+			{item: 'createmetallurgy:graphite_rod_mold'},
+			{amount: 200, fluid: 'kubejs:molten_cube1', nbt: {}}
+		],
+		processingTime: 30,
+		result: {item: 'kubejs:cube1_rod'}
+	}).id('kubejs:createmetallurgy/casting_in_table/cube1_rod');
+	event.custom({
+		type: 'createmetallurgy:casting_in_table',
+		ingredients: [
+			{item: 'createmetallurgy:graphite_gear_mold'},
+			{amount: 1600, fluid: 'kubejs:molten_cube1', nbt: {}}
+		],
+		processingTime: 240,
+		result: {item: 'kubejs:cube1_gear'}
+	}).id('kubejs:createmetallurgy/casting_in_table/cube1_gear');
+	mechanicalEssenceVariants.forEach(cube => {
+		let triangle = `${cube}_triangle`;
+		event.recipes.create.cutting(Item.of(`kubejs:${triangle}`, 4), `kubejs:${cube}`)
+			.id(`kubejs:create/cutting/${cube}_to_triangles`);
+		event.recipes.create.compacting(`kubejs:${cube}`, Item.of(`kubejs:${triangle}`, 4))
+			.id(`kubejs:create/compacting/${triangle}_to_cube`);
 	});
 	
 	event.recipes.thermal.crucible(Fluid.of('thermal:crude_oil', 125), 'kubejs:oil_clump').energy(400);

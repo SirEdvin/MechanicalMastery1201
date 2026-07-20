@@ -87,7 +87,7 @@
 			id: "12B35BA91EB23973"
 			tasks: [{
 				id: "327D958500D08B08"
-				item: "kubejs:cube1_nugget"
+				item: "kubejs:cube1_triangle"
 				type: "item"
 			}]
 			x: 6.0d

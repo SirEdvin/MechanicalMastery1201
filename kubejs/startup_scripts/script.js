@@ -83,6 +83,21 @@ for(var metal in metals) {
 
 console.log('[AMMONIUM@KUBEJS]:End of list.');
 
+const mechanicalEssenceVariants = [
+	{cube: 'cube1', name: 'Basic Mechanical Essence', color: 0xE54963},
+	{cube: 'cube1_5a', name: 'Basic Compacting Mechanical Essence', color: 0xBB41B9},
+	{cube: 'cube1_5b', name: 'Basic Logistic Mechanical Essence', color: 0x533ABA},
+	{cube: 'cube2', name: 'Regular Mechanical Essence', color: 0x4794C4},
+	{cube: 'cube2_5a', name: 'Turquoise Mechanical Essence', color: 0x37B983},
+	{cube: 'cube2_5b', name: 'Green Mechanical Essence', color: 0x53BC38},
+	{cube: 'cube3', name: 'Improved Mechanical Essence', color: 0xE5E237},
+	{cube: 'cube3_5a', name: 'Burnished Coral Mechanical Essence', color: 0xC56343},
+	{cube: 'cube3_5b', name: 'Rose Mechanical Essence', color: 0xC6518E},
+	{cube: 'cube4', name: 'Advanced Mechanical Essence', color: 0xCA6DE4},
+	{cube: 'cube4_5a', name: 'Fuchsia Mechanical Essence', color: 0xCF53A9},
+	{cube: 'cube4_5b', name: 'Crimson Mechanical Essence', color: 0xD74657}
+];
+
 StartupEvents.registry('item', event => {
 	// Register new items here
 	// event.create('example_item').displayName('Example Item')
@@ -113,8 +128,9 @@ StartupEvents.registry('item', event => {
 	// Items for chapter 1.5
 	event.create("cube1_rod").displayName("Basic Mechanical Rod")
 	event.create("cube1_gear").displayName("Basic Mechanical Gear")
-	event.create("cube1_nugget").displayName("Small Basic Mechanical Essense")
-	event.create("cube1_5a_nugget").displayName("Small Basic Compacting Mechanical Essense")
+	mechanicalEssenceVariants.forEach(variant => {
+		event.create(`${variant.cube}_triangle`).displayName(`${variant.name} Triangle`);
+	});
 	
 	event.create('press_rod_die').displayName('Rod Die');
 	event.create('oil_clump').displayName('Oil clump');
@@ -203,6 +219,15 @@ StartupEvents.registry('item', event => {
 	}
 	
 })
+
+StartupEvents.registry('fluid', event => {
+	mechanicalEssenceVariants.forEach(variant => {
+		event.create(`molten_${variant.cube}`)
+			.thickTexture(variant.color)
+			.bucketColor(variant.color)
+			.displayName(`Molten ${variant.name}`);
+	});
+});
 
 StartupEvents.registry('block', event => {
 	// Register new blocks here

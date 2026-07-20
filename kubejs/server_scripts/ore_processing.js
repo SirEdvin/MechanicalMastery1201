@@ -114,7 +114,7 @@ ServerEvents.recipes( event => {
 			[Item.of(metals[metal]['dirty_dust']), Item.of(metals[metal]['dirty_dust']).withChance(0.1)],
 			metals[metal]['crushed']
 		).id(`kubejs:milling/crushed_raw_${metal}`);
-		const washingOutputs = [Item.of(metals[metal]['dust'])];
+		let washingOutputs = [Item.of(metals[metal]['dust'])];
 		if (createMetallurgyByproducts[metal]) {
 			washingOutputs.push(Item.of(createMetallurgyByproducts[metal]).withChance(0.1));
 		}
