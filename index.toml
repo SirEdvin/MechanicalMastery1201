@@ -598,7 +598,7 @@ hash = "219442387008fa8187dd3311afcdd09e74ab5f8ebf28207e7fb6348a2a27f8c7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tier_15_even_more_thermal.snbt"
-hash = "49e272673fa94d75f16e9996fd60062c4950f3b9c6815d6c9967bdd8f5817dc4"
+hash = "461d407eb799201f08a421977f49df9099b32e85a7af1976b709114629677354"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tier_2.snbt"
@@ -1349,6 +1349,10 @@ file = "kubejs/assets/kubejs/textures/item/cube1_5a.png"
 hash = "37d611268aaf8bdef8696889f45a657a09c03b0e0eb9e1d8fbd29f5026213b4f"
 
 [[files]]
+file = "kubejs/assets/kubejs/textures/item/cube1_5a_nugget.png"
+hash = "d72214400d08e094d8ed6ff371376f9a753a8028800e02f18c4e1766caa02db4"
+
+[[files]]
 file = "kubejs/assets/kubejs/textures/item/cube1_5a_packaged.png"
 hash = "0abd8b78d497484877c164e33c6bdf6787b0be842421442f507492f69b2cd1cf"
 
@@ -1383,6 +1387,10 @@ hash = "c9a2fd98dcb05874d94c1162708be39f9a0599694052824cee8e399c3f70c9dd"
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/cube1_gear.png"
 hash = "523cc57c0d91ffee8fac599ccaeca1c844664700d041e6b04dd131a4cfcc91f2"
+
+[[files]]
+file = "kubejs/assets/kubejs/textures/item/cube1_nugget.png"
+hash = "8ad88da6e0b69680667fc1c6ee140f54db29919e0fdc66e45bc6273ec2a2b14a"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/item/cube1_packaged.png"
@@ -1667,6 +1675,10 @@ hash = "a95af6901ffa92f58cc71a4e294a61490dfd10c5ade2fb369a174af0af33ccd8"
 [[files]]
 file = "kubejs/data/industrialforegoing/tags/entity_types/mob_duplicator_blacklist.json"
 hash = "a37d50678e6a4379e0582a73fcdf1c7aee76c8f3e10a6ceb0c5e9e09340e6949"
+
+[[files]]
+file = "kubejs/data/kubejs/recipes/compact_crafting/angel_ring.json"
+hash = "e770d435413c3b13507abbf1577bb7479b23f7d24ff6773b309662d725f845d9"
 
 [[files]]
 file = "kubejs/data/mechanicalmastery/recipes/ore_processing/aluminum/crystallizing.json"
@@ -2042,7 +2054,7 @@ hash = "70f26cbe24e0349047f8824b478a1aa94167048bd4dc85af86e84d85e649c535"
 
 [[files]]
 file = "kubejs/server_scripts/compact_crafting.js"
-hash = "814a01422edcda5f16c7f715556e9259c68226f9802f3fcc29ad8fe3343f7595"
+hash = "440bb7f96a68100f5594206ed466ff0863b022b959e81265f8fe52ef795bed7a"
 
 [[files]]
 file = "kubejs/server_scripts/entity.loot_tables.js"
@@ -2070,7 +2082,7 @@ hash = "a036fd0df311a5203c8e74a49e1d9dfb7814708f5367eabacd0c6027cb836fcd"
 
 [[files]]
 file = "kubejs/server_scripts/recipes.js"
-hash = "069141acc499174aeed46f54556fd76e2075797552fad0f6e5a317454926104d"
+hash = "232addce23dfde88b629e03e936fa71022b955956bf6fa71588f40d4c1358dd2"
 
 [[files]]
 file = "kubejs/server_scripts/thermal/lapidary_dynamo.js"
@@ -2082,7 +2094,7 @@ hash = "a77cde62dc96dfec20e8cd2a5c9fe37f8ceeeeb7f226df9f2b29ad429e9addef"
 
 [[files]]
 file = "kubejs/startup_scripts/script.js"
-hash = "8211631eb5331238784186bacd2f04fb4a5a7350e3e4adf16fec177ff443c222"
+hash = "6d61d0f24d8e760c214b3082dc602c389c9a3e3412ca99d1157649061e5e6127"
 
 [[files]]
 file = "mods/advanced-peripherals.pw.toml"
@@ -2211,7 +2223,7 @@ metafile = true
 
 [[files]]
 file = "mods/chloride.pw.toml"
-hash = "1706203beb5925ff51887b4b4c4c1f00e32b37f0af3d4a274544ed12a239c153"
+hash = "1f26d854030d4b96e2c0f430719606b2a99faa6c919851b6c36f695c087e96f8"
 metafile = true
 
 [[files]]
@@ -2256,7 +2268,7 @@ metafile = true
 
 [[files]]
 file = "mods/compact-crafting-fork.pw.toml"
-hash = "8a159464293f50c0690993485d1348599ec3fa55e7edbb1540ca731545ce0a66"
+hash = "d89f07582d793a8261b426150d5e3aa2290c3d9b927ab86f10db1eb8b5f4030f"
 metafile = true
 
 [[files]]
@@ -2306,7 +2318,7 @@ metafile = true
 
 [[files]]
 file = "mods/create-chromaticreturn.pw.toml"
-hash = "a4470ff99a3e0b1163df88284ad4740b03767a0ba10c4ed54757ea52315417c2"
+hash = "8e247f0700ddd8b41130a4366fec1f413ba090ec6050f0c5c65ac268339a13c6"
 metafile = true
 
 [[files]]
@@ -2541,7 +2553,7 @@ metafile = true
 
 [[files]]
 file = "mods/fusion-connected-textures.pw.toml"
-hash = "2dd0c1dd36c6d9f9f166c6e04c5175d69c68edac1742c5000f29ad3d779bcc02"
+hash = "c407f3e9c2037e43a80fc543c7fd5bfd04809149cfc9691cae9c033038a3d357"
 metafile = true
 
 [[files]]
@@ -2636,7 +2648,7 @@ metafile = true
 
 [[files]]
 file = "mods/lootjs.pw.toml"
-hash = "e8ffbf5788712fac841e1bb0bff8969697f99be47d6f1c3f41ebe9ac965016d3"
+hash = "de2643b3bb36e6b5fd97540bd79619e0844293b43487ecce1613165a409ce8cc"
 metafile = true
 
 [[files]]
@@ -2686,7 +2698,7 @@ metafile = true
 
 [[files]]
 file = "mods/modernfix.pw.toml"
-hash = "31451e71608859493539cefe84b738f1ee218fd315a5e7858da9ab7a1aab2d07"
+hash = "133881d2f995195c6751f381b2df6d410b643b61fb7528ef13f657cfacff02e1"
 metafile = true
 
 [[files]]
@@ -2921,7 +2933,7 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-core.pw.toml"
-hash = "2e1e072c31233ac4739bb84eb1aaf3ff0c1c54ebdd7da5f8da6fb2d0a65ef792"
+hash = "048736f3c046f8713b1c7e09ba08a92ee8a22eae16352b84cad1ab281f551e88"
 metafile = true
 
 [[files]]
@@ -2931,7 +2943,7 @@ metafile = true
 
 [[files]]
 file = "mods/sophisticated-storage.pw.toml"
-hash = "523817a3ce081a7327c3d076a6ffa0dda9745b97515f0e929c368727ddac32e2"
+hash = "8da05cff3b1b67cd72c21fd03e2e04a0ebb5b0d8db8e3028cd62363bd64185b6"
 metafile = true
 
 [[files]]

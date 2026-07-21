@@ -151,9 +151,28 @@ def interpolate_texture(
     output.save(TEXTURES / output_name)
 
 
+def nugget(source_name: str, output_name: str) -> None:
+    """Create a centered half-scale essence nugget from its cube texture."""
+    source = Image.open(TEXTURES / source_name).convert("RGBA")
+    bounds = source.getbbox()
+    if bounds is None:
+        raise ValueError(f"{source_name} produced an empty nugget")
+    cropped = source.crop(bounds)
+    size = (max(1, cropped.width // 2), max(1, cropped.height // 2))
+    cropped = cropped.resize(size, Image.Resampling.NEAREST)
+    output = Image.new("RGBA", source.size)
+    output.alpha_composite(
+        cropped,
+        ((source.width - cropped.width) // 2, (source.height - cropped.height) // 2),
+    )
+    output.save(TEXTURES / output_name)
+
+
 def main() -> None:
     recolor("diamond_rod.png", "cube1_rod.png", "cube1.png")
     recolor("aluminum_gear.png", "cube1_gear.png", "cube1.png")
+    nugget("cube1.png", "cube1_nugget.png")
+    nugget("cube1_5a.png", "cube1_5a_nugget.png")
     for step in range(1, LOGISTIC_TRANSITION_STEPS + 1):
         interpolate_texture(
             "cube1.png",

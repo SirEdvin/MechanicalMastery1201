@@ -735,6 +735,12 @@ ServerEvents.recipes( event => {
 		.id('kubejs:thermal/press/cube1_rod');
 	event.recipes.thermal.press('kubejs:cube1_gear', [Item.of('kubejs:cube1', 4), 'thermal:press_gear_die']).energy(2400)
 		.id('kubejs:thermal/press/cube1_gear');
+	event.recipes.thermal.press(Item.of('kubejs:cube1_nugget', 4), ['kubejs:cube1_triangle', 'thermal:press_unpacking_die']).energy(150)
+		.id('kubejs:thermal/press/cube1_triangle_to_nuggets');
+	event.recipes.thermal.smelter('kubejs:cube1_5a_nugget', ['kubejs:cube1_nugget', '#forge:nuggets/silver']).energy(600)
+		.id('kubejs:thermal/smelter/cube1_5a_nugget');
+	event.recipes.thermal.press('kubejs:cube1_5a_triangle', [Item.of('kubejs:cube1_5a_nugget', 4), 'thermal:press_packing_2x2_die']).energy(150)
+		.id('kubejs:thermal/press/cube1_5a_nuggets_to_triangle');
 	let mechanicalEssenceVariants = [
 		'cube1', 'cube1_5a', 'cube1_5b',
 		'cube2', 'cube2_5a', 'cube2_5b',
@@ -819,64 +825,6 @@ ServerEvents.recipes( event => {
 	event.recipes.create.haunting('minecraft:egg', 'create:dough');
 
 	// end game recipes
-
-	event.custom({
-		type: 'compactcrafting:miniaturization',
-		version: 1,
-		recipeSize: 5,
-		craftingTime: 600,
-		layers: [
-			{
-				type: 'compactcrafting:mixed',
-				pattern: [
-					['-', '-', 'G', '-', '-'],
-					['-', 'G', '-', 'G', '-'],
-					['G', '-', '-', '-', 'G'],
-					['-', 'G', '-', 'G', '-'],
-					['-', '-', 'G', '-', '-']
-				]
-			},
-			{
-				type: 'compactcrafting:mixed',
-				pattern: [
-					['-', 'G', 'G', 'G', '-'],
-					['G', '-', '-', '-', 'G'],
-					['G', '-', 'C', '-', 'G'],
-					['G', '-', '-', '-', 'G'],
-					['-', 'G', 'G', 'G', '-']
-				]
-			},
-			{
-				type: 'compactcrafting:mixed',
-				pattern: [
-					['-', '-', 'G', '-', '-'],
-					['-', 'G', '-', 'G', '-'],
-					['G', '-', '-', '-', 'G'],
-					['-', 'G', '-', 'G', '-'],
-					['-', '-', 'G', '-', '-']
-				]
-			}
-		],
-		catalyst: {
-			id: 'minecraft:gold_nugget',
-			Count: 1,
-			nbt: '{}'
-		},
-		components: {
-			G: {
-				type: 'compactcrafting:block',
-				block: 'minecraft:gold_block'
-			},
-			C: {
-				type: 'compactcrafting:block',
-				block: 'kubejs:cube1_block'
-			}
-		},
-		outputs: [{
-			id: 'miniutilities:angel_ring',
-			Count: 1
-		}]
-	}).id('kubejs:compact_crafting/angel_ring');
 
 	event.recipes.create.sequenced_assembly([
 		'ae2:silicon_press'

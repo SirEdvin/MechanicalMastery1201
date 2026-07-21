@@ -1,0 +1,59 @@
+{
+  "type": "compactcrafting:miniaturization",
+  "version": 1,
+  "recipeSize": 5,
+  "craftingTime": 600,
+  "layers": [
+    {
+      "type": "compactcrafting:mixed",
+      "pattern": [
+        ["-", "-", "G", "-", "-"],
+        ["-", "G", "-", "G", "-"],
+        ["G", "-", "-", "-", "G"],
+        ["-", "G", "-", "G", "-"],
+        ["-", "-", "G", "-", "-"]
+      ]
+    },
+    {
+      "type": "compactcrafting:mixed",
+      "pattern": [
+        ["-", "G", "G", "G", "-"],
+        ["G", "-", "-", "-", "G"],
+        ["G", "-", "C", "-", "G"],
+        ["G", "-", "-", "-", "G"],
+        ["-", "G", "G", "G", "-"]
+      ]
+    },
+    {
+      "type": "compactcrafting:mixed",
+      "pattern": [
+        ["-", "-", "G", "-", "-"],
+        ["-", "G", "-", "G", "-"],
+        ["G", "-", "-", "-", "G"],
+        ["-", "G", "-", "G", "-"],
+        ["-", "-", "G", "-", "-"]
+      ]
+    }
+  ],
+  "catalyst": {
+    "id": "minecraft:gold_nugget",
+    "Count": 1,
+    "nbt": {}
+  },
+  "components": {
+    "G": {
+      "type": "compactcrafting:block",
+      "block": "minecraft:gold_block"
+    },
+    "C": {
+      "type": "compactcrafting:block",
+      "block": "kubejs:cube1_block"
+    }
+  },
+  "outputs": [
+    {
+      "id": "miniutilities:angel_ring",
+      "Count": 1
+    }
+  ]
+}

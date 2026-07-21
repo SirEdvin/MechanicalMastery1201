@@ -128,6 +128,8 @@ StartupEvents.registry('item', event => {
 	// Items for chapter 1.5
 	event.create("cube1_rod").displayName("Basic Mechanical Rod")
 	event.create("cube1_gear").displayName("Basic Mechanical Gear")
+	event.create('cube1_nugget').displayName('Basic Mechanical Essence Nugget');
+	event.create('cube1_5a_nugget').displayName('Basic Compacting Mechanical Essence Nugget');
 	event.create('cube1_5b_1').displayName('Slightly Logistic Mechanical Essense');
 	event.create('cube1_5b_2').displayName('Moderny Logistic Mechanical Essense');
 	event.create('cube1_5b_3').displayName('Nearly Logistic Mechanical Essense');
