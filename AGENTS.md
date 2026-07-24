@@ -10,4 +10,6 @@
 - Keep the original archive `/home/siredvin/Mechanical Mastery.zip` unchanged.
 - Use `.upstream/original-mechanical-mastery-1.18.2/` as the unpacked upstream reference; it is intentionally excluded from Git and Packwiz.
 - Use Packwiz metadata rather than committing mod JARs.
+- This is a CurseForge-based modpack. Prefer CurseForge metadata whenever a compatible CurseForge release is available; use Modrinth metadata only when the mod or compatible release is unavailable on CurseForge.
+- CC: Tweaked is an explicit exception: use Modrinth metadata because its newer compatible Forge 1.20.1 releases are not available on CurseForge.
 - Preserve the upstream CC BY-NC 3.0 Unported license and attribution to ammoniumx.

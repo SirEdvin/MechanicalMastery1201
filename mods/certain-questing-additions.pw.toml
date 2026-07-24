@@ -1,13 +1,13 @@
 name = "Certain Questing Additions"
 filename = "certain_questing_additions-forge-1.2.0.3+mc1.20.1.jar"
-side = "client"
+side = "both"
 
 [download]
-url = "https://cdn.modrinth.com/data/5BPpCYUe/versions/DOhohD8b/certain_questing_additions-forge-1.2.0.3%2Bmc1.20.1.jar"
-hash-format = "sha512"
-hash = "1cd3ac7508cd83ce695f73cae234ed25c9b757a992d9a375ce201ab2f6fb32f5795c0177e017826db44485e9d11aa0709d980fe52c5dd9e94afe1972669525d4"
+hash-format = "sha1"
+hash = "db314944c27a99439d2f0e593f3c1cc9805a8fde"
+mode = "metadata:curseforge"
 
 [update]
-[update.modrinth]
-mod-id = "5BPpCYUe"
-version = "DOhohD8b"
+[update.curseforge]
+file-id = 8385712
+project-id = 1372051
