@@ -1,0 +1,15 @@
+[world-preset]
+	# Type in the name from the world preset which should be selected by default.
+	world-preset = "skyblockbuilder:skyblock"
+
+	# Type in a valid generation setting for flat world type.
+	flat-settings = "minecraft:bedrock,2*minecraft:dirt,minecraft:grass_block;minecraft:plains"
+
+	# Type in a valid biome for single biome world type.
+	single-biome-biome = "minecraft:plains"
+
+	# Keep the selector available for testing or intentionally creating a non-skyblock world.
+	disable-button = false
+
+	# An empty list keeps all registered world presets selectable.
+	allowed-world-types = []

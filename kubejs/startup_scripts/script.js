@@ -130,9 +130,9 @@ StartupEvents.registry('item', event => {
 	event.create("cube1_gear").displayName("Basic Mechanical Gear")
 	event.create('cube1_nugget').displayName('Basic Mechanical Essence Nugget');
 	event.create('cube1_5a_nugget').displayName('Basic Compacting Mechanical Essence Nugget');
-	event.create('cube1_5b_1').displayName('Slightly Logistic Mechanical Essense');
-	event.create('cube1_5b_2').displayName('Moderny Logistic Mechanical Essense');
-	event.create('cube1_5b_3').displayName('Nearly Logistic Mechanical Essense');
+	event.create('cube1_5b_1').displayName('Slightly Logistic Mechanical Essence');
+	event.create('cube1_5b_2').displayName('Moderny Logistic Mechanical Essence');
+	event.create('cube1_5b_3').displayName('Nearly Logistic Mechanical Essence');
 	mechanicalEssenceVariants.forEach(variant => {
 		event.create(`${variant.cube}_triangle`).displayName(`${variant.name} Triangle`);
 	});

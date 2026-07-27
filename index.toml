@@ -441,6 +441,10 @@ file = "config/de/mari_023/ae2wtlib.json5"
 hash = "e9838cc6c67a746008e2c8bc88577be4c350d4f990ee5ca4861f07bce76e36ea"
 
 [[files]]
+file = "config/defaultworldtype/client-config.toml"
+hash = "f9617607fc7213cbad06e08559ffa16f140ef5e9a7cdcba2b847a4aeaedcbd89"
+
+[[files]]
 file = "config/digitalitems.toml"
 hash = "42d8d620e27761496734b3e918dbcc7a1abc2ea65b022febcfee65a01eb8d06f"
 
@@ -598,7 +602,7 @@ hash = "219442387008fa8187dd3311afcdd09e74ab5f8ebf28207e7fb6348a2a27f8c7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tier_15_even_more_thermal.snbt"
-hash = "461d407eb799201f08a421977f49df9099b32e85a7af1976b709114629677354"
+hash = "66775e2d63ec48fcde46fc83465aa6a3e069679b6d6a15d6bd2ada1b82c363d7"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/tier_2.snbt"
@@ -2094,7 +2098,7 @@ hash = "a77cde62dc96dfec20e8cd2a5c9fe37f8ceeeeb7f226df9f2b29ad429e9addef"
 
 [[files]]
 file = "kubejs/startup_scripts/script.js"
-hash = "6d61d0f24d8e760c214b3082dc602c389c9a3e3412ca99d1157649061e5e6127"
+hash = "19693759e8162d9d0aaffdbbfc5e44dbd969de6253872241f3886d75bd9069e3"
 
 [[files]]
 file = "mods/advanced-peripherals.pw.toml"
@@ -2397,6 +2401,11 @@ hash = "1e5226def4d447c7b1352274229443c7bf66658be97f3a7fa3dbc1581e9f12b3"
 metafile = true
 
 [[files]]
+file = "mods/defaultworldtype.pw.toml"
+hash = "51b75a4fd2f1843714534c073781912a07b61b4be8e14692a78fd83ee15ac64b"
+metafile = true
+
+[[files]]
 file = "mods/digital-items-3.pw.toml"
 hash = "84094c39f5063fb13810776590ed7b152c04ac74314eab5c15df7c046f8b3dc8"
 metafile = true
@@ -2439,6 +2448,11 @@ metafile = true
 [[files]]
 file = "mods/ex-pattern-provider.pw.toml"
 hash = "834c69f0656370c090ab3c13fa3228a751b66384bdcb522bead98f946d71bf2b"
+metafile = true
+
+[[files]]
+file = "mods/experimental-settings-disabler.pw.toml"
+hash = "5c760f88115ea4cbc556956185ae36761a5e5947bdd24eb01541dfd1c9b32e53"
 metafile = true
 
 [[files]]
@@ -2974,6 +2988,16 @@ metafile = true
 [[files]]
 file = "mods/supermartijn642s-core-lib.pw.toml"
 hash = "b6a895f1b93c2e70488e8b0ae289ef03257bf25d91e5d92211bfaedd54889dde"
+metafile = true
+
+[[files]]
+file = "mods/team-project-expansion.pw.toml"
+hash = "c1af01adc726ef5c40c7b21de252e31481241cf6f4581d47a2dd8975a58afc94"
+metafile = true
+
+[[files]]
+file = "mods/team-projecte.pw.toml"
+hash = "c589dc6d0bcf64db7239bd2578fbf67b23a640d2cdad33cb9146154af727e2aa"
 metafile = true
 
 [[files]]

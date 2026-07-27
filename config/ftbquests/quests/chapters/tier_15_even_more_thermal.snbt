@@ -10,7 +10,7 @@
 	quests: [
 		{
 			dependencies: ["7A0CB1037E6BE4D7"]
-			description: ["Now that you have basic essense, it is time to expand your capabilities with it. After all, this is a goal of all factories, build to build more."]
+			description: ["Now that you have basic essence, it is time to expand your capabilities with it. After all, this is a goal of all factories, build to build more."]
 			id: "13CD9AB761E4BB04"
 			rewards: [{
 				id: "79E6BD7B117EF859"
@@ -29,7 +29,7 @@
 		{
 			dependencies: ["01B547AF26EBC021"]
 			description: [
-				"This is probably the first useful essense, finally. "
+				"This is probably the first useful essence, finally. "
 				""
 				"Not only it produces more EMC, but it also simplifies craft of logistic devices and open way to some more advanced, like computers"
 			]
@@ -47,7 +47,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "Finally, first useful essense!"
+			subtitle: "Finally, first useful essence!"
 			tasks: [
 				{
 					id: "08597269015A0772"
@@ -65,7 +65,7 @@
 		}
 		{
 			dependencies: ["144A3BDACDD1DA6C"]
-			description: ["Compacting essense sadly less useful then logistic counterpart but it opens up compacting crafts! Maybe it contains a couple of useful skips, I dunno."]
+			description: ["Compacting essence sadly less useful then logistic counterpart but it opens up compacting crafts! Maybe it contains a couple of useful skips, I dunno."]
 			id: "670DA5DEE1CEB51A"
 			rewards: [
 				{
